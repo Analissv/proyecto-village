@@ -1,0 +1,665 @@
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Caveat:wght@400;600&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Zilla Slab', serif;
+    font-family: 'Caveat', cursive;
+    azul claro #aed1e6
+    lila   #c6cbf021
+    verde agua #CFE8EF
+    azulmas intenso #A0C4E2
+    */
+}
+
+/*mobile first*/
+
+/*header*/
+.header{
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://img.freepik.com/foto-gratis/delicioso-pastel-coco-casero-medio-coco_114579-8412.jpg?w=1380&t=st=1660419726~exp=1660420326~hmac=523a8db84b348dd3cf6107846a0995a02015ea7175af00a5177258ceecba722f);
+  align-items: center;
+  height: 15em;
+  justify-content: center;
+
+}
+.header1{
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.unsplash.com/photo-1506368083636-6defb67639a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  align-items: center;
+  height: 15em;
+  justify-content: center;
+
+}
+.header2{
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.unsplash.com/photo-1589783361701-d5161a106415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxjb3NhcyUyMGRlJTIwcGFzdGVsZXJhfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  align-items: center;
+  height: 15em;
+  justify-content: center;
+
+}
+.header3{
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.unsplash.com/photo-1600326145308-d7d5a04f4ce6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+  align-items: center;
+  height: 15em;
+  justify-content: center;
+
+}
+.header4{
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://img.freepik.com/foto-gratis/marco-ingredientes-alimentarios-hornear-sobre-fondo-pastel-ligeramente-rosa-cocinar-plano-sentar-espacio-copia-vista-superior-concepto-horneado-endecha-plana_127032-2183.jpg?w=1380&t=st=1660418956~exp=1660419556~hmac=885fcfdcfe44450354f3aa77c2861aed921bbdd026dcbb08a27ba9e6abfe589e);
+  align-items: center;
+  height: 15em;
+  justify-content: center;
+
+}
+.header5{
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.unsplash.com/photo-1586985289906-406988974504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRvcnRhJTIwY2hvY29sYXRlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  align-items: center;
+  height: 15em;
+  justify-content: center;
+
+}
+
+.header.nav, .header1 .nav, .header2 .nav, .header3 .nav, .header4 .nav, .header5 .nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.header .nav ul, .header1 .nav ul, .header2 .nav ul, .header3 .nav ul, .header4 .nav ul, .header5 .nav ul{
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  background-color:#aed1e6;
+  width: 100vw;
+  justify-content: center;
+}
+.header li, .header1 li, .header2 li, .header3 li, .header4 li, .header5 li{
+  font-size: 13px;
+  
+}
+.header .nav .contLogo, .header1 .nav .contLogo, .header2 .nav .contLogo, .header3 .nav .contLogo, .header4 .nav .contLogo, .header5 .nav .contLogo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.header .nav .contLogo img, .header1 .nav .contLogo img, .header2 .nav .contLogo img, .header3 .nav .contLogo img, .header4 .nav .contLogo img, .header5 .nav .contLogo img{
+  border-radius: 70%;
+  width: 7em;
+}
+.header a, .header1 a, .header2 a, .header3 a, .header4 a, .header5 a{
+  color: rgba(0, 0, 0, 0.678);
+  text-decoration: none;
+  font-family: 'Cabin', sans-serif;
+  
+}
+.header a:hover, .header1 a:hover, .header2 a:hover, .header3 a:hover, .header4 a:hover, .header5 a:hover{
+  font-weight: bold;
+  color: black;
+}
+
+
+/*footer*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color:#A0C4E2;
+  justify-content: center;
+  align-items: center;
+}
+.footer img{
+  width: 2em;
+  border-radius: 15%;
+  margin: 15px;
+}
+.footer p{
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  font-style: oblique;
+  margin-bottom: 15px;
+}
+main{
+  min-height:100%;
+}
+/*main index*/
+.section0{
+  display: flex;
+  font-family: 'Caveat', cursive;
+  background-color: #c6cbf021;
+  font-size: 13px;
+  text-align: center;
+}
+.section .imgTexto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section p{
+  font-family: 'Cabin', sans-serif;
+  background-color: #CFE8EF;
+  text-align: center;
+  margin: 15px;
+  font-weight: bold;
+}
+.sectionVideo{
+  display: flex;
+  justify-content: center;
+}
+.sectionVideo video{
+  width: 15em;
+  height: 10em;
+  margin: 10px 0 10px 0;
+
+}
+
+/*main sobre ana*/
+
+.sectionA{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  margin: 15px;
+  line-height: 20px;
+  
+}
+.sectionB{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.sectionB img{
+  width: 18em;
+  border-radius: 5%;
+  margin: 15px;
+}
+
+/*recetas*/
+.grid-container { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(12, auto);
+  grid-template-areas:
+    "chocolatosas chocolatosas chocolatosas"
+    "choc1 choc1 choc1"
+    "choc2 choc2 choc2"
+    "choc3 choc3 choc3"
+    "tartas tartas tartas"
+    "tart1 tart1 tart1"
+    "tart2 tart2 tart2"
+    "tart3 tart3 tart3"
+    "sinhorno sinhorno sinhorno"
+    "sh1 sh1 sh1"
+    "sh2 sh2 sh2"
+    "sh3 sh3 sh3";
+}
+
+.chocolatosas { 
+  grid-area: chocolatosas; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #CFE8EF;
+  height: 10em;
+  margin: 15px;
+}
+.chocolatosas h2, .tartas h2, .sinHorno h2{
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.801);
+  
+}
+.choc1{ 
+  grid-area: choc1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+.choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
+  width: 18em;
+  border-radius: 4%;
+}
+.choc1 h3, .choc2 h3, .choc3 h3, .tart1 h3, .tart2 h3, .tart3 h3, .sH1 h3, .sH2 h3, .sH3 h3{
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  margin: 15px 0 15px 0;
+}
+
+.choc2 { 
+  grid-area: choc2; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+.choc3 { 
+  grid-area: choc3; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+
+.tartas { 
+  grid-area: tartas;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #CFE8EF;
+  height: 10em;
+  margin: 15px;
+}
+
+.tart1 { 
+  grid-area: tart1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+
+.tart2 { 
+  grid-area: tart2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+
+.tart3 { 
+  grid-area: tart3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+
+.sinHorno { 
+  grid-area: sinhorno;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #CFE8EF;
+  height: 10em;
+  margin: 15px;
+}
+
+.sH1 { 
+  grid-area: sh1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+
+.sH2 { 
+  grid-area: sh2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+
+.sH3 { 
+  grid-area: sh3;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+
+/*productos*/
+.precios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:#c6cbf021 ;
+}
+.precios img{
+  width: 15em;
+  margin: 15px 0 15px 0;
+  border-radius: 5% ;
+}
+.precios h2{
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+}
+.precios h3{
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.productos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  height: 10em;
+  background-color: #CFE8EF;
+  margin: 15px;
+}
+/*tips*/
+.tips{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 25px;
+}
+.tips img{
+  width: 15em;
+  margin: 15px;
+  border-radius: 5%;
+}
+.tips h2{
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.textoTips{
+  display: flex;
+  font-family: 'Caveat', cursive;
+  font-size: 3em;
+  text-align: center;
+  background-color:#CFE8EF ;
+  margin:15px;
+}
+/*contacto*/
+.comentarioForm{
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  text-align: left;
+  background-color: #CFE8EF;
+  margin: 10px;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  #c6cbf021;
+}
+.contacto form{
+  border:2px solid rgba(0, 0, 0, 0.733);
+  margin: 20px;
+  padding: 25px 10px;
+}
+ 
+.contacto form .input{
+  display: flex;
+  justify-content: end;
+  margin: 5px;
+  height: 30px;
+}
+
+.ubicacion{
+  width: 18em;
+  margin: 15px;
+}
+.contacto #descripcion{
+  display: block;
+}
+.contacto label{
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+}
+
+/*query*/
+@media(min-width:768px){
+  .header li, .header1 li, .header2 li, .header3 li, .header4 li, .header5 li{
+    font-size: 20px;
+    
+  }
+  .header .nav .contLogo img, .header1 .nav .contLogo img, .header2 .nav .contLogo img, .header3 .nav .contLogo img, .header4 .nav .contLogo img, .header5 .nav .contLogo img{
+    border-radius: 70%;
+    width: 10em;
+  }
+  /*main inicio*/
+  .section0{
+    display: flex;
+    font-family: 'Caveat', cursive;
+    background-color: #c6cbf021;
+    font-size: 2em;
+    height: 5em;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .todasSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+  }
+  .section img{
+    width: 20em;
+    border-radius: 5%;
+  }
+.sectionVideo video{
+  width: 25em;
+  height: 15em;
+  margin: 10px 0 10px 0;
+
+}
+/*main sobre ana*/
+.sectionA{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  margin: 25px;
+  line-height: 30px;
+  
+}
+.sectionB img{
+  width: 25em;
+  border-radius: 5%;
+  margin: 15px;
+}
+
+.footer p{
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  font-style: oblique;
+  margin-bottom: 15px;
+}
+
+/*main recetas*/
+.grid-container { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(12, auto);
+  grid-template-areas:
+    "chocolatosas chocolatosas chocolatosas"
+    "choc1 choc2 choc3"
+    "choc1 choc2 choc3"
+    "choc1 choc2 choc3"
+    "tartas tartas tartas"
+    "tart1 tart2 tart3"
+    "tart1 tart2 tart3"
+    "tart1 tart2 tart3"
+    "sinhorno sinhorno sinhorno"
+    "sh1 sh2 sh3"
+    "sh1 sh2 sh3"
+    "sh1 sh2 sh3";
+}
+
+.choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
+  width: 12em;
+}
+/*main tips*/
+.tips img{
+  width: 18em;
+  margin: 15px;
+}
+.tips h2{
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+/*productos*/
+.precios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content:space-around;
+}
+.precios img{
+  width: 20em;
+  margin: 25px 25px 25px 25px;
+}
+/*contacto*/
+.comentarioForm{
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  text-align: left;
+  background-color: #CFE8EF;
+  margin: 15px;
+}
+.contacto{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background-color:  #c6cbf021;
+  height: 40em;
+}
+.contacto label{
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+}
+}
+
+
+
+
+
+@media(min-width:1024px){
+  .header, .header1, .header2, .header3, .header4, .header5{
+    height: 30em;
+  }
+  
+ 
+  .header li, .header1 li, .header2 li, .header3 li, .header4 li, .header5 li{
+    font-size: 25px;
+    
+  }
+  .header .nav .contLogo, .header1 .nav .contLogo, .header2 .nav .contLogo, .header3 .nav .contLogo, .header4 .nav .contLogo, .header5 .nav .contLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .header .nav .contLogo img, .header1 .nav .contLogo img, .header2 .nav .contLogo img, .header3 .nav .contLogo img, .header4 .nav .contLogo img, .header5 .nav .contLogo img{
+    border-radius: 70%;
+    width: 15em;
+  }
+  /*main inicio*/
+  .section0{
+    display: flex;
+    font-family: 'Caveat', cursive;
+    background-color: #c6cbf021;
+    font-size: 2em;
+    height: 8em;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .todasSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+  }
+  .section img{
+    width: 25em;
+    border-radius: 5%;
+  }
+  
+  /*main sobreana*/
+  .sectionA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    margin: 40px;
+    line-height: 30px;
+    
+  }
+  
+  .sectionB img{
+    width: 40em;
+    border-radius: 5%;
+    margin: 15px;
+  }
+  /*main recetas*/
+  .choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
+    width: 20em;
+  }
+  /*productos*/
+  .precios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 35px;
+  }
+  .contProducto{
+    margin: 15px;
+  }
+  /*contacto*/
+  .comentarioForm{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    text-align: left;
+    background-color: #CFE8EF;
+    margin: 20px;
+  }
+  .contacto form .input{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    width: 32em;
+  }
+  .ubicacion{
+    width: 25em;
+    margin: 15px;
+  }
+  .contacto form{
+    border:2px solid rgba(0, 0, 0, 0.733);
+    margin: 20px;
+    padding: 25px 10px;
+    width: 30em;
+  }
+  .contacto #descripcion{
+    width: 32em;
+  }
+}
