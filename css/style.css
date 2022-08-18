@@ -87,7 +87,7 @@
   display: flex;
   list-style: none;
   font-weight: bold;
-  background-color:#aed1e6;
+  background-image: linear-gradient(to right, #266ea8e1, #c9cbddce, #69c0d8  );
   width: 100vw;
   justify-content: center;
 }
@@ -157,7 +157,12 @@ main{
   background-color: #CFE8EF;
   text-align: center;
   margin: 15px;
+  
+}
+.section p:hover{
+  transform: scale(1.2);
   font-weight: bold;
+  transition: 0.2s;
 }
 .sectionVideo{
   display: flex;
