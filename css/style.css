@@ -117,7 +117,9 @@ main{
 }
 
 /*main sobre ana*/
-
+.bannerSA img{
+width: 100VW;
+}
 .sectionA{
   display: flex;
   justify-content: center;
@@ -618,6 +620,14 @@ main{
 }
 
 @media(min-width: 1440px){
+   /*sobre ana*/
+   .sectionB img{
+    width: 50em;
+    border-radius: 5%;
+    margin: 15px;
+  }
+
+  /*footer*/
   
   .footer img{
     width: 3em;
@@ -630,9 +640,12 @@ main{
     font-style: oblique;
     margin-bottom: 15px;
   }
+ 
+
   
 }
 @media(min-width:2560px){
+  /*inicio*/
   .section0{
     display: flex;
     font-family: 'Caveat', cursive;
@@ -651,6 +664,14 @@ main{
     margin: 10px 0 10px 0;
   
   }
+  /*sobre Ana*/
+  .sectionB img{
+    width: 60em;
+    border-radius: 5%;
+    margin: 15px;
+  }
+
+  /*footer*/
   .footer img{
     width: 5em;
     border-radius: 15%;
@@ -662,5 +683,6 @@ main{
     font-style: oblique;
     margin-bottom: 15px;
   }
+ 
 
 }
