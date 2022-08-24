@@ -12,108 +12,38 @@
     font-family: 'Cabin', sans-serif;
     font-family: 'Zilla Slab', serif;
     font-family: 'Caveat', cursive;
-    azul claro #aed1e6
-    lila   #c6cbf021
-    verde agua #CFE8EF
-    azulmas intenso #A0C4E2
+    azul claro #aed1e6       azul opal #BAD1CD
+    lila   #c6cbf021         rosado mistico #F2D1C9
+    verde agua #CFE8EF       pink #EBBCE4
+    azulmas intenso #A0C4E2   lila french #8D64A2 purpura #462749
     */
 }
 
 /*mobile first*/
 
 /*header*/
-.header{
-  display: flex;
-  flex-direction: column;
-  background-image: url(https://img.freepik.com/foto-gratis/delicioso-pastel-coco-casero-medio-coco_114579-8412.jpg?w=1380&t=st=1660419726~exp=1660420326~hmac=523a8db84b348dd3cf6107846a0995a02015ea7175af00a5177258ceecba722f);
-  align-items: center;
-  height: 15em;
-  justify-content: center;
-
+.navbar img{
+  border-radius: 60%;
+  width: 3em;
 }
-.header1{
-  display: flex;
-  flex-direction: column;
-  background-image: url(https://images.unsplash.com/photo-1506368083636-6defb67639a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-  align-items: center;
-  height: 15em;
-  justify-content: center;
-
+.navbar{
+  background-color: #462749;
 }
-.header2{
-  display: flex;
-  flex-direction: column;
-  background-image: url(https://images.unsplash.com/photo-1589783361701-d5161a106415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxjb3NhcyUyMGRlJTIwcGFzdGVsZXJhfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-  align-items: center;
-  height: 15em;
-  justify-content: center;
-
-}
-.header3{
-  display: flex;
-  flex-direction: column;
-  background-image: url(https://images.unsplash.com/photo-1600326145308-d7d5a04f4ce6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
-  align-items: center;
-  height: 15em;
-  justify-content: center;
-
-}
-.header4{
-  display: flex;
-  flex-direction: column;
-  background-image: url(https://img.freepik.com/foto-gratis/marco-ingredientes-alimentarios-hornear-sobre-fondo-pastel-ligeramente-rosa-cocinar-plano-sentar-espacio-copia-vista-superior-concepto-horneado-endecha-plana_127032-2183.jpg?w=1380&t=st=1660418956~exp=1660419556~hmac=885fcfdcfe44450354f3aa77c2861aed921bbdd026dcbb08a27ba9e6abfe589e);
-  align-items: center;
-  height: 15em;
-  justify-content: center;
-
-}
-.header5{
-  display: flex;
-  flex-direction: column;
-  background-image: url(https://images.unsplash.com/photo-1586985289906-406988974504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRvcnRhJTIwY2hvY29sYXRlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-  align-items: center;
-  height: 15em;
-  justify-content: center;
-
-}
-
-.header.nav, .header1 .nav, .header2 .nav, .header3 .nav, .header4 .nav, .header5 .nav{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-}
-.header .nav ul, .header1 .nav ul, .header2 .nav ul, .header3 .nav ul, .header4 .nav ul, .header5 .nav ul{
-  display: flex;
-  list-style: none;
-  font-weight: bold;
-  background-image: linear-gradient(to right, #266ea8e1, #c9cbddce, #69c0d8  );
-  width: 100vw;
-  justify-content: center;
-}
-.header li, .header1 li, .header2 li, .header3 li, .header4 li, .header5 li{
-  font-size: 13px;
-  
-}
-.header .nav .contLogo, .header1 .nav .contLogo, .header2 .nav .contLogo, .header3 .nav .contLogo, .header4 .nav .contLogo, .header5 .nav .contLogo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5px;
-}
-.header .nav .contLogo img, .header1 .nav .contLogo img, .header2 .nav .contLogo img, .header3 .nav .contLogo img, .header4 .nav .contLogo img, .header5 .nav .contLogo img{
-  border-radius: 70%;
-  width: 7em;
-}
-.header a, .header1 a, .header2 a, .header3 a, .header4 a, .header5 a{
-  color: rgba(0, 0, 0, 0.678);
-  text-decoration: none;
+.navbar a{
+  color: white;
+  font-size: 25px;
   font-family: 'Cabin', sans-serif;
-  
 }
-.header a:hover, .header1 a:hover, .header2 a:hover, .header3 a:hover, .header4 a:hover, .header5 a:hover{
-  font-weight: bold;
-  color: black;
+.navbar button{
+  background-color: #F2D1C9;
+}
+.navbar .menu{
+  justify-content: flex-end;
+}
+.navbar a:hover{
+  font-weight: 800;
+  color: #F2D1C9;
+
 }
 
 
@@ -121,7 +51,7 @@
 .footer{
   display: flex;
   flex-direction: column;
-  background-color:#A0C4E2;
+  background-color:#8D64A2;
   justify-content: center;
   align-items: center;
 }
@@ -458,14 +388,12 @@ main{
 
 /*query*/
 @media(min-width:768px){
-  .header li, .header1 li, .header2 li, .header3 li, .header4 li, .header5 li{
-    font-size: 20px;
-    
+  /*header*/
+  .navbar img{
+    border-radius: 60%;
+    width: 5em;
   }
-  .header .nav .contLogo img, .header1 .nav .contLogo img, .header2 .nav .contLogo img, .header3 .nav .contLogo img, .header4 .nav .contLogo img, .header5 .nav .contLogo img{
-    border-radius: 70%;
-    width: 10em;
-  }
+  
   /*main inicio*/
   .section0{
     display: flex;
@@ -588,26 +516,12 @@ main{
 
 
 @media(min-width:1024px){
-  .header, .header1, .header2, .header3, .header4, .header5{
-    height: 30em;
+  /*header*/
+  .navbar img{
+    border-radius: 60%;
+    width: 6em;
   }
   
- 
-  .header li, .header1 li, .header2 li, .header3 li, .header4 li, .header5 li{
-    font-size: 25px;
-    
-  }
-  .header .nav .contLogo, .header1 .nav .contLogo, .header2 .nav .contLogo, .header3 .nav .contLogo, .header4 .nav .contLogo, .header5 .nav .contLogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px;
-  }
-  
-  .header .nav .contLogo img, .header1 .nav .contLogo img, .header2 .nav .contLogo img, .header3 .nav .contLogo img, .header4 .nav .contLogo img, .header5 .nav .contLogo img{
-    border-radius: 70%;
-    width: 15em;
-  }
   /*main inicio*/
   .section0{
     display: flex;
