@@ -70,23 +70,32 @@ main{
   min-height:100%;
 }
 /*main index*/
+
 .section0{
   display: flex;
   font-family: 'Caveat', cursive;
-  background-color: #c6cbf021;
-  font-size: 13px;
-  text-align: center;
+  background-color: #ebbce436;
+  font-size: 18px;
+  justify-content: center;
+  height: 3em;
 }
+.section0 p{
+  margin: auto;
+  color: rgba(0, 0, 0, 0.815);
+}
+
 .section .imgTexto{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 25px;
 }
 .section p{
   font-family: 'Cabin', sans-serif;
-  background-color: #CFE8EF;
+  background-color: #4627499d;
   text-align: center;
   margin: 15px;
+  border-radius: 0.30rem;
   
 }
 .section p:hover{
@@ -97,6 +106,8 @@ main{
 .sectionVideo{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 .sectionVideo video{
   width: 15em;
@@ -398,14 +409,14 @@ main{
   .section0{
     display: flex;
     font-family: 'Caveat', cursive;
-    background-color: #c6cbf021;
+    background-color:#ebbce436;
     font-size: 2em;
-    height: 5em;
+    height: 4em;
     flex-direction: column;
     justify-content: center;
   }
 
-  .todasSection{
+  #todasSection{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
@@ -526,9 +537,9 @@ main{
   .section0{
     display: flex;
     font-family: 'Caveat', cursive;
-    background-color: #c6cbf021;
-    font-size: 2em;
-    height: 8em;
+    background-color:#ebbce436 ;
+    font-size: 4em;
+    height: 6em;
     flex-direction: column;
     justify-content: center;
   }
@@ -539,8 +550,11 @@ main{
     justify-content: space-evenly;
   }
   .section img{
-    width: 25em;
+    width: 28em;
     border-radius: 5%;
+  }
+  .section p{
+    font-size: 25px;
   }
   
   /*main sobreana*/
@@ -601,4 +615,52 @@ main{
   .contacto #descripcion{
     width: 32em;
   }
+}
+
+@media(min-width: 1440px){
+  
+  .footer img{
+    width: 3em;
+    border-radius: 15%;
+    margin: 15px;
+  }
+  .footer p{
+    font-family: 'Cabin', sans-serif;
+    font-size: 25px;
+    font-style: oblique;
+    margin-bottom: 15px;
+  }
+  
+}
+@media(min-width:2560px){
+  .section0{
+    display: flex;
+    font-family: 'Caveat', cursive;
+    background-color: #ebbce436;
+    font-size: 90px;
+    justify-content: center;
+    height: 6em;
+  }
+  .section img{
+    width: 38em;
+    border-radius: 5%;
+  }
+  .sectionVideo video{
+    width: 40em;
+    height: 20em;
+    margin: 10px 0 10px 0;
+  
+  }
+  .footer img{
+    width: 5em;
+    border-radius: 15%;
+    margin: 15px;
+  }
+  .footer p{
+    font-family: 'Cabin', sans-serif;
+    font-size: 35px;
+    font-style: oblique;
+    margin-bottom: 15px;
+  }
+
 }
