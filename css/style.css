@@ -31,7 +31,7 @@
 }
 .navbar a{
   color: white;
-  font-size: 25px;
+  font-size: 15px;
   font-family: 'Cabin', sans-serif;
 }
 .navbar button{
@@ -75,9 +75,9 @@ main{
   display: flex;
   font-family: 'Caveat', cursive;
   background-color: #ebbce436;
-  font-size: 18px;
+  font-size: 25px;
   justify-content: center;
-  height: 3em;
+  height: 6em;
 }
 .section0 p{
   margin: auto;
