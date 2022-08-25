@@ -74,7 +74,7 @@ main{
 .section0{
   display: flex;
   font-family: 'Caveat', cursive;
-  background-color: #ebbce436;
+  background-color: #ebbce436; 
   font-size: 25px;
   justify-content: center;
   height: 6em;
@@ -142,6 +142,21 @@ width: 100VW;
 }
 
 /*recetas*/
+#textoBannerRecetas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#bannerRecetas h1{
+  font-family: 'Cabin', sans-serif;
+  font-size: 35px;
+}
+#bannerRecetas h3{
+  font-family: 'Caveat', cursive;
+
+  font-size: 25px;
+}
 .grid-container { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -167,20 +182,20 @@ width: 100VW;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #CFE8EF;
+  background-color: #F2D1C9;
   height: 10em;
   margin: 15px;
 }
 .chocolatosas h2, .tartas h2, .sinHorno h2{
   font-family: 'Caveat', cursive;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.801);
   
 }
 
 .grid-container h2:hover{
-  transform: scale(2);
+  transform: scale(1.5);
   transition: 0.6s;
 }
 .choc1{ 
@@ -188,7 +203,7 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 .choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
   width: 18em;
@@ -205,14 +220,14 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 .choc3 { 
   grid-area: choc3; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 
 .tartas { 
@@ -221,7 +236,7 @@ width: 100VW;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #CFE8EF;
+  background-color: #F2D1C9;
   height: 10em;
   margin: 15px;
 }
@@ -231,7 +246,7 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 
 .tart2 { 
@@ -239,7 +254,7 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 
 .tart3 { 
@@ -247,7 +262,7 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 
 .sinHorno { 
@@ -256,7 +271,7 @@ width: 100VW;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #CFE8EF;
+  background-color: #F2D1C9;
   height: 10em;
   margin: 15px;
 }
@@ -266,7 +281,7 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 
 .sH2 { 
@@ -274,7 +289,7 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 
 .sH3 { 
@@ -283,7 +298,7 @@ width: 100VW;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 
 /*productos*/
@@ -451,6 +466,7 @@ width: 100VW;
   margin: 15px;
 }
 
+
 .footer p{
   font-family: 'Cabin', sans-serif;
   font-size: 16px;
@@ -459,6 +475,34 @@ width: 100VW;
 }
 
 /*main recetas*/
+#bannerRecetas h1{
+  font-family: 'Cabin', sans-serif;
+  font-size: 45px;
+}
+#bannerRecetas h3{
+  font-family: 'Caveat', cursive;
+
+  font-size: 35px;
+}
+.grid-container { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(12, auto);
+  grid-template-areas:
+    "chocolatosas chocolatosas chocolatosas"
+    "choc1 choc1 choc1"
+    "choc2 choc2 choc2"
+    "choc3 choc3 choc3"
+    "tartas tartas tartas"
+    "tart1 tart1 tart1"
+    "tart2 tart2 tart2"
+    "tart3 tart3 tart3"
+    "sinhorno sinhorno sinhorno"
+    "sh1 sh1 sh1"
+    "sh2 sh2 sh2"
+    "sh3 sh3 sh3";
+}
+
 .grid-container { 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -477,6 +521,7 @@ width: 100VW;
     "sh1 sh2 sh3"
     "sh1 sh2 sh3";
 }
+
 
 .choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
   width: 12em;
@@ -577,8 +622,40 @@ width: 100VW;
     margin: 15px;
   }
   /*main recetas*/
+  #bannerRecetas h1{
+    font-family: 'Cabin', sans-serif;
+    font-size: 6em;
+  }
+  #bannerRecetas h3{
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+  }
+  .grid-container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas:
+      "chocolatosas chocolatosas chocolatosas"
+      "choc1 choc2 choc3"
+      "choc1 choc2 choc3"
+      "choc1 choc2 choc3"
+      "tartas tartas tartas"
+      "tart1 tart2 tart3"
+      "tart1 tart2 tart3"
+      "tart1 tart2 tart3"
+      "sinhorno sinhorno sinhorno"
+      "sh1 sh2 sh3"
+      "sh1 sh2 sh3"
+      "sh1 sh2 sh3";
+  }
+  
   .choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
     width: 20em;
+  }
+  .choc1 h3, .choc2 h3, .choc3 h3, .tart1 h3, .tart2 h3, .tart3 h3, .sH1 h3, .sH2 h3, .sH3 h3{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    margin: 15px 0 15px 0;
   }
   /*productos*/
   .precios{
@@ -626,6 +703,16 @@ width: 100VW;
     border-radius: 5%;
     margin: 15px;
   }
+/*recetas*/
+.choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
+  width: 28em;
+}
+.choc1 h3, .choc2 h3, .choc3 h3, .tart1 h3, .tart2 h3, .tart3 h3, .sH1 h3, .sH2 h3, .sH3 h3{
+  font-family: 'Cabin', sans-serif;
+  font-size: 25px;
+  margin: 15px 0 15px 0;
+}
+
 
   /*footer*/
   
@@ -643,46 +730,4 @@ width: 100VW;
  
 
   
-}
-@media(min-width:2560px){
-  /*inicio*/
-  .section0{
-    display: flex;
-    font-family: 'Caveat', cursive;
-    background-color: #ebbce436;
-    font-size: 90px;
-    justify-content: center;
-    height: 6em;
-  }
-  .section img{
-    width: 38em;
-    border-radius: 5%;
-  }
-  .sectionVideo video{
-    width: 40em;
-    height: 20em;
-    margin: 10px 0 10px 0;
-  
-  }
-  /*sobre Ana*/
-  .sectionB img{
-    width: 60em;
-    border-radius: 5%;
-    margin: 15px;
-  }
-
-  /*footer*/
-  .footer img{
-    width: 5em;
-    border-radius: 15%;
-    margin: 15px;
-  }
-  .footer p{
-    font-family: 'Cabin', sans-serif;
-    font-size: 35px;
-    font-style: oblique;
-    margin-bottom: 15px;
-  }
- 
-
 }
