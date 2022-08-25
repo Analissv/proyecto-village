@@ -306,7 +306,8 @@ width: 100VW;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:#c6cbf021 ;
+  background-color:#ebbce436 ;
+  padding: 10px 0 10px 0;
 }
 .precios img{
   width: 15em;
@@ -320,11 +321,14 @@ width: 100VW;
 .precios h2{
   font-family: 'Cabin', sans-serif;
   font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.842);
 }
 .precios h3{
   font-family: 'Cabin', sans-serif;
-  font-size: 12px;
-  margin-bottom: 15px;
+  font-size: 15px;
+  color: #462749;
+  font-weight: 800;
 }
 .productos{
   display: flex;
@@ -334,9 +338,15 @@ width: 100VW;
   font-family: 'Caveat', cursive;
   font-size: 15px;
   height: 10em;
-  background-color: #CFE8EF;
+  background-color: #F2D1C9;
   margin: 15px;
 }
+.nombrePrecio{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
 /*tips*/
 .tips{
   display: flex;
@@ -639,6 +649,7 @@ width: 100VW;
     font-size: 20px;
     margin: 15px 0 15px 0;
   }
+
   /*productos*/
   .precios{
     display: flex;
@@ -646,9 +657,13 @@ width: 100VW;
     justify-content: center;
     margin: 35px;
   }
-  .contProducto{
+  .precios img{
+    width: 25em;
     margin: 15px;
+    border-radius: 5% ;
   }
+  
+  
   /*contacto*/
   .comentarioForm{
     font-family: 'Caveat', cursive;
@@ -695,6 +710,24 @@ width: 100VW;
   font-family: 'Cabin', sans-serif;
   font-size: 25px;
   margin: 15px 0 15px 0;
+}
+/*productos*/
+.precios img{
+  width: 35em;
+  margin: 15px;
+  border-radius: 5% ;
+}
+.precios h2{
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.842);
+}
+.precios h3{
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color: #462749;
+  font-weight: 800;
 }
 
 
