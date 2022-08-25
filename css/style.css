@@ -414,7 +414,7 @@ width: 100VW;
   font-size: 12px;
 }
 
-/*query*/
+/*query.........................................................................................*/
 @media(min-width:768px){
   /*header*/
   .navbar img{
@@ -484,24 +484,6 @@ width: 100VW;
 
   font-size: 35px;
 }
-.grid-container { 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(12, auto);
-  grid-template-areas:
-    "chocolatosas chocolatosas chocolatosas"
-    "choc1 choc1 choc1"
-    "choc2 choc2 choc2"
-    "choc3 choc3 choc3"
-    "tartas tartas tartas"
-    "tart1 tart1 tart1"
-    "tart2 tart2 tart2"
-    "tart3 tart3 tart3"
-    "sinhorno sinhorno sinhorno"
-    "sh1 sh1 sh1"
-    "sh2 sh2 sh2"
-    "sh3 sh3 sh3";
-}
 
 .grid-container { 
   display: grid;
@@ -570,7 +552,7 @@ width: 100VW;
 }
 
 
-
+/*1024..................................................................................................*/
 
 
 @media(min-width:1024px){
@@ -695,6 +677,8 @@ width: 100VW;
     width: 32em;
   }
 }
+
+/*1440................................................................................................*/
 
 @media(min-width: 1440px){
    /*sobre ana*/
