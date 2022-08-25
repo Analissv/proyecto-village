@@ -118,7 +118,7 @@ main{
 
 /*main sobre ana*/
 .bannerSA img{
-width: 100VW;
+width: 100vw;
 }
 .sectionA{
   display: flex;
@@ -352,27 +352,57 @@ width: 100VW;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 25px;
+  background-color: #ebbce436;
+  padding: 10px;
+  
 }
 .tips div:hover{
   background-color: #c6cbf021;
 }
 .tips img{
-  width: 15em;
-  margin: 15px;
+  width: 18em;
+  margin: 10px;
   border-radius: 5%;
 }
-.tips h2{
+.tips .contenido h2{
   font-family: 'Cabin', sans-serif;
-  font-size: 15px;
-  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.tips .contenido p{
+  font-family: 'Cabin', sans-serif;
+
+}
+.tips .contenido a{
+  text-decoration: none;
+  color: #462749;
+  font-family: 'Cabin', sans-serif;
+  background-color: #8D64A2;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 0.5em;
+  
+}
+.contenido{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ebbce433;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 15px 0 15px 0;
+}
+.itemTips{
+  display: flex;
+  flex-wrap: wrap;
+  width: 18em;
+  margin-top: 15px;
 }
 .textoTips{
   display: flex;
   font-family: 'Caveat', cursive;
-  font-size: 3em;
+  font-size: 20px;
   text-align: center;
-  background-color:#CFE8EF ;
+  background-color:#F2D1C9 ;
   margin:15px;
 }
 /*contacto*/
@@ -526,7 +556,12 @@ width: 100VW;
 .tips h2{
   font-family: 'Cabin', sans-serif;
   font-size: 20px;
-  text-align: center;
+}
+.itemTips{
+  display: flex;
+  flex-wrap: wrap;
+  width: 25em;
+  margin-top: 15px;
 }
 /*productos*/
 .precios{
@@ -662,7 +697,28 @@ width: 100VW;
     margin: 15px;
     border-radius: 5% ;
   }
+  /*tips*/
+  .tips img{
+    width: 14em;
+    margin: 10px;
+    border-radius: 5%;
+  }
+  .tips .contenido h2{
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .tips .contenido p{
+    font-family: 'Cabin', sans-serif;
   
+  }
+  
+  .itemTips{
+    display: flex;
+    flex-wrap: wrap;
+    width: 15em;
+    margin-top: 15px;
+  }
   
   /*contacto*/
   .comentarioForm{
@@ -729,6 +785,40 @@ width: 100VW;
   color: #462749;
   font-weight: 800;
 }
+/*tips*/
+
+
+.tips img{
+  width: 21em;
+  margin: 10px;
+  border-radius: 5%;
+}
+.tips .contenido h2{
+  font-family: 'Cabin', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.tips .contenido p{
+  font-family: 'Cabin', sans-serif;
+
+}
+
+.itemTips{
+  display: flex;
+  flex-wrap: wrap;
+  width: 21em;
+  margin-top: 15px;
+}
+.textoTips{
+  display: flex;
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  align-items: center;
+  background-color:#F2D1C9 ;
+  margin:15px;
+  height: 5em; 
+}
+
 
 
   /*footer*/
