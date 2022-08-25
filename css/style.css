@@ -310,8 +310,8 @@ width: 100VW;
   padding: 10px 0 10px 0;
 }
 .precios img{
-  width: 15em;
-  margin: 15px 0 15px 0;
+  width: 19em;
+  margin: 15px 0 18px 0;
   border-radius: 5% ;
 }
 .precios img:hover{
@@ -336,7 +336,7 @@ width: 100VW;
   justify-content: center;
   text-align: center;
   font-family: 'Caveat', cursive;
-  font-size: 15px;
+  font-size: 20px;
   height: 10em;
   background-color: #F2D1C9;
   margin: 15px;
