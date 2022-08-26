@@ -182,7 +182,7 @@ width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F2D1C9;
+  background-color: #F2D1C9;;
   height: 10em;
   margin: 15px;
 }
@@ -406,12 +406,17 @@ width: 100vw;
   margin:15px;
 }
 /*contacto*/
+
+.bannerContacto img{
+  max-width: 100%;
+}
 .comentarioForm{
   font-family: 'Caveat', cursive;
   font-size: 20px;
   text-align: left;
-  background-color: #CFE8EF;
+  background-color: #F2D1C9;
   margin: 10px;
+  padding: 15px;
 }
 
 .contacto{
@@ -419,7 +424,7 @@ width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color:  #ebbce436;
 }
 .contacto form{
   border:2px solid rgba(0, 0, 0, 0.733);
@@ -579,15 +584,16 @@ width: 100vw;
   font-family: 'Caveat', cursive;
   font-size: 25px;
   text-align: left;
-  background-color: #CFE8EF;
+  background-color: #F2D1C9;
   margin: 15px;
+  padding: 15px;
 }
 .contacto{
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
-  background-color:  #c6cbf021;
+  background-color: #ebbce436;
   height: 40em;
 }
 .contacto label{
@@ -725,14 +731,15 @@ width: 100vw;
     font-family: 'Caveat', cursive;
     font-size: 30px;
     text-align: left;
-    background-color: #CFE8EF;
+    background-color: #F2D1C9;
     margin: 20px;
+    padding: 15px;
   }
   .contacto form .input{
     display: flex;
     justify-content: end;
     margin: 10px;
-    width: 32em;
+    width: 26em;
   }
   .ubicacion{
     width: 25em;
@@ -745,7 +752,7 @@ width: 100vw;
     width: 30em;
   }
   .contacto #descripcion{
-    width: 32em;
+    width: 26em;
   }
 }
 
