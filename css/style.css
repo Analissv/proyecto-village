@@ -51,7 +51,7 @@
 .footer{
   display: flex;
   flex-direction: column;
-  background-color:#8D64A2;
+  background-color:#8d64a221;
   justify-content: center;
   align-items: center;
 }
@@ -120,15 +120,20 @@ main{
 .bannerSA img{
 width: 100vw;
 }
-.sectionA{
+.todasSection{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+}
+.sectionA{
   font-family: 'Cabin', sans-serif;
   font-size: 15px;
   margin: 15px;
   line-height: 20px;
   
+}
+.sectionA p{
+  line-height: 2;
 }
 .sectionB{
   display: flex;
@@ -190,8 +195,7 @@ width: 100vw;
   font-family: 'Caveat', cursive;
   font-size: 35px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.801);
-  
+  color: rgba(0, 0, 0, 0.801);  
 }
 
 .grid-container h2:hover{
@@ -204,6 +208,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 .choc1 img, .choc2 img, .choc3 img, .tart1 img, .tart2 img, .tart3 img, .sH1 img, .sH2 img, .sH3 img{
   width: 18em;
@@ -221,6 +226,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 .choc3 { 
   grid-area: choc3; 
@@ -228,6 +234,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 
 .tartas { 
@@ -247,6 +254,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 
 .tart2 { 
@@ -255,6 +263,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 
 .tart3 { 
@@ -263,6 +272,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 
 .sinHorno { 
@@ -282,6 +292,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 
 .sH2 { 
@@ -290,6 +301,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 
 .sH3 { 
@@ -299,6 +311,7 @@ width: 100vw;
   flex-direction: column;
   align-items: center;
   background-color:  #ebbce436;
+  margin: 25px 0 25px 0;
 }
 
 /*productos*/
@@ -352,12 +365,18 @@ width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #ebbce436;
+  /*background-color: #ebbce436;*/
   padding: 10px;
   
 }
 .tips div:hover{
-  background-color: #c6cbf021;
+  background-color: #8d64a234;
+}
+.tips .itemTips:hover{
+  background-color:rgba(219, 152, 197, 0.37) ;
+}
+.tips div a:hover{
+  background-color: #8d64a25b ;
 }
 .tips img{
   width: 18em;
@@ -371,6 +390,7 @@ width: 100vw;
 }
 .tips .contenido p{
   font-family: 'Cabin', sans-serif;
+  line-height: 2;
 
 }
 .tips .contenido a{
@@ -396,6 +416,7 @@ width: 100vw;
   flex-wrap: wrap;
   width: 18em;
   margin-top: 15px;
+  padding: 10px;
 }
 .textoTips{
   display: flex;
@@ -432,7 +453,7 @@ width: 100vw;
   padding: 25px 10px;
 }
 .contacto form:hover{
-  background-color:#a0c4e234;
+  background-color:#46274925;
 }
  
 .contacto form .input{
@@ -503,7 +524,7 @@ width: 100vw;
   font-size: 15px;
   margin: 25px;
   line-height: 30px;
-  
+  width: 75%;
 }
 .sectionB img{
   width: 25em;
