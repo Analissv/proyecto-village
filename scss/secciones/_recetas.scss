@@ -1,0 +1,374 @@
+main{
+    min-height: 100%;
+    #bannerRecetas{
+        #textoBannerRecetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-family: 'Cabin', sans-serif;
+                 font-size: 35px;
+            }
+            h3{
+                font-family: 'Caveat', cursive;
+                font-size: 25px;
+            }
+          }
+    }
+    .grid-container { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas:
+          "chocolatosas chocolatosas chocolatosas"
+          "choc1 choc1 choc1"
+          "choc2 choc2 choc2"
+          "choc3 choc3 choc3"
+          "tartas tartas tartas"
+          "tart1 tart1 tart1"
+          "tart2 tart2 tart2"
+          "tart3 tart3 tart3"
+          "sinhorno sinhorno sinhorno"
+          "sh1 sh1 sh1"
+          "sh2 sh2 sh2"
+          "sh3 sh3 sh3";
+        .chocolatosas { 
+            grid-area: chocolatosas; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F2D1C9;;
+            height: 10em;
+            margin: 15px;
+            h2{
+                font-family: 'Caveat', cursive;
+                font-size: 35px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.801);
+                &:hover{
+                    transform: scale(1.5);
+                    transition: 0.6s;
+                  }
+            }
+        }  
+        .choc1{ 
+            grid-area: choc1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+        }
+        .choc2 { 
+            grid-area: choc2; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+        }
+        .choc3 { 
+            grid-area: choc3; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+        }
+
+        .tartas { 
+            grid-area: tartas;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F2D1C9;
+            height: 10em;
+            margin: 15px;
+            h2{
+                font-family: 'Caveat', cursive;
+                font-size: 35px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.801);
+                &:hover{
+                    transform: scale(1.5);
+                    transition: 0.6s;
+                  }
+
+            }
+        }
+        .tart1 { 
+            grid-area: tart1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+
+        }
+          
+        .tart2 { 
+            grid-area: tart2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+
+        }
+          
+        .tart3 { 
+            grid-area: tart3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+
+        }
+          
+        .sinHorno { 
+            grid-area: sinhorno;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F2D1C9;
+            height: 10em;
+            margin: 15px;
+            h2{
+                font-family: 'Caveat', cursive;
+                font-size: 35px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.801);  
+                &:hover{
+                    transform: scale(1.5);
+                    transition: 0.6s;
+                  }
+
+            }
+        }
+        .sH1 { 
+            grid-area: sh1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+
+        }
+          
+        .sH2 { 
+            grid-area: sh2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+
+        }
+          
+        .sH3 { 
+            grid-area: sh3;
+            display: flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:  #ebbce436;
+            margin: 25px 0 25px 0;
+            img{
+                width: 18em;
+                border-radius: 4%;
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                margin: 15px 0 15px 0;
+            }
+
+        }
+          
+
+          
+      }
+
+
+
+
+   
+}
+
+/*media query.......................................................................................................*/
+@media(min-width:768px){
+    main{
+        #bannerRecetas{
+            #textoRecetas{
+                h1{
+                    font-size: 45px;
+                }
+                h3{
+                    font-size: 35px;
+                }
+            }
+        }
+        .grid-container { 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(12, auto);
+            grid-template-areas:
+              "chocolatosas chocolatosas chocolatosas"
+              "choc1 choc2 choc3"
+              "choc1 choc2 choc3"
+              "choc1 choc2 choc3"
+              "tartas tartas tartas"
+              "tart1 tart2 tart3"
+              "tart1 tart2 tart3"
+              "tart1 tart2 tart3"
+              "sinhorno sinhorno sinhorno"
+              "sh1 sh2 sh3"
+              "sh1 sh2 sh3"
+              "sh1 sh2 sh3";
+            
+              .choc1, .choc2, .choc3, .tart1, .tart2, .tart3, .sH1, .sH2, .sH3{
+                img{
+                    width: 12em;
+                }
+              }
+
+          }
+    }
+}
+
+/*media query.......................................................................................................*/
+@media(min-width:1024px){
+   main{
+    #bannerRecetas{
+        #textoBannerRecetas{
+            h1{
+                font-size: 6em;
+            }
+            h3{
+                font-size: 3em;
+            }
+        }
+    }
+    .grid-container { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas:
+          "chocolatosas chocolatosas chocolatosas"
+          "choc1 choc2 choc3"
+          "choc1 choc2 choc3"
+          "choc1 choc2 choc3"
+          "tartas tartas tartas"
+          "tart1 tart2 tart3"
+          "tart1 tart2 tart3"
+          "tart1 tart2 tart3"
+          "sinhorno sinhorno sinhorno"
+          "sh1 sh2 sh3"
+          "sh1 sh2 sh3"
+          "sh1 sh2 sh3";
+        .choc1, .choc2, .choc3, .tart1, .tart2, .tart3, .sH1, .sH2, .sH3{
+            img{
+                width: 20em;
+            }
+            h3{
+                font-size: 20px; 
+            }
+        }
+      }
+   } 
+}
+
+/*media query.......................................................................................................*/
+
+@media(min-width: 1440px){
+    main{
+        .grid-container{
+            .choc1, .choc2, .choc3, .tart1, .tart2, .tart3, .sH1, .sH2, .sH3{
+                img{
+                    width: 28em;
+                }
+                h3{
+                    font-size: 25px; 
+                }
+            }
+    
+        }
+    }
+}

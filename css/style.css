@@ -1,0 +1,658 @@
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Caveat:wght@400;600&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Zilla Slab', serif;
+    font-family: 'Caveat', cursive;
+     azul opal #BAD1CD
+     rosado mistico #F2D1C9
+    pink #EBBCE4
+    lila french #8D64A2 purpura #462749
+*/
+.navbar {
+  background-color: #462749; }
+  .navbar nav img {
+    border-radius: 60%;
+    width: 3em; }
+  .navbar nav button {
+    background-color: #F2D1C9; }
+  .navbar nav .menu {
+    justify-content: flex-end; }
+    .navbar nav .menu a {
+      color: white;
+      font-size: 15px;
+      font-family: 'Cabin', sans-serif; }
+      .navbar nav .menu a:hover {
+        font-weight: 800;
+        color: #F2D1C9; }
+
+/*media querys 768..............................................................................*/
+@media (min-width: 768px) {
+  .navbar nav img {
+    width: 5em; } }
+
+/* media query 1024..............................................................................................*/
+@media (min-width: 1024px) {
+  .navbar nav img {
+    width: 6em; } }
+
+main {
+  min-height: 100%; }
+  main .section0 {
+    display: flex;
+    background-color: #ebbce436;
+    justify-content: center;
+    height: 6em; }
+    main .section0 p {
+      margin: auto;
+      color: rgba(0, 0, 0, 0.815);
+      font-family: 'Caveat', cursive;
+      font-size: 25px; }
+  main #todasSection .section .imgTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px; }
+  main #todasSection .section p {
+    font-family: 'Cabin', sans-serif;
+    background-color: #4627499d;
+    text-align: center;
+    margin: 15px;
+    border-radius: 0.30rem; }
+    main #todasSection .section p:hover {
+      transform: scale(1.2);
+      font-weight: bold;
+      transition: 0.2s; }
+  main #todasSection .sectionVideo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around; }
+    main #todasSection .sectionVideo video {
+      width: 15em;
+      height: 10em;
+      margin: 10px 0 10px 0; }
+
+/*media query 768....................................................................................................................................................*/
+@media (min-width: 768px) {
+  main .section0 {
+    flex-direction: column;
+    height: 4em; }
+    main .section0 p {
+      font-size: 2em; }
+  main #todasSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly; }
+    main #todasSection .section .imgTexto img {
+      width: 20em;
+      border-radius: 5%; }
+    main #todasSection .sectionVideo video {
+      width: 25em;
+      height: 15em; } }
+
+/*media query 1024....................................................................................................................................................*/
+@media (min-width: 1024px) {
+  main .section0 {
+    flex-direction: column;
+    height: 6em; }
+    main .section0 p {
+      font-size: 4em; }
+  main #todasSection .section .imgTexto img {
+    width: 28em; }
+  main #todasSection .section .imgTexto p {
+    font-size: 25px; } }
+
+main {
+  min-height: 100%; }
+  main .bannerSA img {
+    width: 100vw; }
+  main .todasSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    main .todasSection .sectionA {
+      font-family: 'Cabin', sans-serif;
+      font-size: 15px;
+      margin: 15px;
+      line-height: 20px;
+      text-align: justify; }
+      main .todasSection .sectionA p {
+        line-height: 2; }
+    main .todasSection .sectionB {
+      display: flex;
+      justify-content: center;
+      justify-items: center; }
+      main .todasSection .sectionB img {
+        width: 18em;
+        border-radius: 5%;
+        margin: 15px; }
+
+/*media query.................................................................................................................................*/
+@media (min-width: 768px) {
+  main .todasSection .sectionA {
+    align-items: center;
+    margin: 25px;
+    line-height: 30px;
+    width: 75%; }
+  main .todasSection .sectionB {
+    width: 25em; } }
+
+/*media query.................................................................................................................................*/
+@media (min-width: 1024px) {
+  main .todasSection .sectionA {
+    margin: 40px;
+    font-size: 20px; }
+  main .todasSection .sectionB img {
+    width: 40em; } }
+
+/*media query.................................................................................................................................*/
+@media (min-width: 1440px) {
+  main .todasSection .sectionB {
+    width: 50em; } }
+
+main {
+  min-height: 100%; }
+  main #bannerRecetas #textoBannerRecetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main #bannerRecetas #textoBannerRecetas h1 {
+      font-family: 'Cabin', sans-serif;
+      font-size: 35px; }
+    main #bannerRecetas #textoBannerRecetas h3 {
+      font-family: 'Caveat', cursive;
+      font-size: 25px; }
+  main .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: "chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc1" "choc2 choc2 choc2" "choc3 choc3 choc3" "tartas tartas tartas" "tart1 tart1 tart1" "tart2 tart2 tart2" "tart3 tart3 tart3" "sinhorno sinhorno sinhorno" "sh1 sh1 sh1" "sh2 sh2 sh2" "sh3 sh3 sh3"; }
+    main .grid-container .chocolatosas {
+      grid-area: chocolatosas;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #F2D1C9;
+      height: 10em;
+      margin: 15px; }
+      main .grid-container .chocolatosas h2 {
+        font-family: 'Caveat', cursive;
+        font-size: 35px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.801); }
+        main .grid-container .chocolatosas h2:hover {
+          transform: scale(1.5);
+          transition: 0.6s; }
+    main .grid-container .choc1 {
+      grid-area: choc1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .choc1 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .choc1 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .choc2 {
+      grid-area: choc2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .choc2 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .choc2 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .choc3 {
+      grid-area: choc3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .choc3 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .choc3 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .tartas {
+      grid-area: tartas;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #F2D1C9;
+      height: 10em;
+      margin: 15px; }
+      main .grid-container .tartas h2 {
+        font-family: 'Caveat', cursive;
+        font-size: 35px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.801); }
+        main .grid-container .tartas h2:hover {
+          transform: scale(1.5);
+          transition: 0.6s; }
+    main .grid-container .tart1 {
+      grid-area: tart1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .tart1 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .tart1 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .tart2 {
+      grid-area: tart2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .tart2 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .tart2 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .tart3 {
+      grid-area: tart3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .tart3 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .tart3 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .sinHorno {
+      grid-area: sinhorno;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #F2D1C9;
+      height: 10em;
+      margin: 15px; }
+      main .grid-container .sinHorno h2 {
+        font-family: 'Caveat', cursive;
+        font-size: 35px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.801); }
+        main .grid-container .sinHorno h2:hover {
+          transform: scale(1.5);
+          transition: 0.6s; }
+    main .grid-container .sH1 {
+      grid-area: sh1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .sH1 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .sH1 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .sH2 {
+      grid-area: sh2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .sH2 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .sH2 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+    main .grid-container .sH3 {
+      grid-area: sh3;
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
+      main .grid-container .sH3 img {
+        width: 18em;
+        border-radius: 4%; }
+      main .grid-container .sH3 h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        margin: 15px 0 15px 0; }
+
+/*media query.......................................................................................................*/
+@media (min-width: 768px) {
+  main #bannerRecetas #textoRecetas h1 {
+    font-size: 45px; }
+  main #bannerRecetas #textoRecetas h3 {
+    font-size: 35px; }
+  main .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: "chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3" "choc1 choc2 choc3" "choc1 choc2 choc3" "tartas tartas tartas" "tart1 tart2 tart3" "tart1 tart2 tart3" "tart1 tart2 tart3" "sinhorno sinhorno sinhorno" "sh1 sh2 sh3" "sh1 sh2 sh3" "sh1 sh2 sh3"; }
+    main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
+      width: 12em; } }
+
+/*media query.......................................................................................................*/
+@media (min-width: 1024px) {
+  main #bannerRecetas #textoBannerRecetas h1 {
+    font-size: 6em; }
+  main #bannerRecetas #textoBannerRecetas h3 {
+    font-size: 3em; }
+  main .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: "chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3" "choc1 choc2 choc3" "choc1 choc2 choc3" "tartas tartas tartas" "tart1 tart2 tart3" "tart1 tart2 tart3" "tart1 tart2 tart3" "sinhorno sinhorno sinhorno" "sh1 sh2 sh3" "sh1 sh2 sh3" "sh1 sh2 sh3"; }
+    main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
+      width: 20em; }
+    main .grid-container .choc1 h3, main .grid-container .choc2 h3, main .grid-container .choc3 h3, main .grid-container .tart1 h3, main .grid-container .tart2 h3, main .grid-container .tart3 h3, main .grid-container .sH1 h3, main .grid-container .sH2 h3, main .grid-container .sH3 h3 {
+      font-size: 20px; } }
+
+/*media query.......................................................................................................*/
+@media (min-width: 1440px) {
+  main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
+    width: 28em; }
+  main .grid-container .choc1 h3, main .grid-container .choc2 h3, main .grid-container .choc3 h3, main .grid-container .tart1 h3, main .grid-container .tart2 h3, main .grid-container .tart3 h3, main .grid-container .sH1 h3, main .grid-container .sH2 h3, main .grid-container .sH3 h3 {
+    font-size: 25px; } }
+
+main {
+  min-height: 100%; }
+  main .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+    background-color: #F2D1C9;
+    margin: 15px; }
+    main .productos h1 {
+      font-family: 'Caveat', cursive;
+      font-size: 20px; }
+  main .precios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ebbce436;
+    padding: 10px 0 10px 0; }
+    main .precios img {
+      width: 19em;
+      margin: 15px 0 18px 0;
+      border-radius: 5%; }
+      main .precios img:hover {
+        transform: skewX(3deg);
+        transition: 1s; }
+    main .precios .nombrePrecio {
+      display: flex;
+      flex-direction: column;
+      margin: 15px; }
+      main .precios .nombrePrecio h2 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.842); }
+      main .precios .nombrePrecio h3 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        color: #462749;
+        font-weight: 800; }
+
+/* madia query....................................................................................................................*/
+@media (min-width: 768px) {
+  main .productos h1 {
+    font-size: 25px; }
+  main .precios {
+    justify-content: space-around; }
+    main .precios img {
+      width: 20em;
+      margin: 25px 25px 25px 25px; } }
+
+/* madia query....................................................................................................................*/
+@media (min-width: 1024px) {
+  main .productos h1 {
+    font-size: 35px; }
+  main .precios {
+    justify-content: center;
+    margin: 35px; }
+    main .precios img {
+      width: 25em;
+      margin: 15px; } }
+
+/* madia query....................................................................................................................*/
+@media (min-width: 1440px) {
+  main .precios img {
+    width: 35em; }
+  main .precios .nombrePrecio h2 {
+    font-size: 20px; }
+  main .precios .nombrePrecio h3 {
+    font-size: 20px; } }
+
+main {
+  min-height: 100%; }
+  main .textoTips {
+    display: flex;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    text-align: center;
+    background-color: #F2D1C9;
+    margin: 15px; }
+  main .tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*background-color: #ebbce436;*/
+    padding: 10px; }
+    main .tips .contenido {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ebbce433;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 15px 0 15px 0; }
+      main .tips .contenido img {
+        width: 18em;
+        margin: 10px;
+        border-radius: 5%; }
+      main .tips .contenido .itemTips {
+        display: flex;
+        flex-wrap: wrap;
+        width: 18em;
+        margin-top: 15px;
+        padding: 10px; }
+        main .tips .contenido .itemTips h2 {
+          font-family: 'Cabin', sans-serif;
+          font-size: 18px;
+          font-weight: bold; }
+        main .tips .contenido .itemTips p {
+          font-family: 'Cabin', sans-serif;
+          line-height: 2;
+          text-align: justify; }
+        main .tips .contenido .itemTips a {
+          text-decoration: none;
+          color: #462749;
+          font-family: 'Cabin', sans-serif;
+          background-color: #8D64A2;
+          padding: 5px;
+          margin: 10px;
+          border-radius: 0.5em; }
+          main .tips .contenido .itemTips a:hover {
+            background-color: #8d64a25b; }
+        main .tips .contenido .itemTips:hover {
+          background-color: rgba(219, 152, 197, 0.37); }
+      main .tips .contenido:hover {
+        background-color: #8d64a234; }
+
+/*media query.......................................................................................................................................................*/
+@media (min-width: 768px) {
+  main .tips .contenido img {
+    width: 18em;
+    margin: 15px; }
+  main .tips .contenido .itemTips {
+    width: 25em; }
+    main .tips .contenido .itemTips h2 {
+      font-size: 20px; } }
+
+/*media query.......................................................................................................................................................*/
+@media (min-width: 1024px) {
+  main .tips .contenido img {
+    width: 14em;
+    margin: 10px; }
+  main .tips .contenido .itemTips {
+    width: 15em; }
+    main .tips .contenido .itemTips h2 {
+      font-size: 18px; } }
+
+/*media query.......................................................................................................................................................*/
+@media (min-width: 1440px) {
+  main .textoTips {
+    font-size: 40px;
+    height: 5em;
+    align-items: center; }
+  main .tips .contenido img {
+    width: 21em;
+    margin: 10px; }
+  main .tips .contenido .itemTips {
+    width: 21em; }
+    main .tips .contenido .itemTips h2 {
+      font-size: 25px; } }
+
+main {
+  min-height: 100%; }
+  main .bannerContacto img {
+    max-width: 100%; }
+  main .comentarioForm {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    text-align: left;
+    background-color: #F2D1C9;
+    margin: 10px;
+    padding: 15px; }
+  main .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebbce436; }
+    main .contacto form {
+      border: 2px solid rgba(0, 0, 0, 0.733);
+      margin: 20px;
+      padding: 25px 10px; }
+      main .contacto form:hover {
+        background-color: #46274925; }
+      main .contacto form .input {
+        display: flex;
+        justify-content: end;
+        margin: 5px;
+        height: 30px; }
+        main .contacto form .input:focus {
+          border: solid 3px rgba(0, 0, 0, 0.336);
+          transition: 0.3s; }
+      main .contacto form textarea:focus {
+        border: solid 3px rgba(0, 0, 0, 0.336);
+        transition: 0.3s; }
+      main .contacto form #descripcion {
+        display: block; }
+      main .contacto form label {
+        font-family: 'Cabin', sans-serif;
+        font-size: 12px; }
+    main .contacto .ubicacion {
+      width: 18em;
+      margin: 15px; }
+
+/*media query............................................................................................................................................*/
+@media (min-width: 768px) {
+  main .comentarioForm {
+    font-size: 25px;
+    margin: 15px; }
+  main .contacto {
+    flex-direction: row;
+    align-content: center;
+    align-items: center; }
+    main .contacto form label {
+      font-size: 16px; } }
+
+/*media query............................................................................................................................................*/
+@media (min-width: 1024px) {
+  main .comentarioForm {
+    font-size: 30px;
+    margin: 20px; }
+  main .contacto {
+    flex-direction: row;
+    align-content: center;
+    align-items: center; }
+    main .contacto form {
+      width: 30em; }
+      main .contacto form .input {
+        margin: 10px;
+        width: 26em; }
+      main .contacto form label {
+        font-size: 16px; }
+      main .contacto form #descripcion {
+        width: 26em; }
+    main .contacto .ubicacion {
+      width: 25em; } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #8d64a221;
+  justify-content: center;
+  align-items: center; }
+  .footer img {
+    width: 2em;
+    border-radius: 15%;
+    margin: 15px; }
+  .footer p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+    font-style: oblique;
+    margin-bottom: 15px; }
+
+/*media query 768*/
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 16px; } }
+
+/*media query 1440*/
+@media (min-width: 1440px) {
+  .footer img {
+    width: 3em; }
+  .footer p {
+    font-size: 25px; } }

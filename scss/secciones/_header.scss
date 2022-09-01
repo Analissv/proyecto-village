@@ -1,0 +1,50 @@
+.navbar{
+    background-color: #462749;
+    nav{
+        img{
+            border-radius: 60%;
+            width: 3em;
+        }
+        button{
+            background-color: #F2D1C9;
+        }
+        .menu{
+            justify-content: flex-end;
+            a{
+                color: white;
+                font-size: 15px;
+                font-family: 'Cabin', sans-serif;
+                &:hover{
+                    font-weight: 800;
+                    color: #F2D1C9;
+                }
+            }
+        }
+
+
+    }
+}
+
+/*media querys 768..............................................................................*/
+@media(min-width:768px){
+    .navbar{
+        nav{
+            img{
+                width: 5em;
+            }
+        }
+    }
+}
+
+/* media query 1024..............................................................................................*/
+@media(min-width:1024px){
+    .navbar{
+        nav{
+            img{
+                width: 6em;
+            }
+        }
+    }
+
+}
+

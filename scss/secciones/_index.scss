@@ -1,0 +1,110 @@
+main{
+    min-height:100%;
+    .section0{
+        display: flex;
+        background-color: #ebbce436;        
+        justify-content: center;
+        height: 6em;
+        p{
+            margin: auto;
+            color: rgba(0, 0, 0, 0.815);
+            font-family: 'Caveat', cursive;
+            font-size: 25px;
+        }
+    }
+    #todasSection{
+        .section{
+            .imgTexto{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 25px;
+            }
+            p{
+                font-family: 'Cabin', sans-serif;
+                background-color: #4627499d;
+                text-align: center;
+                margin: 15px;
+                border-radius: 0.30rem;
+                &:hover{
+                    transform: scale(1.2);
+                    font-weight: bold;
+                    transition: 0.2s;
+                  }
+              }
+        }
+        .sectionVideo{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: space-around;
+            video{
+                width: 15em;
+                height: 10em;
+                margin: 10px 0 10px 0;
+    
+            }
+        }
+    
+    }
+
+}
+
+/*media query 768....................................................................................................................................................*/
+@media(min-width:768px){
+    main{
+        .section0{
+            flex-direction: column;
+            height: 4em;
+            p{
+                font-size: 2em;
+            }
+        }
+        #todasSection{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+            justify-content: space-evenly;
+            .section{
+                .imgTexto{
+                    img{
+                        width: 20em;
+                        border-radius: 5%;
+                    }
+                }
+            }
+            .sectionVideo{
+                video{
+                    width: 25em;
+                    height: 15em;  
+                }
+            }
+        }
+    }
+}
+
+/*media query 1024....................................................................................................................................................*/
+@media(min-width:1024px){
+    main{
+        .section0{
+            flex-direction: column;
+            height: 6em;
+            p{
+                font-size: 4em;
+            }
+        }
+        #todasSection{
+            .section{
+                .imgTexto{
+                    img{
+                        width: 28em;
+                    }
+                    p{
+                        font-size: 25px; 
+                    }
+                }
+                
+            }
+        }
+    }
+}

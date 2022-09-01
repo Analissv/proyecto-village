@@ -1,0 +1,85 @@
+main{
+    min-height:100%;
+    .bannerSA {
+        img{
+            width: 100vw;
+            }
+    }
+    .todasSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .sectionA{
+            font-family: 'Cabin', sans-serif;
+            font-size: 15px;
+            margin: 15px;
+            line-height: 20px;
+            text-align: justify;
+            p{
+                line-height: 2;
+          }
+        }
+      .sectionB{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        img{
+            width: 18em;
+            border-radius: 5%;
+            margin: 15px;
+          }
+        }
+    }
+}
+
+/*media query.................................................................................................................................*/
+@media(min-width:768px){
+  main{
+    .todasSection{
+      .sectionA{
+        align-items: center;
+        margin: 25px;
+        line-height: 30px;
+        width: 75%;
+      }
+      .sectionB{
+        width: 25em;
+      }
+    }
+  
+  }
+
+}
+
+/*media query.................................................................................................................................*/
+@media(min-width:1024px){
+  main{
+    .todasSection{
+      .sectionA{
+        margin: 40px;
+        font-size: 20px;
+      }
+      .sectionB{
+        img{
+          width: 40em;
+  
+        }
+      }
+    }
+  
+  }
+
+}
+
+/*media query.................................................................................................................................*/
+
+@media(min-width: 1440px){
+  main{
+    .todasSection{
+      .sectionB{
+        width: 50em;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,110 @@
+main{
+    min-height: 100%;
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 10em;
+        background-color: #F2D1C9;
+        margin: 15px;
+        h1{
+            font-family: 'Caveat', cursive;
+            font-size: 20px;
+        }
+        
+    }
+    .precios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color:#ebbce436 ;
+        padding: 10px 0 10px 0;
+        img{
+            width: 19em;
+            margin: 15px 0 18px 0;
+            border-radius: 5% ;
+            &:hover{
+                transform: skewX(3deg);
+                transition: 1s;
+            }
+        }
+        .nombrePrecio{
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            h2{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.842);
+            }
+            h3{
+                font-family: 'Cabin', sans-serif;
+                font-size: 15px;
+                color: #462749;
+                font-weight: 800;
+            }
+        }
+
+        
+    }
+}
+
+/* madia query....................................................................................................................*/
+@media(min-width:768px){
+    main{
+        .productos{
+            h1{
+                font-size: 25px;
+            }
+        }
+        .precios{
+            justify-content:space-around;
+            img{
+                width: 20em;  
+                margin: 25px 25px 25px 25px; 
+            }
+        }
+    }
+}
+
+/* madia query....................................................................................................................*/
+
+@media(min-width:1024px){
+   main{
+    .productos{
+        h1{
+            font-size: 35px;
+        }
+    }
+
+    .precios{
+        justify-content: center;
+        margin: 35px;
+        img{
+            width: 25em;
+            margin: 15px;  
+        }
+    }
+   } 
+}
+
+/* madia query....................................................................................................................*/
+@media(min-width: 1440px){
+    main{
+        .precios{
+            img{
+                width: 35em;
+            }
+            .nombrePrecio{
+                h2{
+                    font-size: 20px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

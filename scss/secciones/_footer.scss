@@ -1,0 +1,39 @@
+.footer{
+    display: flex;
+  flex-direction: column;
+  background-color:#8d64a221;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 2em;
+    border-radius: 15%;
+    margin: 15px;
+  }
+  p{
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+    font-style: oblique;
+    margin-bottom: 15px;
+  }
+}
+
+/*media query 768*/
+@media(min-width:768px){
+  .footer{
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+/*media query 1440*/
+@media(min-width:1440px){
+  .footer{
+    img{
+      width: 3em;
+    }
+    p{
+      font-size: 25px;
+    }
+  }
+}
