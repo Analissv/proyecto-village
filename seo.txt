@@ -1,0 +1,34 @@
+keywords utilizadas:
+    -index: postres, tortas, cookies, dulces, reposteria.
+    -sobre ana: biografia, gastronomia, vida, historia.
+    -recetas: preparaciones, recetas, instrucciones, procedimiento, ingredientes.
+    -productos: productos, articulo, monto, postre, costo.
+    -tips: tips, fallas, consejo, recomendacion, sugerencia.
+    -contacto: informacion, contacto, lugar, sitio, mensaje.
+
+Titulos: agregue a cada pagina html la seccion en la que estaria el usuario, por ejemplo:
+ en recetas se visualiza Village | recetas.
+
+descrption:
+    -index: <meta name="description" content="En village encontraras muchas opciones para tus antojos dulces, lugares para ir a merendar deli y mucho mas">
+    -sobre ana: <meta name="description" content="te cuento mi historia y como llegue a la pasteleria">
+    -recetas: <meta name="description" content="Animate a preparar postres y disfrutar con tu familia y amigos">
+    -productos: <meta name="description" content="Puedes llevarte lo que quieras, no te arrepentiras">
+    -tips: <meta name="description" content="Te damos muchos trucos y tecnicas para que no falles cuando estes haciendo tus postres">
+    -contacto: <meta name="description" content="nos puedes preguntar todas las dudas que tengas">
+
+encabezados: coloque un solo h1 por html, y en los lugares donde tenia varios h2 los reemplace por h3.
+
+jerarquia de los archivos: coloque migas de pan en todos los html.
+
+mapa de sitio: cree un archivo de sistemap en formato xml.
+
+optimizacion movil: utilice la prueba de optimizacion movil de google.
+
+
+
+
+
+
+
+

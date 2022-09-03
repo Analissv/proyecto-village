@@ -1,21 +1,57 @@
 main{
     min-height: 100%;
+    .migaPan{
+        ol{
+          li{
+            margin: 15px;
+            
+            .iniNoImportante{
+                font-size: 12px;
+                color: $lila;
+                text-decoration: none;
+                &:hover{
+                    font-weight: bold;
+                  }
+    
+            }
+            .siguiente{
+                text-decoration: none;
+                  color: $purpura;
+                  font-size: 18px;
+                  font-family: $cabin;
+            }
+              
+          }
+        }
+      }
+  
     #bannerRecetas{
-        #textoBannerRecetas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        img{
+            
+            max-width: 100%;
+
+        }
+    }
+    #textoBannerRecetas{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-color: #ebbce433;
+            padding: 15px;
             h1{
-                font-family: 'Cabin', sans-serif;
+                font-family: $cabin;
                  font-size: 35px;
             }
-            h3{
-                font-family: 'Caveat', cursive;
+            p{
+                font-family: $caveatCursiva;
                 font-size: 25px;
             }
           }
-    }
+    
     .grid-container { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -34,230 +70,127 @@ main{
           "sh2 sh2 sh2"
           "sh3 sh3 sh3";
         .chocolatosas { 
-            grid-area: chocolatosas; 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #F2D1C9;;
-            height: 10em;
-            margin: 15px;
-            h2{
-                font-family: 'Caveat', cursive;
-                font-size: 35px;
-                font-weight: bold;
-                color: rgba(0, 0, 0, 0.801);
-                &:hover{
-                    transform: scale(1.5);
-                    transition: 0.6s;
-                  }
-            }
+            @include estiloContenedorTipoReceta(chocolatosas)
         }  
         .choc1{ 
-            grid-area: choc1; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (choc1);
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
             }
         }
         .choc2 { 
-            grid-area: choc2; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (choc2);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+  
             }
         }
         .choc3 { 
-            grid-area: choc3; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (choc3);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
+
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+
             }
         }
 
         .tartas { 
-            grid-area: tartas;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #F2D1C9;
-            height: 10em;
-            margin: 15px;
-            h2{
-                font-family: 'Caveat', cursive;
-                font-size: 35px;
-                font-weight: bold;
-                color: rgba(0, 0, 0, 0.801);
-                &:hover{
-                    transform: scale(1.5);
-                    transition: 0.6s;
-                  }
+            @include estiloContenedorTipoReceta(tartas)
 
-            }
         }
         .tart1 { 
-            grid-area: tart1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (tart1);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+
             }
 
         }
           
         .tart2 { 
-            grid-area: tart2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (tart2);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+
             }
 
         }
           
         .tart3 { 
-            grid-area: tart3;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (tart3);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
+
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+
             }
 
         }
           
         .sinHorno { 
-            grid-area: sinhorno;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #F2D1C9;
-            height: 10em;
-            margin: 15px;
-            h2{
-                font-family: 'Caveat', cursive;
-                font-size: 35px;
-                font-weight: bold;
-                color: rgba(0, 0, 0, 0.801);  
-                &:hover{
-                    transform: scale(1.5);
-                    transition: 0.6s;
-                  }
+            @include estiloContenedorTipoReceta(sinhorno)
 
-            }
         }
         .sH1 { 
-            grid-area: sh1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (sh1);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
+
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+
             }
 
         }
           
         .sH2 { 
-            grid-area: sh2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (sh2);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
+
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+
             }
 
         }
           
         .sH3 { 
-            grid-area: sh3;
-            display: flex;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color:  #ebbce436;
-            margin: 25px 0 25px 0;
+            @include estiloCadaContenedorReceta (sh3);
+
             img{
-                width: 18em;
-                border-radius: 4%;
+                @extend %estiloImgSeccRecetas;       
+
             }
-            h3{
-                font-family: 'Cabin', sans-serif;
-                font-size: 15px;
-                margin: 15px 0 15px 0;
+            h4{
+                @extend %estiloH3SeccRecetas;
+
             }
 
         }
@@ -275,16 +208,28 @@ main{
 /*media query.......................................................................................................*/
 @media(min-width:768px){
     main{
-        #bannerRecetas{
-            #textoRecetas{
+        .migaPan{
+            ol{
+              li{
+                .iniNoImportante{
+                  font-size: 15px;
+                }
+                .siguiente{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+      
+        #textoBannerRecetas{
                 h1{
                     font-size: 45px;
                 }
-                h3{
+                p{
                     font-size: 35px;
                 }
-            }
         }
+        
         .grid-container { 
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -316,16 +261,28 @@ main{
 /*media query.......................................................................................................*/
 @media(min-width:1024px){
    main{
-    #bannerRecetas{
+    .migaPan{
+        ol{
+          li{
+            .iniNoImportante{
+              font-size: 18px;
+            }
+            .siguiente{
+              font-size: 28px;
+            }
+          }
+        }
+      }
+  
         #textoBannerRecetas{
             h1{
                 font-size: 6em;
             }
-            h3{
+            p{
                 font-size: 3em;
             }
         }
-    }
+    
     .grid-container { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -347,7 +304,7 @@ main{
             img{
                 width: 20em;
             }
-            h3{
+            h4{
                 font-size: 20px; 
             }
         }
@@ -364,7 +321,7 @@ main{
                 img{
                     width: 28em;
                 }
-                h3{
+                h4{
                     font-size: 25px; 
                 }
             }

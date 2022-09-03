@@ -1,21 +1,23 @@
-/*<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Caveat:wght@400;600&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Caveat:wght@400;600&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Caveat:wght@400;600&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/*
-    font-family: 'Cabin', sans-serif;
-    font-family: 'Zilla Slab', serif;
-    font-family: 'Caveat', cursive;
-     azul opal #BAD1CD
-     rosado mistico #F2D1C9
-    pink #EBBCE4
-    lila french #8D64A2 purpura #462749
-*/
+/*mixin contenedor de cada receta*/
+/*mixin para cada titulo de tipo de receta*/
+/*extend para img de cada receta*/
+main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
+  width: 18em;
+  border-radius: 4%; }
+
+/*extend estilo contenedor de letra de cada receta*/
+main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4 {
+  font-family: "Cabin", sans-serif;
+  font-size: 15px;
+  margin: 15px 0 15px 0; }
+
 .navbar {
   background-color: #462749; }
   .navbar nav img {
@@ -45,12 +47,19 @@
 
 main {
   min-height: 100%; }
+  main .migaPan ol li {
+    margin: 15px; }
+    main .migaPan ol li .inicio {
+      text-decoration: none;
+      color: #462749;
+      font-size: 15px;
+      font-family: "Cabin", sans-serif; }
   main .section0 {
     display: flex;
     background-color: #ebbce436;
     justify-content: center;
     height: 6em; }
-    main .section0 p {
+    main .section0 h1 {
       margin: auto;
       color: rgba(0, 0, 0, 0.815);
       font-family: 'Caveat', cursive;
@@ -82,10 +91,12 @@ main {
 
 /*media query 768....................................................................................................................................................*/
 @media (min-width: 768px) {
+  main .migaPan ol li .inicio {
+    font-size: 25px; }
   main .section0 {
     flex-direction: column;
-    height: 4em; }
-    main .section0 p {
+    height: 6em; }
+    main .section0 h1 {
       font-size: 2em; }
   main #todasSection {
     display: flex;
@@ -101,10 +112,12 @@ main {
 
 /*media query 1024....................................................................................................................................................*/
 @media (min-width: 1024px) {
+  main .migaPan ol li .inicio {
+    font-size: 35px; }
   main .section0 {
     flex-direction: column;
-    height: 6em; }
-    main .section0 p {
+    height: 10em; }
+    main .section0 h1 {
       font-size: 4em; }
   main #todasSection .section .imgTexto img {
     width: 28em; }
@@ -113,6 +126,19 @@ main {
 
 main {
   min-height: 100%; }
+  main .migaPan ol li {
+    margin: 15px; }
+    main .migaPan ol li .iniNoImportante {
+      font-size: 12px;
+      color: #8D64A2;
+      text-decoration: none; }
+      main .migaPan ol li .iniNoImportante:hover {
+        font-weight: bold; }
+    main .migaPan ol li .siguiente {
+      text-decoration: none;
+      color: #462749;
+      font-size: 18px;
+      font-family: "Cabin", sans-serif; }
   main .bannerSA img {
     width: 100vw; }
   main .todasSection {
@@ -138,6 +164,10 @@ main {
 
 /*media query.................................................................................................................................*/
 @media (min-width: 768px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 15px; }
+  main .migaPan ol li .siguiente {
+    font-size: 20px; }
   main .todasSection .sectionA {
     align-items: center;
     margin: 25px;
@@ -148,6 +178,10 @@ main {
 
 /*media query.................................................................................................................................*/
 @media (min-width: 1024px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 18px; }
+  main .migaPan ol li .siguiente {
+    font-size: 28px; }
   main .todasSection .sectionA {
     margin: 40px;
     font-size: 20px; }
@@ -161,16 +195,37 @@ main {
 
 main {
   min-height: 100%; }
-  main #bannerRecetas #textoBannerRecetas {
+  main .migaPan ol li {
+    margin: 15px; }
+    main .migaPan ol li .iniNoImportante {
+      font-size: 12px;
+      color: #8D64A2;
+      text-decoration: none; }
+      main .migaPan ol li .iniNoImportante:hover {
+        font-weight: bold; }
+    main .migaPan ol li .siguiente {
+      text-decoration: none;
+      color: #462749;
+      font-size: 18px;
+      font-family: "Cabin", sans-serif; }
+  main #bannerRecetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    main #bannerRecetas img {
+      max-width: 100%; }
+  main #textoBannerRecetas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
-    main #bannerRecetas #textoBannerRecetas h1 {
-      font-family: 'Cabin', sans-serif;
+    justify-content: center;
+    background-color: #ebbce433;
+    padding: 15px; }
+    main #textoBannerRecetas h1 {
+      font-family: "Cabin", sans-serif;
       font-size: 35px; }
-    main #bannerRecetas #textoBannerRecetas h3 {
-      font-family: 'Caveat', cursive;
+    main #textoBannerRecetas p {
+      font-family: "Caveat", cursive;
       font-size: 25px; }
   main .grid-container {
     display: grid;
@@ -186,12 +241,12 @@ main {
       background-color: #F2D1C9;
       height: 10em;
       margin: 15px; }
-      main .grid-container .chocolatosas h2 {
-        font-family: 'Caveat', cursive;
+      main .grid-container .chocolatosas h3 {
+        font-family: "Caveat", cursive;
         font-size: 35px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
-        main .grid-container .chocolatosas h2:hover {
+        main .grid-container .chocolatosas h3:hover {
           transform: scale(1.5);
           transition: 0.6s; }
     main .grid-container .choc1 {
@@ -201,13 +256,6 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .choc1 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .choc1 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .choc2 {
       grid-area: choc2;
       display: flex;
@@ -215,13 +263,6 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .choc2 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .choc2 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .choc3 {
       grid-area: choc3;
       display: flex;
@@ -229,13 +270,6 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .choc3 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .choc3 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .tartas {
       grid-area: tartas;
       display: flex;
@@ -245,12 +279,12 @@ main {
       background-color: #F2D1C9;
       height: 10em;
       margin: 15px; }
-      main .grid-container .tartas h2 {
-        font-family: 'Caveat', cursive;
+      main .grid-container .tartas h3 {
+        font-family: "Caveat", cursive;
         font-size: 35px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
-        main .grid-container .tartas h2:hover {
+        main .grid-container .tartas h3:hover {
           transform: scale(1.5);
           transition: 0.6s; }
     main .grid-container .tart1 {
@@ -260,13 +294,6 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .tart1 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .tart1 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .tart2 {
       grid-area: tart2;
       display: flex;
@@ -274,13 +301,6 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .tart2 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .tart2 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .tart3 {
       grid-area: tart3;
       display: flex;
@@ -288,13 +308,6 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .tart3 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .tart3 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .sinHorno {
       grid-area: sinhorno;
       display: flex;
@@ -304,12 +317,12 @@ main {
       background-color: #F2D1C9;
       height: 10em;
       margin: 15px; }
-      main .grid-container .sinHorno h2 {
-        font-family: 'Caveat', cursive;
+      main .grid-container .sinHorno h3 {
+        font-family: "Caveat", cursive;
         font-size: 35px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
-        main .grid-container .sinHorno h2:hover {
+        main .grid-container .sinHorno h3:hover {
           transform: scale(1.5);
           transition: 0.6s; }
     main .grid-container .sH1 {
@@ -319,13 +332,6 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .sH1 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .sH1 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .sH2 {
       grid-area: sh2;
       display: flex;
@@ -333,34 +339,23 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .sH2 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .sH2 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
     main .grid-container .sH3 {
       grid-area: sh3;
-      display: flex;
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
-      main .grid-container .sH3 img {
-        width: 18em;
-        border-radius: 4%; }
-      main .grid-container .sH3 h3 {
-        font-family: 'Cabin', sans-serif;
-        font-size: 15px;
-        margin: 15px 0 15px 0; }
 
 /*media query.......................................................................................................*/
 @media (min-width: 768px) {
-  main #bannerRecetas #textoRecetas h1 {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 15px; }
+  main .migaPan ol li .siguiente {
+    font-size: 20px; }
+  main #textoBannerRecetas h1 {
     font-size: 45px; }
-  main #bannerRecetas #textoRecetas h3 {
+  main #textoBannerRecetas p {
     font-size: 35px; }
   main .grid-container {
     display: grid;
@@ -372,9 +367,13 @@ main {
 
 /*media query.......................................................................................................*/
 @media (min-width: 1024px) {
-  main #bannerRecetas #textoBannerRecetas h1 {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 18px; }
+  main .migaPan ol li .siguiente {
+    font-size: 28px; }
+  main #textoBannerRecetas h1 {
     font-size: 6em; }
-  main #bannerRecetas #textoBannerRecetas h3 {
+  main #textoBannerRecetas p {
     font-size: 3em; }
   main .grid-container {
     display: grid;
@@ -383,18 +382,31 @@ main {
     grid-template-areas: "chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3" "choc1 choc2 choc3" "choc1 choc2 choc3" "tartas tartas tartas" "tart1 tart2 tart3" "tart1 tart2 tart3" "tart1 tart2 tart3" "sinhorno sinhorno sinhorno" "sh1 sh2 sh3" "sh1 sh2 sh3" "sh1 sh2 sh3"; }
     main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
       width: 20em; }
-    main .grid-container .choc1 h3, main .grid-container .choc2 h3, main .grid-container .choc3 h3, main .grid-container .tart1 h3, main .grid-container .tart2 h3, main .grid-container .tart3 h3, main .grid-container .sH1 h3, main .grid-container .sH2 h3, main .grid-container .sH3 h3 {
+    main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4 {
       font-size: 20px; } }
 
 /*media query.......................................................................................................*/
 @media (min-width: 1440px) {
   main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
     width: 28em; }
-  main .grid-container .choc1 h3, main .grid-container .choc2 h3, main .grid-container .choc3 h3, main .grid-container .tart1 h3, main .grid-container .tart2 h3, main .grid-container .tart3 h3, main .grid-container .sH1 h3, main .grid-container .sH2 h3, main .grid-container .sH3 h3 {
+  main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4 {
     font-size: 25px; } }
 
 main {
   min-height: 100%; }
+  main .migaPan ol li {
+    margin: 15px; }
+    main .migaPan ol li .iniNoImportante {
+      font-size: 12px;
+      color: #8D64A2;
+      text-decoration: none; }
+      main .migaPan ol li .iniNoImportante:hover {
+        font-weight: bold; }
+    main .migaPan ol li .siguiente {
+      text-decoration: none;
+      color: #462749;
+      font-size: 18px;
+      font-family: "Cabin", sans-serif; }
   main .productos {
     display: flex;
     flex-direction: column;
@@ -423,12 +435,12 @@ main {
       display: flex;
       flex-direction: column;
       margin: 15px; }
-      main .precios .nombrePrecio h2 {
+      main .precios .nombrePrecio h3 {
         font-family: 'Cabin', sans-serif;
         font-size: 15px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.842); }
-      main .precios .nombrePrecio h3 {
+      main .precios .nombrePrecio p {
         font-family: 'Cabin', sans-serif;
         font-size: 15px;
         color: #462749;
@@ -436,6 +448,10 @@ main {
 
 /* madia query....................................................................................................................*/
 @media (min-width: 768px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 15px; }
+  main .migaPan ol li .siguiente {
+    font-size: 20px; }
   main .productos h1 {
     font-size: 25px; }
   main .precios {
@@ -446,6 +462,10 @@ main {
 
 /* madia query....................................................................................................................*/
 @media (min-width: 1024px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 18px; }
+  main .migaPan ol li .siguiente {
+    font-size: 28px; }
   main .productos h1 {
     font-size: 35px; }
   main .precios {
@@ -459,13 +479,26 @@ main {
 @media (min-width: 1440px) {
   main .precios img {
     width: 35em; }
-  main .precios .nombrePrecio h2 {
-    font-size: 20px; }
   main .precios .nombrePrecio h3 {
+    font-size: 20px; }
+  main .precios .nombrePrecio p {
     font-size: 20px; } }
 
 main {
   min-height: 100%; }
+  main .migaPan ol li {
+    margin: 15px; }
+    main .migaPan ol li .iniNoImportante {
+      font-size: 12px;
+      color: #8D64A2;
+      text-decoration: none; }
+      main .migaPan ol li .iniNoImportante:hover {
+        font-weight: bold; }
+    main .migaPan ol li .siguiente {
+      text-decoration: none;
+      color: #462749;
+      font-size: 18px;
+      font-family: "Cabin", sans-serif; }
   main .textoTips {
     display: flex;
     font-family: 'Caveat', cursive;
@@ -496,7 +529,7 @@ main {
         width: 18em;
         margin-top: 15px;
         padding: 10px; }
-        main .tips .contenido .itemTips h2 {
+        main .tips .contenido .itemTips h3 {
           font-family: 'Cabin', sans-serif;
           font-size: 18px;
           font-weight: bold; }
@@ -521,16 +554,24 @@ main {
 
 /*media query.......................................................................................................................................................*/
 @media (min-width: 768px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 15px; }
+  main .migaPan ol li .siguiente {
+    font-size: 20px; }
   main .tips .contenido img {
     width: 18em;
     margin: 15px; }
   main .tips .contenido .itemTips {
     width: 25em; }
-    main .tips .contenido .itemTips h2 {
+    main .tips .contenido .itemTips h3 {
       font-size: 20px; } }
 
 /*media query.......................................................................................................................................................*/
 @media (min-width: 1024px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 18px; }
+  main .migaPan ol li .siguiente {
+    font-size: 28px; }
   main .tips .contenido img {
     width: 14em;
     margin: 10px; }
@@ -550,11 +591,24 @@ main {
     margin: 10px; }
   main .tips .contenido .itemTips {
     width: 21em; }
-    main .tips .contenido .itemTips h2 {
+    main .tips .contenido .itemTips h3 {
       font-size: 25px; } }
 
 main {
   min-height: 100%; }
+  main .migaPan ol li {
+    margin: 15px; }
+    main .migaPan ol li .iniNoImportante {
+      font-size: 12px;
+      color: #8D64A2;
+      text-decoration: none; }
+      main .migaPan ol li .iniNoImportante:hover {
+        font-weight: bold; }
+    main .migaPan ol li .siguiente {
+      text-decoration: none;
+      color: #462749;
+      font-size: 18px;
+      font-family: "Cabin", sans-serif; }
   main .bannerContacto img {
     max-width: 100%; }
   main .comentarioForm {
@@ -598,6 +652,10 @@ main {
 
 /*media query............................................................................................................................................*/
 @media (min-width: 768px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 15px; }
+  main .migaPan ol li .siguiente {
+    font-size: 20px; }
   main .comentarioForm {
     font-size: 25px;
     margin: 15px; }
@@ -610,6 +668,10 @@ main {
 
 /*media query............................................................................................................................................*/
 @media (min-width: 1024px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 18px; }
+  main .migaPan ol li .siguiente {
+    font-size: 28px; }
   main .comentarioForm {
     font-size: 30px;
     margin: 20px; }

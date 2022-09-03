@@ -1,11 +1,25 @@
 main{
     min-height:100%;
+    .migaPan{
+        ol{
+            li{
+                margin: 15px;
+               .inicio{
+                text-decoration: none;
+                color: $purpura;
+                font-size: 15px;
+                font-family: $cabin;
+               }
+
+            }
+        }
+    }
     .section0{
         display: flex;
         background-color: #ebbce436;        
         justify-content: center;
         height: 6em;
-        p{
+        h1{
             margin: auto;
             color: rgba(0, 0, 0, 0.815);
             font-family: 'Caveat', cursive;
@@ -53,10 +67,20 @@ main{
 /*media query 768....................................................................................................................................................*/
 @media(min-width:768px){
     main{
+        .migaPan{
+            ol{
+                li{
+                    .inicio{
+                        font-size: 25px;
+                    }
+                    
+                }
+            }
+        }
         .section0{
             flex-direction: column;
-            height: 4em;
-            p{
+            height: 6em;
+            h1{
                 font-size: 2em;
             }
         }
@@ -86,10 +110,21 @@ main{
 /*media query 1024....................................................................................................................................................*/
 @media(min-width:1024px){
     main{
+        .migaPan{
+            ol{
+                li{
+                    .inicio{
+                        font-size: 35px;
+                    }
+                    
+                }
+            }
+        }
+
         .section0{
             flex-direction: column;
-            height: 6em;
-            p{
+            height: 10em;
+            h1{
                 font-size: 4em;
             }
         }

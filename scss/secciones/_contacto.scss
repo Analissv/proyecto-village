@@ -1,5 +1,30 @@
 main{
     min-height: 100%;
+    .migaPan{
+        ol{
+          li{
+            margin: 15px;
+            
+            .iniNoImportante{
+                font-size: 12px;
+                color: $lila;
+                text-decoration: none;
+                &:hover{
+                    font-weight: bold;
+                  }
+    
+            }
+            .siguiente{
+                text-decoration: none;
+                  color: $purpura;
+                  font-size: 18px;
+                  font-family: $cabin;
+            }
+              
+          }
+        }
+      }
+
     .bannerContacto{
         img{
             max-width: 100%;
@@ -58,6 +83,19 @@ main{
 /*media query............................................................................................................................................*/
 @media(min-width:768px){
     main{
+        .migaPan{
+            ol{
+              li{
+                .iniNoImportante{
+                  font-size: 15px;
+                }
+                .siguiente{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+
         .comentarioForm{
             font-size: 25px;
             margin: 15px;
@@ -78,6 +116,20 @@ main{
 /*media query............................................................................................................................................*/
 @media(min-width:1024px){
     main{
+        .migaPan{
+            ol{
+              li{
+                .iniNoImportante{
+                  font-size: 18px;
+                
+                }
+                .siguiente{
+                  font-size: 28px;
+                }
+              }
+            }
+          }
+
         .comentarioForm{
             font-size: 30px;
             margin: 20px;

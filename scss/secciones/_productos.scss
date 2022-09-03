@@ -1,5 +1,30 @@
 main{
     min-height: 100%;
+    .migaPan{
+        ol{
+          li{
+            margin: 15px;
+            
+            .iniNoImportante{
+                font-size: 12px;
+                color: $lila;
+                text-decoration: none;
+                &:hover{
+                    font-weight: bold;
+                  }
+    
+            }
+            .siguiente{
+                text-decoration: none;
+                  color: $purpura;
+                  font-size: 18px;
+                  font-family: $cabin;
+            }
+              
+          }
+        }
+      }
+
     .productos{
         display: flex;
         flex-direction: column;
@@ -33,13 +58,13 @@ main{
             display: flex;
             flex-direction: column;
             margin: 15px;
-            h2{
+            h3{
                 font-family: 'Cabin', sans-serif;
                 font-size: 15px;
                 font-weight: bold;
                 color: rgba(0, 0, 0, 0.842);
             }
-            h3{
+            p{
                 font-family: 'Cabin', sans-serif;
                 font-size: 15px;
                 color: #462749;
@@ -54,6 +79,19 @@ main{
 /* madia query....................................................................................................................*/
 @media(min-width:768px){
     main{
+        .migaPan{
+            ol{
+              li{
+                .iniNoImportante{
+                  font-size: 15px;
+                }
+                .siguiente{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+
         .productos{
             h1{
                 font-size: 25px;
@@ -73,6 +111,19 @@ main{
 
 @media(min-width:1024px){
    main{
+    .migaPan{
+        ol{
+          li{
+            .iniNoImportante{
+              font-size: 18px;
+            }
+            .siguiente{
+              font-size: 28px;
+            }
+          }
+        }
+      }
+
     .productos{
         h1{
             font-size: 35px;
@@ -98,10 +149,10 @@ main{
                 width: 35em;
             }
             .nombrePrecio{
-                h2{
+                h3{
                     font-size: 20px;
                 }
-                h3{
+                p{
                     font-size: 20px;
                 }
             }

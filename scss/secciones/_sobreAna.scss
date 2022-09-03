@@ -1,5 +1,28 @@
 main{
     min-height:100%;
+    .migaPan{
+      ol{
+        li{
+          margin: 15px;
+          
+          .iniNoImportante{
+              font-size: 12px;
+              color: $lila;
+              text-decoration: none;
+              &:hover{
+                font-weight: bold;
+              }
+          }
+          .siguiente{
+              text-decoration: none;
+                color: $purpura;
+                font-size: 18px;
+                font-family: $cabin;
+          }
+            
+        }
+      }
+    }
     .bannerSA {
         img{
             width: 100vw;
@@ -35,6 +58,18 @@ main{
 /*media query.................................................................................................................................*/
 @media(min-width:768px){
   main{
+    .migaPan{
+      ol{
+        li{
+          .iniNoImportante{
+            font-size: 15px;
+          }
+          .siguiente{
+            font-size: 20px;
+          }
+        }
+      }
+    }
     .todasSection{
       .sectionA{
         align-items: center;
@@ -54,6 +89,20 @@ main{
 /*media query.................................................................................................................................*/
 @media(min-width:1024px){
   main{
+    .migaPan{
+      ol{
+        li{
+          .iniNoImportante{
+            font-size: 18px;
+          
+          }
+          .siguiente{
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
     .todasSection{
       .sectionA{
         margin: 40px;

@@ -1,0 +1,49 @@
+@import "./fuentes";
+
+/*mixin contenedor de cada receta*/
+
+@mixin estiloCadaContenedorReceta ($seccion-grid) {
+    grid-area: $seccion-grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #ebbce436;
+    margin: 25px 0 25px 0;
+}
+
+/*mixin para cada titulo de tipo de receta*/
+@mixin estiloContenedorTipoReceta ($tituloTipo) {
+    grid-area: $tituloTipo; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2D1C9;;
+    height: 10em;
+    margin: 15px;
+    h3{
+        font-family: $caveatCursiva;
+        font-size: 35px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.801);
+        &:hover{
+            transform: scale(1.5);
+            transition: 0.6s;
+          }
+    }
+
+}
+
+/*extend para img de cada receta*/
+%estiloImgSeccRecetas {
+    width: 18em;
+    border-radius: 4%;
+}
+
+/*extend estilo contenedor de letra de cada receta*/
+%estiloH3SeccRecetas {
+    font-family: $cabin;
+    font-size: 15px;
+    margin: 15px 0 15px 0;
+
+}

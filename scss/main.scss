@@ -1,21 +1,13 @@
-/*<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;1,700&family=Caveat:wght@400;600&family=Zilla+Slab:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*
-    font-family: 'Cabin', sans-serif;
-    font-family: 'Zilla Slab', serif;
-    font-family: 'Caveat', cursive;
-     azul opal #BAD1CD
-     rosado mistico #F2D1C9
-    pink #EBBCE4
-    lila french #8D64A2 purpura #462749
-*/
+
+
+@import "./variables/extend";
+@import "./variables/fuentes";
+@import "./variables/color";
 
 @import "./secciones/header";
 @import "./secciones/index";
