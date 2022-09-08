@@ -47,8 +47,8 @@ main{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(12, auto);
         grid-template-areas:
-          "recetas img2 img2 img3"
-          "img1 img2 img2 parrafo"
+          "img2 img2 recetas img3"
+          "img2 img2 img1 parrafo"
           "chocolatosas chocolatosas chocolatosas chocolatosas"
           "choc1 choc1 choc1 choc1"
           "choc2 choc2 choc2 choc2"
@@ -66,7 +66,7 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: $rosaMistico;
+            background-color:#ebbce463;
 
             h1{
                 font-size: 20px;
@@ -96,6 +96,7 @@ main{
         }
         .img3{
             grid-area: img3;
+            display: flex;
             img{
                 padding: 0px;
                 border-radius: 0;
@@ -107,7 +108,9 @@ main{
             grid-area: parrafo;
             font-size: 14px;
             display: flex;
-            background-color: $lila;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #8d64a269;
             p{
                 text-align: center
             }
