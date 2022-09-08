@@ -228,8 +228,8 @@ main {
   main .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(12, auto);
-    grid-template-areas: "img2 img2 recetas img3" "img2 img2 img1 parrafo" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc1 choc1" "choc2 choc2 choc2 choc2" "choc3 choc3 choc3 choc3" "tartas tartas tartas tartas" "tart1 tart1 tart1 tart1" "tart2 tart2 tart2 tart2" "tart3 tart3 tart3 tart3" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh1 sh1 sh1" "sh2 sh2 sh2 sh2" "sh3 sh3 sh3 sh3"; }
+    grid-template-rows: repeat(17, auto);
+    grid-template-areas: "img1 img1 img1 img1" "recetas recetas recetas recetas" "img2 img2 img2 img2" "parrafo parrafo parrafo parrafo" "img3 img3 img3 img3" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc1 choc1" "choc2 choc2 choc2 choc2" "choc3 choc3 choc3 choc3" "tartas tartas tartas tartas" "tart1 tart1 tart1 tart1" "tart2 tart2 tart2 tart2" "tart3 tart3 tart3 tart3" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh1 sh1 sh1" "sh2 sh2 sh2 sh2" "sh3 sh3 sh3 sh3"; }
     main .grid-container .recetas {
       grid-area: recetas;
       display: flex;
@@ -237,8 +237,9 @@ main {
       justify-content: center;
       background-color: #ebbce463; }
       main .grid-container .recetas h1 {
-        font-size: 20px;
-        text-align: center; }
+        font-size: 25px;
+        text-align: center;
+        padding: 15px; }
     main .grid-container .img1 {
       grid-area: img1;
       display: flex; }
@@ -259,13 +260,14 @@ main {
         border-radius: 0; }
     main .grid-container .parrafo {
       grid-area: parrafo;
-      font-size: 14px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: #8d64a269; }
       main .grid-container .parrafo p {
-        text-align: center; }
+        text-align: center;
+        padding: 15px;
+        font-size: 14px; }
     main .grid-container .chocolatosas {
       grid-area: chocolatosas;
       display: flex;
