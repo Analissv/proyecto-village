@@ -127,10 +127,12 @@ main{
             }
         }
         #todasSection{
+            width: 75%;
+            margin: auto;
             .section{
                 .imgTexto{
                     img{
-                        width: 28em;
+                        width: 20em;
                     }
                     p{
                         font-size: 25px; 
@@ -140,4 +142,22 @@ main{
             }
         }
     }
+}
+
+/*media query 1024....................................................................................................................................................*/
+@media(min-width:1024px){
+    #todasSection{
+        .section{
+            .imgTexto{
+                img{
+                    width: 30em;
+                }
+                p{
+                    font-size: 25px; 
+                }
+            }
+            
+        }
+    }
+
 }

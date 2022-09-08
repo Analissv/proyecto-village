@@ -8,12 +8,12 @@
 /*mixin contenedor de cada receta*/
 /*mixin para cada titulo de tipo de receta*/
 /*extend para img de cada receta*/
-main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
+main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .choc4 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .tart4 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img, main .grid-container .sH4 img {
   width: 18em;
   border-radius: 4%; }
 
 /*extend estilo contenedor de letra de cada receta*/
-main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4 {
+main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .choc4 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .tart4 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4, main .grid-container .sH4 h4 {
   font-family: "Cabin", sans-serif;
   font-size: 15px;
   margin: 15px 0 15px 0; }
@@ -123,9 +123,19 @@ main {
     height: 10em; }
     main .section0 h1 {
       font-size: 4em; }
-  main #todasSection .section .imgTexto img {
-    width: 28em; }
-  main #todasSection .section .imgTexto p {
+  main #todasSection {
+    width: 75%;
+    margin: auto; }
+    main #todasSection .section .imgTexto img {
+      width: 20em; }
+    main #todasSection .section .imgTexto p {
+      font-size: 25px; } }
+
+/*media query 1024....................................................................................................................................................*/
+@media (min-width: 1024px) {
+  #todasSection .section .imgTexto img {
+    width: 30em; }
+  #todasSection .section .imgTexto p {
     font-size: 25px; } }
 
 main {
@@ -212,24 +222,11 @@ main {
       color: #462749;
       font-size: 18px;
       font-family: "Cabin", sans-serif; }
-  main #textoBannerRecetas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ebbce433;
-    padding: 15px; }
-    main #textoBannerRecetas h1 {
-      font-family: "Cabin", sans-serif;
-      font-size: 35px; }
-    main #textoBannerRecetas p {
-      font-family: "Caveat", cursive;
-      font-size: 25px; }
   main .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(17, auto);
-    grid-template-areas: "img1 img1 img1 img1" "recetas recetas recetas recetas" "img2 img2 img2 img2" "parrafo parrafo parrafo parrafo" "img3 img3 img3 img3" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc1 choc1" "choc2 choc2 choc2 choc2" "choc3 choc3 choc3 choc3" "tartas tartas tartas tartas" "tart1 tart1 tart1 tart1" "tart2 tart2 tart2 tart2" "tart3 tart3 tart3 tart3" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh1 sh1 sh1" "sh2 sh2 sh2 sh2" "sh3 sh3 sh3 sh3"; }
+    grid-template-areas: "img2 img2 recetas img3" "img2 img2 img1 parrafo" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc1 choc1" "choc2 choc2 choc2 choc2" "choc3 choc3 choc3 choc3" "choc4 choc4 choc4 choc4" "tartas tartas tartas tartas" "tart1 tart1 tart1 tart1" "tart2 tart2 tart2 tart2" "tart3 tart3 tart3 tart3" "tart4 tart4 tart4 tart4" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh1 sh1 sh1" "sh2 sh2 sh2 sh2" "sh3 sh3 sh3 sh3" "sh4 sh4 sh4 sh4"; }
     main .grid-container .recetas {
       grid-area: recetas;
       display: flex;
@@ -237,27 +234,18 @@ main {
       justify-content: center;
       background-color: #ebbce463; }
       main .grid-container .recetas h1 {
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        padding: 15px; }
+        font-family: "Cabin", sans-serif; }
     main .grid-container .img1 {
       grid-area: img1;
       display: flex; }
-      main .grid-container .img1 img {
-        padding: 0px;
-        border-radius: 0; }
     main .grid-container .img2 {
       grid-area: img2;
       display: flex; }
-      main .grid-container .img2 img {
-        padding: 0px;
-        border-radius: 0; }
     main .grid-container .img3 {
       grid-area: img3;
       display: flex; }
-      main .grid-container .img3 img {
-        padding: 0px;
-        border-radius: 0; }
     main .grid-container .parrafo {
       grid-area: parrafo;
       display: flex;
@@ -266,8 +254,8 @@ main {
       background-color: #8d64a269; }
       main .grid-container .parrafo p {
         text-align: center;
-        padding: 15px;
-        font-size: 14px; }
+        font-size: 8px;
+        font-family: "Cabin", sans-serif; }
     main .grid-container .chocolatosas {
       grid-area: chocolatosas;
       display: flex;
@@ -279,7 +267,7 @@ main {
       margin: 15px; }
       main .grid-container .chocolatosas h3 {
         font-family: "Caveat", cursive;
-        font-size: 35px;
+        font-size: 45px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
         main .grid-container .chocolatosas h3:hover {
@@ -306,6 +294,13 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
+    main .grid-container .choc4 {
+      grid-area: choc4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
     main .grid-container .tartas {
       grid-area: tartas;
       display: flex;
@@ -317,7 +312,7 @@ main {
       margin: 15px; }
       main .grid-container .tartas h3 {
         font-family: "Caveat", cursive;
-        font-size: 35px;
+        font-size: 45px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
         main .grid-container .tartas h3:hover {
@@ -344,6 +339,13 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
+    main .grid-container .tart4 {
+      grid-area: tart4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
     main .grid-container .sinHorno {
       grid-area: sinhorno;
       display: flex;
@@ -355,7 +357,7 @@ main {
       margin: 15px; }
       main .grid-container .sinHorno h3 {
         font-family: "Caveat", cursive;
-        font-size: 35px;
+        font-size: 45px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
         main .grid-container .sinHorno h3:hover {
@@ -382,6 +384,13 @@ main {
       align-items: center;
       background-color: #ebbce436;
       margin: 25px 0 25px 0; }
+    main .grid-container .sH4 {
+      grid-area: sh4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ebbce436;
+      margin: 25px 0 25px 0; }
 
 /*media query.......................................................................................................*/
 @media (min-width: 768px) {
@@ -395,11 +404,15 @@ main {
     font-size: 35px; }
   main .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(12, auto);
-    grid-template-areas: "chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3" "choc1 choc2 choc3" "choc1 choc2 choc3" "tartas tartas tartas" "tart1 tart2 tart3" "tart1 tart2 tart3" "tart1 tart2 tart3" "sinhorno sinhorno sinhorno" "sh1 sh2 sh3" "sh1 sh2 sh3" "sh1 sh2 sh3"; }
-    main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
-      width: 12em; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(17, auto);
+    grid-template-areas: "img2 img2 recetas img3" "img2 img2 img1 parrafo" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc2 choc2" "choc1 choc1 choc2 choc2" "choc3 choc3 choc4 choc4" "choc3 choc3 choc4 choc4" "tartas tartas tartas tartas" "tart1 tart1 tart2 tart2" "tart1 tart1 tart2 tart2" "tart3 tart3 tart4 tart4" "tart3 tart3 tart4 tart4" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh1 sh2 sh2" "sh1 sh1 sh2 sh2" "sh3 sh3 sh4 sh4" "sh3 sh3 sh4 sh4"; }
+    main .grid-container .recetas h1 {
+      font-size: 40px; }
+    main .grid-container .parrafo p {
+      font-size: 15px; }
+    main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .choc4 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .tart4 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img, main .grid-container .sH4 img {
+      width: 15em; } }
 
 /*media query.......................................................................................................*/
 @media (min-width: 1024px) {
@@ -413,19 +426,31 @@ main {
     font-size: 3em; }
   main .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(12, auto);
-    grid-template-areas: "chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3" "choc1 choc2 choc3" "choc1 choc2 choc3" "tartas tartas tartas" "tart1 tart2 tart3" "tart1 tart2 tart3" "tart1 tart2 tart3" "sinhorno sinhorno sinhorno" "sh1 sh2 sh3" "sh1 sh2 sh3" "sh1 sh2 sh3"; }
-    main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
-      width: 20em; }
-    main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4 {
-      font-size: 20px; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "img2 img2 recetas img3" "img2 img2 img1 parrafo" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3 choc4" "tartas tartas tartas tartas" "tart1 tart2 tart3 tart4" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh2 sh3 sh4"; }
+    main .grid-container .receta h1 {
+      font-size: 50px; }
+    main .grid-container .parrafo p {
+      font-size: 25px; }
+    main .grid-container .img2 {
+      flex-direction: column; }
+    main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .choc4 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .tart4 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img, main .grid-container .sH4 img {
+      width: 15em; }
+    main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .choc4 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .tart4 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4, main .grid-container .sH4 h4 {
+      font-size: 20px; }
+    main .grid-container .chocolatosas h3, main .grid-container .tartas h3, main .grid-container .sinHorno h3 {
+      font-size: 70px; } }
 
 /*media query.......................................................................................................*/
 @media (min-width: 1440px) {
-  main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img {
-    width: 28em; }
-  main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4 {
+  main .grid-container .recetas h1 {
+    font-size: 60px; }
+  main .grid-container .parrafo p {
+    font-size: 50px; }
+  main .grid-container .choc1 img, main .grid-container .choc2 img, main .grid-container .choc3 img, main .grid-container .choc4 img, main .grid-container .tart1 img, main .grid-container .tart2 img, main .grid-container .tart3 img, main .grid-container .tart4 img, main .grid-container .sH1 img, main .grid-container .sH2 img, main .grid-container .sH3 img, main .grid-container .sH4 img {
+    width: 22em; }
+  main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-container .choc3 h4, main .grid-container .choc4 h4, main .grid-container .tart1 h4, main .grid-container .tart2 h4, main .grid-container .tart3 h4, main .grid-container .tart4 h4, main .grid-container .sH1 h4, main .grid-container .sH2 h4, main .grid-container .sH3 h4, main .grid-container .sH4 h4 {
     font-size: 25px; } }
 
 main {
