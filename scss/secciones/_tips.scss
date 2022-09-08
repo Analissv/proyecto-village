@@ -14,7 +14,7 @@ main{
                   }
     
             }
-            .siguiente{
+            .enPagina{
                 text-decoration: none;
                   color: $purpura;
                   font-size: 18px;
@@ -27,11 +27,13 @@ main{
 
     .textoTips{
         display: flex;
-        font-family: 'Caveat', cursive;
-        font-size: 20px;
-        text-align: center;
-        background-color:#F2D1C9 ;
+        font-family: $caveatCursiva;
+        background-color: $rosaMistico ;
         margin:15px;
+        h1{
+            font-size: 20px;
+
+        }
     }
     .tips{
         display: flex;
@@ -42,7 +44,7 @@ main{
         .contenido{
             display: flex;
             flex-wrap: wrap;
-            background-color: #ebbce433;
+            background-color: $rosaParaFondo;
             justify-content: center;
             align-items: flex-start;
             margin: 15px 0 15px 0;
@@ -58,21 +60,21 @@ main{
                 margin-top: 15px;
                 padding: 10px;
                 h3{
-                    font-family: 'Cabin', sans-serif;
+                    font-family: $cabin;
                     font-size: 18px;
                     font-weight: bold;
                 }
                 p{
-                    font-family: 'Cabin', sans-serif;
+                    font-family: $cabin;
                     line-height: 2;
                     text-align: justify;
                   
                 }  
                 a{
                     text-decoration: none;
-                    color: #462749;
-                    font-family: 'Cabin', sans-serif;
-                    background-color: #8D64A2;
+                    color: $purpura;
+                    font-family: $cabin;
+                    background-color: $lila;
                     padding: 5px;
                     margin: 10px;
                     border-radius: 0.5em;
@@ -101,10 +103,18 @@ main{
                 .iniNoImportante{
                   font-size: 15px;
                 }
-                .siguiente{
+                .enPagina{
                   font-size: 20px;
                 }
               }
+            }
+          }
+          .textoTips{
+            padding: 15px;
+
+            h1{
+                font-size: 25px;
+    
             }
           }
 
@@ -134,15 +144,26 @@ main{
                   font-size: 18px;
                 
                 }
-                .siguiente{
-                  font-size: 28px;
+                .enPagina{
+                  font-size: 25px;
                 }
               }
             }
           }
-    
+        .textoTips{
+            padding: 20px;
+
+            h1{
+                font-size: 30px;
+
+            }
+        }
+          
         .tips{
             .contenido{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 img{
                     width: 14em;
                     margin: 10px;
@@ -161,10 +182,27 @@ main{
 /*media query.......................................................................................................................................................*/
 @media(min-width: 1440px){
     main{
+        .migaPan{
+            ol{
+              li{
+                .iniNoImportante{
+                  font-size: 25px;
+                
+                }
+                .enPagina{
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+
         .textoTips{
-            font-size: 40px;
-            height: 5em;
-            align-items: center;
+            padding: 35px;
+
+            h1{
+                font-size: 50px;
+
+            }
     
         }
     

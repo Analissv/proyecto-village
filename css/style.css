@@ -30,7 +30,7 @@ main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-conta
     .navbar nav .menu a {
       color: white;
       font-size: 15px;
-      font-family: 'Cabin', sans-serif; }
+      font-family: "Cabin", sans-serif; }
       .navbar nav .menu a:hover {
         font-weight: 800;
         color: #F2D1C9; }
@@ -38,21 +38,25 @@ main .grid-container .choc1 h4, main .grid-container .choc2 h4, main .grid-conta
 /*media querys 768..............................................................................*/
 @media (min-width: 768px) {
   .navbar nav img {
-    width: 5em; } }
+    width: 5em; }
+  .navbar nav .menu a {
+    font-size: 18px; } }
 
 /* media query 1024..............................................................................................*/
 @media (min-width: 1024px) {
   .navbar nav img {
-    width: 6em; } }
+    width: 6em; }
+  .navbar nav .menu a {
+    font-size: 20px; } }
 
 main {
   min-height: 100%; }
   main .migaPan ol li {
     margin: 15px; }
-    main .migaPan ol li .inicio {
+    main .migaPan ol li .enPagina {
       text-decoration: none;
       color: #462749;
-      font-size: 15px;
+      font-size: 12px;
       font-family: "Cabin", sans-serif; }
   main .section0 {
     display: flex;
@@ -91,8 +95,8 @@ main {
 
 /*media query 768....................................................................................................................................................*/
 @media (min-width: 768px) {
-  main .migaPan ol li .inicio {
-    font-size: 25px; }
+  main .migaPan ol li {
+    font-size: 20px; }
   main .section0 {
     flex-direction: column;
     height: 6em; }
@@ -112,8 +116,8 @@ main {
 
 /*media query 1024....................................................................................................................................................*/
 @media (min-width: 1024px) {
-  main .migaPan ol li .inicio {
-    font-size: 35px; }
+  main .migaPan ol li .enPagina {
+    font-size: 28px; }
   main .section0 {
     flex-direction: column;
     height: 10em; }
@@ -134,11 +138,11 @@ main {
       text-decoration: none; }
       main .migaPan ol li .iniNoImportante:hover {
         font-weight: bold; }
-    main .migaPan ol li .siguiente {
-      text-decoration: none;
-      color: #462749;
-      font-size: 18px;
-      font-family: "Cabin", sans-serif; }
+  main .migaPan ol .enPagina {
+    text-decoration: none;
+    color: #462749;
+    font-size: 18px;
+    font-family: "Cabin", sans-serif; }
   main .bannerSA img {
     width: 100vw; }
   main .todasSection {
@@ -146,7 +150,7 @@ main {
     flex-wrap: wrap;
     justify-content: center; }
     main .todasSection .sectionA {
-      font-family: 'Cabin', sans-serif;
+      font-family: "Cabin", sans-serif;
       font-size: 15px;
       margin: 15px;
       line-height: 20px;
@@ -203,17 +207,11 @@ main {
       text-decoration: none; }
       main .migaPan ol li .iniNoImportante:hover {
         font-weight: bold; }
-    main .migaPan ol li .siguiente {
+    main .migaPan ol li .enPagina {
       text-decoration: none;
       color: #462749;
       font-size: 18px;
       font-family: "Cabin", sans-serif; }
-  main #bannerRecetas {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; }
-    main #bannerRecetas img {
-      max-width: 100%; }
   main #textoBannerRecetas {
     display: flex;
     flex-direction: column;
@@ -231,7 +229,40 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(12, auto);
-    grid-template-areas: "chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc1" "choc2 choc2 choc2" "choc3 choc3 choc3" "tartas tartas tartas" "tart1 tart1 tart1" "tart2 tart2 tart2" "tart3 tart3 tart3" "sinhorno sinhorno sinhorno" "sh1 sh1 sh1" "sh2 sh2 sh2" "sh3 sh3 sh3"; }
+    grid-template-areas: "recetas img2 img3" "img1 img2 parrafo" "chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc1" "choc2 choc2 choc2" "choc3 choc3 choc3" "tartas tartas tartas" "tart1 tart1 tart1" "tart2 tart2 tart2" "tart3 tart3 tart3" "sinhorno sinhorno sinhorno" "sh1 sh1 sh1" "sh2 sh2 sh2" "sh3 sh3 sh3"; }
+    main .grid-container .recetas {
+      grid-area: recetas;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #F2D1C9; }
+      main .grid-container .recetas h1 {
+        font-size: 20px;
+        text-align: center; }
+    main .grid-container .img1 {
+      grid-area: img1;
+      display: flex; }
+      main .grid-container .img1 img {
+        padding: 0px;
+        border-radius: 0; }
+    main .grid-container .img2 {
+      grid-area: img2;
+      display: flex; }
+      main .grid-container .img2 img {
+        padding: 0px;
+        border-radius: 0; }
+    main .grid-container .img3 {
+      grid-area: img3; }
+      main .grid-container .img3 img {
+        padding: 0px;
+        border-radius: 0; }
+    main .grid-container .parrafo {
+      grid-area: parrafo;
+      font-size: 14px;
+      display: flex;
+      background-color: #8D64A2; }
+      main .grid-container .parrafo p {
+        text-align: center; }
     main .grid-container .chocolatosas {
       grid-area: chocolatosas;
       display: flex;
@@ -402,7 +433,7 @@ main {
       text-decoration: none; }
       main .migaPan ol li .iniNoImportante:hover {
         font-weight: bold; }
-    main .migaPan ol li .siguiente {
+    main .migaPan ol li .enPagina {
       text-decoration: none;
       color: #462749;
       font-size: 18px;
@@ -412,12 +443,12 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 10em;
+    height: 8em;
     background-color: #F2D1C9;
     margin: 15px; }
     main .productos h1 {
-      font-family: 'Caveat', cursive;
-      font-size: 20px; }
+      font-family: "Caveat", cursive;
+      font-size: 25px; }
   main .precios {
     display: flex;
     flex-wrap: wrap;
@@ -429,19 +460,21 @@ main {
       margin: 15px 0 18px 0;
       border-radius: 5%; }
       main .precios img:hover {
-        transform: skewX(3deg);
-        transition: 1s; }
+        transform: skewX(1deg);
+        transition: 1s;
+        opacity: 0.6;
+        border: groove; }
     main .precios .nombrePrecio {
       display: flex;
       flex-direction: column;
       margin: 15px; }
       main .precios .nombrePrecio h3 {
-        font-family: 'Cabin', sans-serif;
+        font-family: "Cabin", sans-serif;
         font-size: 15px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.842); }
       main .precios .nombrePrecio p {
-        font-family: 'Cabin', sans-serif;
+        font-family: "Cabin", sans-serif;
         font-size: 15px;
         color: #462749;
         font-weight: 800; }
@@ -450,39 +483,42 @@ main {
 @media (min-width: 768px) {
   main .migaPan ol li .iniNoImportante {
     font-size: 15px; }
-  main .migaPan ol li .siguiente {
+  main .migaPan ol li .enPagina {
     font-size: 20px; }
   main .productos h1 {
-    font-size: 25px; }
+    font-size: 35px; }
   main .precios {
-    justify-content: space-around; }
-    main .precios img {
-      width: 20em;
+    margin: auto;
+    width: 85%; }
+    main .precios div img {
+      width: 10em;
       margin: 25px 25px 25px 25px; } }
 
 /* madia query....................................................................................................................*/
 @media (min-width: 1024px) {
   main .migaPan ol li .iniNoImportante {
     font-size: 18px; }
-  main .migaPan ol li .siguiente {
+  main .migaPan ol li .enPagina {
     font-size: 28px; }
   main .productos h1 {
-    font-size: 35px; }
+    font-size: 45px; }
   main .precios {
-    justify-content: center;
-    margin: 35px; }
-    main .precios img {
-      width: 25em;
-      margin: 15px; } }
+    width: 75%; }
+    main .precios div img {
+      width: 12em; } }
 
 /* madia query....................................................................................................................*/
 @media (min-width: 1440px) {
-  main .precios img {
-    width: 35em; }
-  main .precios .nombrePrecio h3 {
-    font-size: 20px; }
-  main .precios .nombrePrecio p {
-    font-size: 20px; } }
+  main .productos h1 {
+    font-size: 55px; }
+  main .precios {
+    width: 75%; }
+    main .precios div img {
+      width: 19em; }
+    main .precios .nombrePrecio h3 {
+      font-size: 20px; }
+    main .precios .nombrePrecio p {
+      font-size: 20px; } }
 
 main {
   min-height: 100%; }
@@ -494,18 +530,18 @@ main {
       text-decoration: none; }
       main .migaPan ol li .iniNoImportante:hover {
         font-weight: bold; }
-    main .migaPan ol li .siguiente {
+    main .migaPan ol li .enPagina {
       text-decoration: none;
       color: #462749;
       font-size: 18px;
       font-family: "Cabin", sans-serif; }
   main .textoTips {
     display: flex;
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
-    text-align: center;
+    font-family: "Caveat", cursive;
     background-color: #F2D1C9;
     margin: 15px; }
+    main .textoTips h1 {
+      font-size: 20px; }
   main .tips {
     display: flex;
     flex-wrap: wrap;
@@ -515,7 +551,7 @@ main {
     main .tips .contenido {
       display: flex;
       flex-wrap: wrap;
-      background-color: #ebbce433;
+      background-color: #ebbce436;
       justify-content: center;
       align-items: flex-start;
       margin: 15px 0 15px 0; }
@@ -530,17 +566,17 @@ main {
         margin-top: 15px;
         padding: 10px; }
         main .tips .contenido .itemTips h3 {
-          font-family: 'Cabin', sans-serif;
+          font-family: "Cabin", sans-serif;
           font-size: 18px;
           font-weight: bold; }
         main .tips .contenido .itemTips p {
-          font-family: 'Cabin', sans-serif;
+          font-family: "Cabin", sans-serif;
           line-height: 2;
           text-align: justify; }
         main .tips .contenido .itemTips a {
           text-decoration: none;
           color: #462749;
-          font-family: 'Cabin', sans-serif;
+          font-family: "Cabin", sans-serif;
           background-color: #8D64A2;
           padding: 5px;
           margin: 10px;
@@ -556,8 +592,12 @@ main {
 @media (min-width: 768px) {
   main .migaPan ol li .iniNoImportante {
     font-size: 15px; }
-  main .migaPan ol li .siguiente {
+  main .migaPan ol li .enPagina {
     font-size: 20px; }
+  main .textoTips {
+    padding: 15px; }
+    main .textoTips h1 {
+      font-size: 25px; }
   main .tips .contenido img {
     width: 18em;
     margin: 15px; }
@@ -570,22 +610,34 @@ main {
 @media (min-width: 1024px) {
   main .migaPan ol li .iniNoImportante {
     font-size: 18px; }
-  main .migaPan ol li .siguiente {
-    font-size: 28px; }
-  main .tips .contenido img {
-    width: 14em;
-    margin: 10px; }
-  main .tips .contenido .itemTips {
-    width: 15em; }
-    main .tips .contenido .itemTips h2 {
-      font-size: 18px; } }
+  main .migaPan ol li .enPagina {
+    font-size: 25px; }
+  main .textoTips {
+    padding: 20px; }
+    main .textoTips h1 {
+      font-size: 30px; }
+  main .tips .contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    main .tips .contenido img {
+      width: 14em;
+      margin: 10px; }
+    main .tips .contenido .itemTips {
+      width: 15em; }
+      main .tips .contenido .itemTips h2 {
+        font-size: 18px; } }
 
 /*media query.......................................................................................................................................................*/
 @media (min-width: 1440px) {
+  main .migaPan ol li .iniNoImportante {
+    font-size: 25px; }
+  main .migaPan ol li .enPagina {
+    font-size: 30px; }
   main .textoTips {
-    font-size: 40px;
-    height: 5em;
-    align-items: center; }
+    padding: 35px; }
+    main .textoTips h1 {
+      font-size: 50px; }
   main .tips .contenido img {
     width: 21em;
     margin: 10px; }
@@ -612,12 +664,12 @@ main {
   main .bannerContacto img {
     max-width: 100%; }
   main .comentarioForm {
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
     text-align: left;
     background-color: #F2D1C9;
     margin: 10px;
-    padding: 15px; }
+    padding: 20px; }
   main .contacto {
     display: flex;
     flex-direction: column;
@@ -630,22 +682,41 @@ main {
       padding: 25px 10px; }
       main .contacto form:hover {
         background-color: #46274925; }
-      main .contacto form .input {
+      main .contacto form .llenar {
+        justify-content: center;
         display: flex;
-        justify-content: end;
-        margin: 5px;
-        height: 30px; }
-        main .contacto form .input:focus {
+        flex-direction: column; }
+        main .contacto form .llenar .input {
+          margin: 5px;
+          height: 30px; }
+          main .contacto form .llenar .input:focus {
+            border: solid 3px rgba(0, 0, 0, 0.336);
+            transition: 0.3s; }
+        main .contacto form .llenar textarea:focus {
           border: solid 3px rgba(0, 0, 0, 0.336);
           transition: 0.3s; }
-      main .contacto form textarea:focus {
-        border: solid 3px rgba(0, 0, 0, 0.336);
-        transition: 0.3s; }
-      main .contacto form #descripcion {
-        display: block; }
-      main .contacto form label {
-        font-family: 'Cabin', sans-serif;
-        font-size: 12px; }
+        main .contacto form .llenar #descripcion {
+          display: block; }
+        main .contacto form .llenar label {
+          font-family: "Cabin", sans-serif;
+          font-size: 12px;
+          align-items: flex-start; }
+      main .contacto form .click {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        main .contacto form .click input {
+          margin: 10px;
+          padding: 5px;
+          border-radius: 0.5em;
+          font-family: "Cabin", sans-serif;
+          font-size: 14px;
+          border: #462749 10;
+          background-color: rgba(0, 0, 0, 0.336); }
+          main .contacto form .click input:hover {
+            font-size: 18px;
+            background-color: #462749;
+            color: white; }
     main .contacto .ubicacion {
       width: 18em;
       margin: 15px; }
@@ -657,14 +728,17 @@ main {
   main .migaPan ol li .siguiente {
     font-size: 20px; }
   main .comentarioForm {
-    font-size: 25px;
-    margin: 15px; }
+    font-size: 35px;
+    margin: 15px;
+    padding: 25px; }
   main .contacto {
     flex-direction: row;
     align-content: center;
     align-items: center; }
-    main .contacto form label {
-      font-size: 16px; } }
+    main .contacto form .llenar label {
+      font-size: 15px; }
+    main .contacto form .click input {
+      font-size: 17px; } }
 
 /*media query............................................................................................................................................*/
 @media (min-width: 1024px) {
@@ -673,23 +747,26 @@ main {
   main .migaPan ol li .siguiente {
     font-size: 28px; }
   main .comentarioForm {
-    font-size: 30px;
-    margin: 20px; }
+    font-size: 50px;
+    margin: 20px;
+    padding: 45px; }
   main .contacto {
     flex-direction: row;
     align-content: center;
     align-items: center; }
     main .contacto form {
       width: 30em; }
-      main .contacto form .input {
+      main .contacto form .llenar .input {
         margin: 10px;
         width: 26em; }
-      main .contacto form label {
-        font-size: 16px; }
-      main .contacto form #descripcion {
+      main .contacto form .llenar label {
+        font-size: 20px; }
+      main .contacto form .llenar #descripcion {
         width: 26em; }
+      main .contacto form .click input {
+        font-size: 22px; }
     main .contacto .ubicacion {
-      width: 25em; } }
+      width: 28em; } }
 
 .footer {
   display: flex;

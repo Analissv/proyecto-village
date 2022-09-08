@@ -23,7 +23,7 @@ main{
               
           }
         }
-      }
+    }
 
     .bannerContacto{
         img{
@@ -31,48 +31,72 @@ main{
         }
     }
     .comentarioForm{
-        font-family: 'Caveat', cursive;
-        font-size: 20px;
+        font-family: $caveatCursiva;
+        font-size: 25px;
         text-align: left;
-        background-color: #F2D1C9;
+        background-color: $rosaMistico;
         margin: 10px;
-        padding: 15px;
+        padding: 20px;
     }
     .contacto{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:  #ebbce436;
+        background-color: $rosaParaFondo;
         form{
             border:2px solid rgba(0, 0, 0, 0.733);
             margin: 20px;
             padding: 25px 10px;
             &:hover{
-                background-color:#46274925;
+              background-color:#46274925;
             }
-            .input{
-                display: flex;
-                justify-content: end;
+
+            .llenar{
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              .input{
                 margin: 5px;
                 height: 30px;
                 &:focus{
                     border: solid 3px rgba(0, 0, 0, 0.336);
                     transition: 0.3s;
                 }
-            }
-            textarea:focus{
+              }
+              textarea:focus{
                 border: solid 3px rgba(0, 0, 0, 0.336);
                 transition: 0.3s;
-            }
-            #descripcion{
+              }
+              #descripcion{
                 display: block;
-            }
-            label{
-                font-family: 'Cabin', sans-serif;
+              }
+              label{
+                font-family: $cabin;
                 font-size: 12px;
+                align-items: flex-start;
+              }  
             }
-        }
+            .click{
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              input{
+                margin: 10px;
+                padding: 5px;
+                border-radius: 0.5em;
+                font-family: $cabin;
+                font-size: 14px;
+                border: $purpura 10;
+                background-color: rgba(0, 0, 0, 0.336);
+                &:hover{
+                  font-size: 18px;
+                  background-color: $purpura;
+                  color: white;
+                }
+              }
+            }
+          }
         .ubicacion{
             width: 18em;
             margin: 15px;
@@ -97,17 +121,26 @@ main{
           }
 
         .comentarioForm{
-            font-size: 25px;
+            font-size: 35px;
             margin: 15px;
+            padding: 25px;
         }
         .contacto{
             flex-direction: row;
             align-content: center;
             align-items: center;
             form{
+              .llenar{
                 label{
-                    font-size: 16px;
+                  font-size: 15px;
                 }
+
+              }
+              .click{
+                input{
+                  font-size: 17px ;
+                }
+              }
             }
           }
     
@@ -131,8 +164,9 @@ main{
           }
 
         .comentarioForm{
-            font-size: 30px;
+            font-size: 50px;
             margin: 20px;
+            padding: 45px;
         }
         .contacto{
             flex-direction: row;
@@ -140,19 +174,27 @@ main{
             align-items: center;
             form{
                 width: 30em;
-                .input{
+                .llenar{
+                  .input{
                     margin: 10px;
                     width: 26em; 
-                }
-                label{
-                    font-size: 16px;
-                }
-                #descripcion{
+                  }
+                  label{
+                    font-size: 20px;
+                  }
+                  #descripcion{
                     width: 26em;
                   }
+
+                }
+                .click{
+                  input{
+                    font-size: 22px;
+                  }
+                }
             }
             .ubicacion{
-                width: 25em;
+                width: 28em;
             }
           }
     

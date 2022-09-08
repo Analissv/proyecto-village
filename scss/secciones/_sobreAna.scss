@@ -12,16 +12,19 @@ main{
               &:hover{
                 font-weight: bold;
               }
-          }
-          .siguiente{
-              text-decoration: none;
-                color: $purpura;
-                font-size: 18px;
-                font-family: $cabin;
-          }
-            
+            }
         }
+        .enPagina{
+          text-decoration: none;
+          color: $purpura;
+          font-size: 18px;
+          font-family: $cabin;
+      
+        }
+  
       }
+
+
     }
     .bannerSA {
         img{
@@ -33,7 +36,7 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         .sectionA{
-            font-family: 'Cabin', sans-serif;
+            font-family: $cabin;
             font-size: 15px;
             margin: 15px;
             line-height: 20px;

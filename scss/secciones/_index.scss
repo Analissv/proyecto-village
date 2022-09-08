@@ -4,13 +4,13 @@ main{
         ol{
             li{
                 margin: 15px;
-               .inicio{
-                text-decoration: none;
-                color: $purpura;
-                font-size: 15px;
-                font-family: $cabin;
-               }
-
+                .enPagina{
+                    text-decoration: none;
+                    color: $purpura;
+                    font-size: 12px;
+                    font-family: $cabin;
+                
+                }             
             }
         }
     }
@@ -70,9 +70,7 @@ main{
         .migaPan{
             ol{
                 li{
-                    .inicio{
-                        font-size: 25px;
-                    }
+                    font-size: 20px;
                     
                 }
             }
@@ -113,8 +111,8 @@ main{
         .migaPan{
             ol{
                 li{
-                    .inicio{
-                        font-size: 35px;
+                    .enPagina{
+                        font-size: 28px;
                     }
                     
                 }

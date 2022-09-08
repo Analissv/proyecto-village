@@ -55,7 +55,7 @@
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="migaPan">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="../index.html" class="iniNoImportante">Inicio</a></li>
-              <li class="breadcrumb-item active" aria-current="page"><a href="./contacto.html" class="siguiente">Contacto</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="./contacto.html" class="enPagina">Contacto</a></li>
             </ol>
         </nav>
 
@@ -65,20 +65,24 @@
         <h1 class="comentarioForm">Puedes preguntar lo que quieras</h1>
         <section class="contacto">
             <form action="#" method="get">
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre" class="input">
+                <div class="llenar">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre" class="input">
 
-                <label for="email">Email</label>
-                <input type="email" name="email" class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="input">
 
-                <label for="numero de telefono">Telefono</label>
-                <input type="tel" name="Numero de Telefono" class="input">
+                    <label for="numero de telefono">Telefono</label>
+                    <input type="tel" name="Numero de Telefono" class="input">
 
-                <label for="descripcion">Comentario</label>
-                <textarea name="descripcion" cols="30" rows="5" id="descripcion"></textarea>
+                    <label for="descripcion">Comentario</label>
+                    <textarea name="descripcion" cols="30" rows="5" id="descripcion"></textarea>
+                 </div>
                 <br><br>
-                <input type="submit" value="Enviar" class="click">
-                <input type="reset" class="click">
+                <div class="click">
+                    <input type="submit" value="Enviar" >
+                    <input type="reset" >
+                </div>
             </form>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13159.578485659235!2d-58.565321070533535!3d-34.45482278282007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca563da071d87%3A0x15dadeff3bd62193!2sCarrefour%20Market!5e0!3m2!1ses!2sar!4v1660554142630!5m2!1ses!2sar"

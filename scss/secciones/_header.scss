@@ -1,22 +1,23 @@
 .navbar{
-    background-color: #462749;
+    background-color: $purpura;
     nav{
         img{
             border-radius: 60%;
             width: 3em;
         }
-        button{
-            background-color: #F2D1C9;
+        button {
+            background-color:$rosaMistico;
         }
+        
         .menu{
             justify-content: flex-end;
             a{
                 color: white;
                 font-size: 15px;
-                font-family: 'Cabin', sans-serif;
+                font-family: $cabin;
                 &:hover{
                     font-weight: 800;
-                    color: #F2D1C9;
+                    color: $rosaMistico;
                 }
             }
         }
@@ -32,6 +33,12 @@
             img{
                 width: 5em;
             }
+            .menu{
+                a{
+                    font-size: 18px;
+                } 
+            }
+
         }
     }
 }
@@ -42,6 +49,11 @@
         nav{
             img{
                 width: 6em;
+            }
+            .menu{
+                a{
+                    font-size: 20px;
+                }
             }
         }
     }

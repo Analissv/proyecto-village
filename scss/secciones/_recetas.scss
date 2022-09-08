@@ -2,39 +2,29 @@ main{
     min-height: 100%;
     .migaPan{
         ol{
-          li{
-            margin: 15px;
+            li{
+             margin: 15px;
             
-            .iniNoImportante{
-                font-size: 12px;
-                color: $lila;
-                text-decoration: none;
-                &:hover{
+                .iniNoImportante{
+                    font-size: 12px;
+                    color: $lila;
+                    text-decoration: none;
+                    &:hover{
                     font-weight: bold;
-                  }
+                    }
     
-            }
-            .siguiente{
-                text-decoration: none;
-                  color: $purpura;
-                  font-size: 18px;
-                  font-family: $cabin;
-            }
+                }
+                .enPagina{
+                    text-decoration: none;
+                    color: $purpura;
+                    font-size: 18px;
+                    font-family: $cabin;
+                }
               
-          }
+            }
         }
       }
   
-    #bannerRecetas{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        img{
-            
-            max-width: 100%;
-
-        }
-    }
     #textoBannerRecetas{
             display: flex;
             flex-direction: column;
@@ -57,6 +47,8 @@ main{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(12, auto);
         grid-template-areas:
+          "recetas img2 img3"
+          "img1 img2 parrafo"
           "chocolatosas chocolatosas chocolatosas"
           "choc1 choc1 choc1"
           "choc2 choc2 choc2"
@@ -69,6 +61,57 @@ main{
           "sh1 sh1 sh1"
           "sh2 sh2 sh2"
           "sh3 sh3 sh3";
+        .recetas{
+            grid-area: recetas;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $rosaMistico;
+
+            h1{
+                font-size: 20px;
+                text-align: center;
+            }
+        
+        }
+        .img1{
+            grid-area: img1;
+            display: flex;
+            img{
+                padding: 0px;
+                border-radius: 0;
+            }
+        
+        }
+        .img2{
+            grid-area: img2;
+            display: flex;
+
+            img{
+                padding: 0px;
+                border-radius: 0;
+            }
+
+
+        }
+        .img3{
+            grid-area: img3;
+            img{
+                padding: 0px;
+                border-radius: 0;
+            }
+
+
+        }
+        .parrafo{
+            grid-area: parrafo;
+            font-size: 14px;
+            display: flex;
+            background-color: $lila;
+            p{
+                text-align: center
+            }
+        }
         .chocolatosas { 
             @include estiloContenedorTipoReceta(chocolatosas)
         }  
