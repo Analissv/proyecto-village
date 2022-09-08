@@ -44,23 +44,23 @@ main{
     
     .grid-container { 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(12, auto);
         grid-template-areas:
-          "recetas img2 img3"
-          "img1 img2 parrafo"
-          "chocolatosas chocolatosas chocolatosas"
-          "choc1 choc1 choc1"
-          "choc2 choc2 choc2"
-          "choc3 choc3 choc3"
-          "tartas tartas tartas"
-          "tart1 tart1 tart1"
-          "tart2 tart2 tart2"
-          "tart3 tart3 tart3"
-          "sinhorno sinhorno sinhorno"
-          "sh1 sh1 sh1"
-          "sh2 sh2 sh2"
-          "sh3 sh3 sh3";
+          "recetas img2 img2 img3"
+          "img1 img2 img2 parrafo"
+          "chocolatosas chocolatosas chocolatosas chocolatosas"
+          "choc1 choc1 choc1 choc1"
+          "choc2 choc2 choc2 choc2"
+          "choc3 choc3 choc3 choc3"
+          "tartas tartas tartas tartas"
+          "tart1 tart1 tart1 tart1"
+          "tart2 tart2 tart2 tart2"
+          "tart3 tart3 tart3 tart3"
+          "sinhorno sinhorno sinhorno sinhorno"
+          "sh1 sh1 sh1 sh1"
+          "sh2 sh2 sh2 sh2"
+          "sh3 sh3 sh3 sh3";
         .recetas{
             grid-area: recetas;
             display: flex;
