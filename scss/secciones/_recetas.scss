@@ -110,7 +110,7 @@ main{
             
                 img{
                     width: 18em;
-                    transition: all 500ms ease-out 10s;
+                    transition: all 500ms ease-out;
                     &:hover + .atras{
                         opacity: 1;
                         visibility: visible;
@@ -130,7 +130,7 @@ main{
                     justify-content: space-between;
                     width: 18em;
                     height: 100%;
-                    background: #4627493b;
+                    background: #462749ab;
                     transition: all 500ms ease-out;
                     opacity: 0;
                     visibility: hidden;
