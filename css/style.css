@@ -707,30 +707,69 @@ main {
     align-items: center;
     background-color: #ebbce436; }
     main .contacto form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       border: 2px solid rgba(0, 0, 0, 0.733);
       margin: 20px;
-      padding: 25px 10px; }
-      main .contacto form:hover {
-        background-color: #46274925; }
+      padding: 25px 25px; }
       main .contacto form .llenar {
-        justify-content: center;
         display: flex;
-        flex-direction: column; }
-        main .contacto form .llenar .input {
-          margin: 5px;
-          height: 30px; }
-          main .contacto form .llenar .input:focus {
-            border: solid 3px rgba(0, 0, 0, 0.336);
-            transition: 0.3s; }
-        main .contacto form .llenar textarea:focus {
-          border: solid 3px rgba(0, 0, 0, 0.336);
-          transition: 0.3s; }
-        main .contacto form .llenar #descripcion {
-          display: block; }
-        main .contacto form .llenar label {
-          font-family: "Cabin", sans-serif;
-          font-size: 12px;
-          align-items: flex-start; }
+        flex-direction: column;
+        justify-content: center; }
+        main .contacto form .llenar .escribirTexto {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+          margin: 10px 0 10px 0; }
+          main .contacto form .llenar .escribirTexto .input {
+            outline: none;
+            border: #462749 1px solid;
+            outline: none;
+            height: 30px;
+            font-size: 12px; }
+            main .contacto form .llenar .escribirTexto .input:focus + label, main .contacto form .llenar .escribirTexto .input:valid + label {
+              bottom: 1.3rem;
+              left: 0.5rem;
+              font-size: 10px;
+              background-color: #462749;
+              border-radius: 0.3em;
+              color: white;
+              padding: 2px;
+              letter-spacing: 2px; }
+          main .contacto form .llenar .escribirTexto label {
+            position: absolute;
+            transition: top 2s left 2s;
+            font-family: "Cabin", sans-serif;
+            font-size: 14px;
+            pointer-events: none;
+            margin-left: 5px; }
+          main .contacto form .llenar .escribirTexto #descripcion {
+            outline: none;
+            border: solid 1px #462749;
+            background: none;
+            outline: none;
+            height: 10em;
+            font-size: 12px; }
+            main .contacto form .llenar .escribirTexto #descripcion:focus + .comentario {
+              top: -1rem;
+              left: 0.5rem;
+              font-size: 10px;
+              background-color: #462749;
+              border-radius: 0.3em;
+              color: white;
+              padding: 2px;
+              margin-top: 5px;
+              letter-spacing: 2px; }
+          main .contacto form .llenar .escribirTexto .comentario {
+            position: absolute;
+            top: 5px;
+            transition: top 2s left 2s;
+            font-family: "Cabin", sans-serif;
+            font-size: 14px;
+            pointer-events: none;
+            margin-left: 5px; }
       main .contacto form .click {
         display: flex;
         flex-wrap: wrap;
@@ -743,7 +782,7 @@ main {
           font-size: 14px;
           border: #462749 10;
           background-color: rgba(0, 0, 0, 0.336); }
-          main .contacto form .click input:hover {
+          main .contacto form .click input:focus {
             font-size: 18px;
             background-color: #462749;
             color: white; }
@@ -785,18 +824,41 @@ main {
     align-content: center;
     align-items: center; }
     main .contacto form {
-      width: 30em; }
-      main .contacto form .llenar .input {
-        margin: 10px;
-        width: 26em; }
-      main .contacto form .llenar label {
-        font-size: 20px; }
-      main .contacto form .llenar #descripcion {
-        width: 26em; }
+      width: 25em; }
+      main .contacto form .llenar {
+        align-items: center; }
+        main .contacto form .llenar .escribirTexto .input {
+          margin: 10px;
+          width: 23em;
+          font-size: 15px; }
+        main .contacto form .llenar .escribirTexto .input:focus + label, main .contacto form .llenar .escribirTexto .input:valid + label {
+          bottom: 2.5em;
+          left: 1em;
+          font-size: 12px; }
+        main .contacto form .llenar .escribirTexto label {
+          font-size: 17px;
+          padding: 10px; }
+        main .contacto form .llenar .escribirTexto #descripcion {
+          width: 29em; }
+          main .contacto form .llenar .escribirTexto #descripcion:focus + .comentario {
+            left: 0.3em;
+            font-size: 15px; }
+        main .contacto form .llenar .escribirTexto .comentario {
+          font-size: 17px; }
       main .contacto form .click input {
-        font-size: 22px; }
+        font-size: 18px; }
     main .contacto .ubicacion {
       width: 28em; } }
+
+@media (min-width: 1440px) {
+  main .contacto form .llenar .escribirTexto .input {
+    width: 20em;
+    height: 35px;
+    font-size: 18px; }
+    main .contacto form .llenar .escribirTexto .input:focus + label, main .contacto form .llenar .escribirTexto .input:valid + label {
+      font-size: 15px; }
+  main .contacto form .llenar #descripcion {
+    width: 30em; } }
 
 .footer {
   display: flex;

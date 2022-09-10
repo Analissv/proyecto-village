@@ -45,62 +45,108 @@ main{
         align-items: center;
         background-color: $rosaParaFondo;
         form{
-            border:2px solid rgba(0, 0, 0, 0.733);
-            margin: 20px;
-            padding: 25px 10px;
-            &:hover{
-              background-color:#46274925;
-            }
-
-            .llenar{
-              justify-content: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border:2px solid rgba(0, 0, 0, 0.733);
+          margin: 20px;
+          padding: 25px 25px;
+          .llenar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         
+            .escribirTexto{
               display: flex;
               flex-direction: column;
+              justify-content:center;
+              position: relative;
+              margin: 10px 0 10px 0;
               .input{
-                margin: 5px;
+                outline: none;
+                border:$purpura 1px solid;
+                outline: none;
                 height: 30px;
-                &:focus{
-                    border: solid 3px rgba(0, 0, 0, 0.336);
-                    transition: 0.3s;
+                font-size: 12px;
+               &:focus + label, &:valid + label{
+                  bottom: 1.3rem;
+                  left: 0.5rem;
+                  font-size: 10px;
+                  background-color:$purpura;
+                  border-radius: 0.3em;
+                  color: white;
+                  padding: 2px;
+                  letter-spacing: 2px;
                 }
-              }
-              textarea:focus{
-                border: solid 3px rgba(0, 0, 0, 0.336);
-                transition: 0.3s;
-              }
-              #descripcion{
-                display: block;
               }
               label{
-                font-family: $cabin;
-                font-size: 12px;
-                align-items: flex-start;
-              }  
-            }
-            .click{
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              input{
-                margin: 10px;
-                padding: 5px;
-                border-radius: 0.5em;
+                position: absolute;
+                transition: top 2s left 2s;
                 font-family: $cabin;
                 font-size: 14px;
-                border: $purpura 10;
-                background-color: rgba(0, 0, 0, 0.336);
-                &:hover{
-                  font-size: 18px;
-                  background-color: $purpura;
+                pointer-events: none;
+                margin-left:5px ;
+                               
+              }
+              #descripcion{
+                outline: none;
+                border:solid 1px $purpura;
+                background: none;
+                outline: none;
+                height: 10em;
+                font-size: 12px;
+    
+                &:focus + .comentario{
+                  top: -1rem;
+                  left: 0.5rem;
+                  font-size: 10px;
+                  background-color:$purpura;
+                  border-radius: 0.3em;
                   color: white;
+                  padding: 2px;
+                  margin-top: 5px;
+                  letter-spacing: 2px;
+
+
                 }
+              }
+              .comentario{
+                position: absolute;
+                top: 5px;
+                transition: top 2s left 2s;
+                font-family: $cabin;
+                font-size: 14px;
+                pointer-events: none;
+                margin-left:5px ;
+
               }
             }
           }
+          .click{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            input{
+              margin: 10px;
+              padding: 5px;
+              border-radius: 0.5em;
+              font-family: $cabin;
+              font-size: 14px;
+              border: $purpura 10;
+              background-color: rgba(0, 0, 0, 0.336);
+              &:focus{
+                font-size: 18px;
+                background-color: $purpura;
+                color: white;
+              }
+            }
+          }
+        } 
         .ubicacion{
-            width: 18em;
-            margin: 15px;
-        }
+          width: 18em;
+          margin: 15px;
+      }
+   
       }
 }
 
@@ -173,23 +219,46 @@ main{
             align-content: center;
             align-items: center;
             form{
-                width: 30em;
+                width: 25em;
                 .llenar{
-                  .input{
-                    margin: 10px;
-                    width: 26em; 
-                  }
-                  label{
-                    font-size: 20px;
-                  }
-                  #descripcion{
-                    width: 26em;
+                  align-items: center;
+                  .escribirTexto{
+
+                    .input{
+                      margin: 10px;
+                      width: 23em;
+                      font-size: 15px;
+                    }
+                    .input{
+                      &:focus + label,  &:valid + label{
+                        bottom: 2.5em;
+                        left: 1em;
+                        font-size: 12px
+
+                      }
+
+                    }
+                    label{
+                      font-size: 17px;
+                      padding: 10px;
+                    }
+                    #descripcion{
+                      width: 29em;
+                      &:focus + .comentario{
+                        left: 0.3em;
+                        font-size: 15px;
+                      }
+                    }
+                    .comentario{
+                      font-size: 17px;
+                    }
+  
                   }
 
                 }
                 .click{
                   input{
-                    font-size: 22px;
+                    font-size: 18px;
                   }
                 }
             }
@@ -200,4 +269,27 @@ main{
     
     }
 
+}
+@media(min-width:1440px){
+  main{
+    .contacto{
+      form{
+        .llenar{
+          .escribirTexto{
+            .input{
+              width: 20em;
+              height: 35px;
+              font-size: 18px;
+              &:focus + label, &:valid + label{
+                font-size: 15px;
+              }
+            }
+          }
+          #descripcion{
+            width: 30em;
+          }
+        }
+      }
+    }
+  }
 }
