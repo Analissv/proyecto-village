@@ -258,9 +258,6 @@ main {
         font-size: 45px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
-        main .grid-container .chocolatosas h3:hover {
-          transform: scale(1.5);
-          transition: 0.6s; }
     main .grid-container .choc1 {
       grid-area: choc1;
       display: flex;
@@ -530,9 +527,6 @@ main {
         font-size: 45px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
-        main .grid-container .tartas h3:hover {
-          transform: scale(1.5);
-          transition: 0.6s; }
     main .grid-container .tart1 {
       grid-area: tart1;
       display: flex;
@@ -802,9 +796,6 @@ main {
         font-size: 45px;
         font-weight: bold;
         color: rgba(0, 0, 0, 0.801); }
-        main .grid-container .sinHorno h3:hover {
-          transform: scale(1.5);
-          transition: 0.6s; }
     main .grid-container .sH1 {
       grid-area: sh1;
       display: flex;
