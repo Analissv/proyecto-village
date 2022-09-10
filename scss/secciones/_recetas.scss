@@ -91,113 +91,19 @@ main{
             @include estiloContenedorTipoReceta(chocolatosas)
         }  
         .choc1{ 
-            grid-area: choc1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: $rosaParaFondo;
-            margin: 25px 0 25px 0;
-            div{
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 18em;
-                overflow: hidden;
-                border-radius: 6px;
-                box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-            
-                img{
-                    width: 18em;
-                    transition: all 500ms ease-out;
-                    &:hover + .atras{
-                        opacity: 1;
-                        visibility: visible;
-                        
-                    }
-                    &:hover{
-                        transform: scale(1.3);
-                    }
-    
-                }
-                .atras{
-                    position: absolute;
-                    top: 0;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    justify-content: space-between;
-                    width: 18em;
-                    height: 100%;
-                    background: #462749c0;
-                    transition: all 500ms ease-out;
-                    opacity: 0;
-                    visibility: hidden;
-                    text-align: center;
-                    h4{
-                        font-family: $cabin;
-                        font-size: 25px;
-                        margin: 15px 0 15px 0;
-                        font-weight:bold;
-                        color: $rosaMistico;
-                    }
-                    p{
-                        font-family: $cabin;
-                        font-size: 16px;
-                        color: $rosaMistico
-                    }
-                    a{
-                        
-                        border-radius: 6%;
-                        font-family: $cabin;
-                        font-weight: bold;
-                        font-size: 15px;
-                        text-decoration: none;
-                        color: $purpura;
-                        background-color: $rosaMistico
-                        
-                    }
-        
-                }
-
-            }
-        
+            @include estiloCadaContenedorReceta(choc1);
         }
         .choc2 { 
             @include estiloCadaContenedorReceta (choc2);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-  
-            }
         }
         .choc3 { 
             @include estiloCadaContenedorReceta (choc3);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
         }
         .choc4 { 
             @include estiloCadaContenedorReceta (choc4);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
         }
 
 
@@ -208,53 +114,23 @@ main{
         .tart1 { 
             @include estiloCadaContenedorReceta (tart1);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
 
         }
           
         .tart2 { 
             @include estiloCadaContenedorReceta (tart2);
 
-            img{
-                @extend %estiloImgSeccRecetas;
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
 
         }
           
         .tart3 { 
             @include estiloCadaContenedorReceta (tart3);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
 
         }
         .tart4 { 
             @include estiloCadaContenedorReceta (tart4);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
 
         }
 
@@ -266,55 +142,20 @@ main{
         .sH1 { 
             @include estiloCadaContenedorReceta (sh1);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
-
         }
           
         .sH2 { 
             @include estiloCadaContenedorReceta (sh2);
-
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
 
         }
           
         .sH3 { 
             @include estiloCadaContenedorReceta (sh3);
 
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
 
         }
         .sH4 { 
             @include estiloCadaContenedorReceta (sh4);
-
-            img{
-                @extend %estiloImgSeccRecetas;       
-
-            }
-            h4{
-                @extend %estiloH3SeccRecetas;
-
-            }
 
         }
 
@@ -451,11 +292,20 @@ main{
             flex-direction: column;
         }
         .choc1, .choc2, .choc3, .choc4, .tart1, .tart2, .tart3, .tart4, .sH1, .sH2, .sH3, .sH4{
-            img{
-                width: 10em;
+            margin: 15px;
+            .adelante{
+                width: 12em;
+                h3{
+                    font-size: 18px;
+                }
             }
-            h4{
-                font-size: 20px; 
+            .atras{
+                width: 12em;
+                h4{
+                    font-size: 20px; 
+                }
+                
+    
             }
         }
         .chocolatosas, .tartas, .sinHorno{
@@ -483,11 +333,15 @@ main{
                 }
             }
             .choc1, .choc2, .choc3, .choc4, .tart1, .tart2, .tart3, .tart4, .sH1, .sH2, .sH3, .sH4{
-                img{
-                    width: 22em;
+                .adelante{
+                    width: 15em;
+                    h3{
+                        font-size: 23px;
+                    }
                 }
-                h4{
-                    font-size: 25px; 
+                .atras{
+                    width: 15em;
+                    
                 }
             }
     
