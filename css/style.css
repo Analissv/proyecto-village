@@ -307,7 +307,7 @@ main {
           justify-content: space-between;
           width: 18em;
           height: 100%;
-          background: #462749ab;
+          background: #462749c0;
           transition: all 500ms ease-out;
           opacity: 0;
           visibility: hidden;
@@ -317,17 +317,15 @@ main {
             font-size: 25px;
             margin: 15px 0 15px 0;
             font-weight: bold;
-            color: black; }
+            color: #F2D1C9; }
           main .grid-container .choc1 div .atras p {
             font-family: "Cabin", sans-serif;
             font-size: 16px;
-            font-weight: bold;
-            color: black; }
+            color: #F2D1C9; }
           main .grid-container .choc1 div .atras a {
-            padding: 5px;
             border-radius: 6%;
-            font-weight: bold;
             font-family: "Cabin", sans-serif;
+            font-weight: bold;
             font-size: 15px;
             text-decoration: none;
             color: #462749;
