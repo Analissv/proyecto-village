@@ -44,34 +44,72 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         background-color:$rosaParaFondo ;
-        padding: 10px 0 10px 0;
-        img{
-            width: 19em;
-            margin: 15px 0 18px 0;
-            border-radius: 5% ;
-            &:hover{
-                transform: skewX(1deg);
-                transition: 1s;
-                opacity: 0.6;
-                border: groove;
-            }
-        }
-        .nombrePrecio{
+        margin: 10px 0 10px 0;
+        .cardProd{
             display: flex;
             flex-direction: column;
-            margin: 15px;
-            h3{
-                font-family: $cabin;
-                font-size: 15px;
-                font-weight: bold;
-                color: rgba(0, 0, 0, 0.842);
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 23em;
+            width: 19em;
+            margin: 15px 0 15px 0;
+            padding: 10px;
+            position: relative;
+            transition: all 500ms ease-out;
+            &:hover {
+                box-shadow: 0px 12px 16px rgba(0,0,0, 0.2) ;
+                transform: translateY(-15px);
             }
-            p{
-                font-family: $cabin;
-                font-size: 15px;
-                color: $purpura;
-                font-weight: 800;
+            &:hover img{
+                opacity: 0.6;
             }
+            img{
+                width: 100%;
+                    
+            }
+            .nombrePrecio{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 15px 0 15px 0 ;
+                padding: 10px;
+                h3{
+                    font-family: $cabin;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.842);
+                }
+                p{
+                    font-family:$cabin;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.842);
+                    text-align: justify ;
+                    
+                }
+                span{
+                    font-family: $cabin;
+                    font-size: 15px;
+                    color: rgba(0, 0, 0, 0.842);
+                    font-weight: 800;
+                }
+                button{
+                    width: 5em;
+                    border-radius: 0.25rem;
+                    font-size: 12px;
+                    background-color: $purpura;
+                    color: $rosaMistico;
+                    border: none;
+                    padding: 6px;
+                    transition: all 500ms ease-out;
+                    &:hover{
+                        transform: scale(1.2);
+                        font-weight: bold;
+                    }
+
+                }
+            }
+
         }
 
         
@@ -97,17 +135,6 @@ main{
         .productos{
             h1{
                 font-size: 35px;
-            }
-        }
-        .precios{
-            margin: auto;
-            width: 85%;
-            div{
-                img{
-                    width: 10em;  
-                    margin: 25px 25px 25px 25px; 
-                }
-    
             }
         }
     }
@@ -136,14 +163,6 @@ main{
         }
     }
 
-    .precios{
-        width: 75%;
-        div{
-            img{
-                width: 12em;
-            }
-        }
-    }
    } 
 }
 
@@ -151,26 +170,32 @@ main{
 @media(min-width: 1440px){
     main{
         .productos{
+            margin-bottom: 80px;
+            padding: 80px;
+
             h1{
                 font-size: 55px;
             }
         }
         .precios{
             width: 75%;
-            div{
-                img{
-                    width: 19em;
-                }
-    
-            }
-            .nombrePrecio{
-                h3{
-                    font-size: 20px;
-                }
-                p{
-                    font-size: 20px;
+            margin:auto;
+            .cardProd{
+                width: 25em;
+                height: 30em;
+                .nombrePrecio{
+                    h3{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    button{
+                        font-size: 15px;
+                    }
                 }
             }
         }
+
     }
 }

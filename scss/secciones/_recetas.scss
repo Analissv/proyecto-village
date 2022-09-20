@@ -274,10 +274,13 @@ main{
           "img2 img2 img1 parrafo"
           "chocolatosas chocolatosas chocolatosas chocolatosas"
           "choc1 choc2 choc3 choc4"
+
           "tartas tartas tartas tartas"
           "tart1 tart2 tart3 tart4"
+
           "sinhorno sinhorno sinhorno sinhorno"
           "sh1 sh2 sh3 sh4";
+
         .receta{
             h1{
                 font-size: 50px;
@@ -293,17 +296,23 @@ main{
             flex-direction: column;
         }
         .choc1, .choc2, .choc3, .choc4, .tart1, .tart2, .tart3, .tart4, .sH1, .sH2, .sH3, .sH4{
-            margin: 15px;
+            width: 12em;
+            height: 12em;
             .adelante{
-                width: 12em;
+    
                 h3{
                     font-size: 18px;
                 }
             }
             .atras{
-                width: 12em;
                 h4{
-                    font-size: 20px; 
+                    font-size: 15px; 
+                }
+                p{
+                    font-size: 12px;
+                }
+                a{
+                    font-size: 12px;
                 }
                 
     
@@ -323,6 +332,28 @@ main{
 @media(min-width: 1440px){
     main{
         .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(17, auto);
+            grid-template-areas:
+              "img2 img2 recetas img3"
+              "img2 img2 img1 parrafo"
+              "chocolatosas chocolatosas chocolatosas chocolatosas"
+              "choc1 choc1 choc2 choc2"
+              "choc1 choc1 choc2 choc2"
+              "choc3 choc3 choc4 choc4"
+              "choc3 choc3 choc4 choc4"
+              "tartas tartas tartas tartas"
+              "tart1 tart1 tart2 tart2"
+              "tart1 tart1 tart2 tart2"
+              "tart3 tart3 tart4 tart4"
+              "tart3 tart3 tart4 tart4"
+              "sinhorno sinhorno sinhorno sinhorno"
+              "sh1 sh1 sh2 sh2"
+              "sh1 sh1 sh2 sh2"
+              "sh3 sh3 sh4 sh4"
+              "sh3 sh3 sh4 sh4";
+
             .recetas{
                 h1{
                     font-size: 60px;
@@ -334,14 +365,26 @@ main{
                 }
             }
             .choc1, .choc2, .choc3, .choc4, .tart1, .tart2, .tart3, .tart4, .sH1, .sH2, .sH3, .sH4{
+                width: 35em;
+                height: 28em;
+              
                 .adelante{
-                    width: 15em;
+                
                     h3{
-                        font-size: 23px;
+                        font-size: 25px;
                     }
                 }
                 .atras{
-                    width: 15em;
+                    height: 20em;
+                    h4{
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    a{
+                        font-size: 20px;
+                    }
                     
                 }
             }

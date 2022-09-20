@@ -1173,7 +1173,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas: "img2 img2 recetas img3" "img2 img2 img1 parrafo" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3 choc4" "tartas tartas tartas tartas" "tart1 tart2 tart3 tart4" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh2 sh3 sh4"; }
+    grid-template-areas: "img2 img2 recetas img3" "img2 img2 img1 parrafo" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc2 choc3 choc4"  "tartas tartas tartas tartas" "tart1 tart2 tart3 tart4"  "sinhorno sinhorno sinhorno sinhorno" "sh1 sh2 sh3 sh4"; }
     main .grid-container .receta h1 {
       font-size: 50px; }
     main .grid-container .parrafo p {
@@ -1181,30 +1181,43 @@ main {
     main .grid-container .img2 {
       flex-direction: column; }
     main .grid-container .choc1, main .grid-container .choc2, main .grid-container .choc3, main .grid-container .choc4, main .grid-container .tart1, main .grid-container .tart2, main .grid-container .tart3, main .grid-container .tart4, main .grid-container .sH1, main .grid-container .sH2, main .grid-container .sH3, main .grid-container .sH4 {
-      margin: 15px; }
-      main .grid-container .choc1 .adelante, main .grid-container .choc2 .adelante, main .grid-container .choc3 .adelante, main .grid-container .choc4 .adelante, main .grid-container .tart1 .adelante, main .grid-container .tart2 .adelante, main .grid-container .tart3 .adelante, main .grid-container .tart4 .adelante, main .grid-container .sH1 .adelante, main .grid-container .sH2 .adelante, main .grid-container .sH3 .adelante, main .grid-container .sH4 .adelante {
-        width: 12em; }
-        main .grid-container .choc1 .adelante h3, main .grid-container .choc2 .adelante h3, main .grid-container .choc3 .adelante h3, main .grid-container .choc4 .adelante h3, main .grid-container .tart1 .adelante h3, main .grid-container .tart2 .adelante h3, main .grid-container .tart3 .adelante h3, main .grid-container .tart4 .adelante h3, main .grid-container .sH1 .adelante h3, main .grid-container .sH2 .adelante h3, main .grid-container .sH3 .adelante h3, main .grid-container .sH4 .adelante h3 {
-          font-size: 18px; }
-      main .grid-container .choc1 .atras, main .grid-container .choc2 .atras, main .grid-container .choc3 .atras, main .grid-container .choc4 .atras, main .grid-container .tart1 .atras, main .grid-container .tart2 .atras, main .grid-container .tart3 .atras, main .grid-container .tart4 .atras, main .grid-container .sH1 .atras, main .grid-container .sH2 .atras, main .grid-container .sH3 .atras, main .grid-container .sH4 .atras {
-        width: 12em; }
-        main .grid-container .choc1 .atras h4, main .grid-container .choc2 .atras h4, main .grid-container .choc3 .atras h4, main .grid-container .choc4 .atras h4, main .grid-container .tart1 .atras h4, main .grid-container .tart2 .atras h4, main .grid-container .tart3 .atras h4, main .grid-container .tart4 .atras h4, main .grid-container .sH1 .atras h4, main .grid-container .sH2 .atras h4, main .grid-container .sH3 .atras h4, main .grid-container .sH4 .atras h4 {
-          font-size: 20px; }
+      width: 12em;
+      height: 12em; }
+      main .grid-container .choc1 .adelante h3, main .grid-container .choc2 .adelante h3, main .grid-container .choc3 .adelante h3, main .grid-container .choc4 .adelante h3, main .grid-container .tart1 .adelante h3, main .grid-container .tart2 .adelante h3, main .grid-container .tart3 .adelante h3, main .grid-container .tart4 .adelante h3, main .grid-container .sH1 .adelante h3, main .grid-container .sH2 .adelante h3, main .grid-container .sH3 .adelante h3, main .grid-container .sH4 .adelante h3 {
+        font-size: 18px; }
+      main .grid-container .choc1 .atras h4, main .grid-container .choc2 .atras h4, main .grid-container .choc3 .atras h4, main .grid-container .choc4 .atras h4, main .grid-container .tart1 .atras h4, main .grid-container .tart2 .atras h4, main .grid-container .tart3 .atras h4, main .grid-container .tart4 .atras h4, main .grid-container .sH1 .atras h4, main .grid-container .sH2 .atras h4, main .grid-container .sH3 .atras h4, main .grid-container .sH4 .atras h4 {
+        font-size: 15px; }
+      main .grid-container .choc1 .atras p, main .grid-container .choc2 .atras p, main .grid-container .choc3 .atras p, main .grid-container .choc4 .atras p, main .grid-container .tart1 .atras p, main .grid-container .tart2 .atras p, main .grid-container .tart3 .atras p, main .grid-container .tart4 .atras p, main .grid-container .sH1 .atras p, main .grid-container .sH2 .atras p, main .grid-container .sH3 .atras p, main .grid-container .sH4 .atras p {
+        font-size: 12px; }
+      main .grid-container .choc1 .atras a, main .grid-container .choc2 .atras a, main .grid-container .choc3 .atras a, main .grid-container .choc4 .atras a, main .grid-container .tart1 .atras a, main .grid-container .tart2 .atras a, main .grid-container .tart3 .atras a, main .grid-container .tart4 .atras a, main .grid-container .sH1 .atras a, main .grid-container .sH2 .atras a, main .grid-container .sH3 .atras a, main .grid-container .sH4 .atras a {
+        font-size: 12px; }
     main .grid-container .chocolatosas h3, main .grid-container .tartas h3, main .grid-container .sinHorno h3 {
       font-size: 70px; } }
 
 /*media query.......................................................................................................*/
 @media (min-width: 1440px) {
-  main .grid-container .recetas h1 {
-    font-size: 60px; }
-  main .grid-container .parrafo p {
-    font-size: 50px; }
-  main .grid-container .choc1 .adelante, main .grid-container .choc2 .adelante, main .grid-container .choc3 .adelante, main .grid-container .choc4 .adelante, main .grid-container .tart1 .adelante, main .grid-container .tart2 .adelante, main .grid-container .tart3 .adelante, main .grid-container .tart4 .adelante, main .grid-container .sH1 .adelante, main .grid-container .sH2 .adelante, main .grid-container .sH3 .adelante, main .grid-container .sH4 .adelante {
-    width: 15em; }
-    main .grid-container .choc1 .adelante h3, main .grid-container .choc2 .adelante h3, main .grid-container .choc3 .adelante h3, main .grid-container .choc4 .adelante h3, main .grid-container .tart1 .adelante h3, main .grid-container .tart2 .adelante h3, main .grid-container .tart3 .adelante h3, main .grid-container .tart4 .adelante h3, main .grid-container .sH1 .adelante h3, main .grid-container .sH2 .adelante h3, main .grid-container .sH3 .adelante h3, main .grid-container .sH4 .adelante h3 {
-      font-size: 23px; }
-  main .grid-container .choc1 .atras, main .grid-container .choc2 .atras, main .grid-container .choc3 .atras, main .grid-container .choc4 .atras, main .grid-container .tart1 .atras, main .grid-container .tart2 .atras, main .grid-container .tart3 .atras, main .grid-container .tart4 .atras, main .grid-container .sH1 .atras, main .grid-container .sH2 .atras, main .grid-container .sH3 .atras, main .grid-container .sH4 .atras {
-    width: 15em; } }
+  main .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(17, auto);
+    grid-template-areas: "img2 img2 recetas img3" "img2 img2 img1 parrafo" "chocolatosas chocolatosas chocolatosas chocolatosas" "choc1 choc1 choc2 choc2" "choc1 choc1 choc2 choc2" "choc3 choc3 choc4 choc4" "choc3 choc3 choc4 choc4" "tartas tartas tartas tartas" "tart1 tart1 tart2 tart2" "tart1 tart1 tart2 tart2" "tart3 tart3 tart4 tart4" "tart3 tart3 tart4 tart4" "sinhorno sinhorno sinhorno sinhorno" "sh1 sh1 sh2 sh2" "sh1 sh1 sh2 sh2" "sh3 sh3 sh4 sh4" "sh3 sh3 sh4 sh4"; }
+    main .grid-container .recetas h1 {
+      font-size: 60px; }
+    main .grid-container .parrafo p {
+      font-size: 50px; }
+    main .grid-container .choc1, main .grid-container .choc2, main .grid-container .choc3, main .grid-container .choc4, main .grid-container .tart1, main .grid-container .tart2, main .grid-container .tart3, main .grid-container .tart4, main .grid-container .sH1, main .grid-container .sH2, main .grid-container .sH3, main .grid-container .sH4 {
+      width: 35em;
+      height: 28em; }
+      main .grid-container .choc1 .adelante h3, main .grid-container .choc2 .adelante h3, main .grid-container .choc3 .adelante h3, main .grid-container .choc4 .adelante h3, main .grid-container .tart1 .adelante h3, main .grid-container .tart2 .adelante h3, main .grid-container .tart3 .adelante h3, main .grid-container .tart4 .adelante h3, main .grid-container .sH1 .adelante h3, main .grid-container .sH2 .adelante h3, main .grid-container .sH3 .adelante h3, main .grid-container .sH4 .adelante h3 {
+        font-size: 25px; }
+      main .grid-container .choc1 .atras, main .grid-container .choc2 .atras, main .grid-container .choc3 .atras, main .grid-container .choc4 .atras, main .grid-container .tart1 .atras, main .grid-container .tart2 .atras, main .grid-container .tart3 .atras, main .grid-container .tart4 .atras, main .grid-container .sH1 .atras, main .grid-container .sH2 .atras, main .grid-container .sH3 .atras, main .grid-container .sH4 .atras {
+        height: 20em; }
+        main .grid-container .choc1 .atras h4, main .grid-container .choc2 .atras h4, main .grid-container .choc3 .atras h4, main .grid-container .choc4 .atras h4, main .grid-container .tart1 .atras h4, main .grid-container .tart2 .atras h4, main .grid-container .tart3 .atras h4, main .grid-container .tart4 .atras h4, main .grid-container .sH1 .atras h4, main .grid-container .sH2 .atras h4, main .grid-container .sH3 .atras h4, main .grid-container .sH4 .atras h4 {
+          font-size: 28px; }
+        main .grid-container .choc1 .atras p, main .grid-container .choc2 .atras p, main .grid-container .choc3 .atras p, main .grid-container .choc4 .atras p, main .grid-container .tart1 .atras p, main .grid-container .tart2 .atras p, main .grid-container .tart3 .atras p, main .grid-container .tart4 .atras p, main .grid-container .sH1 .atras p, main .grid-container .sH2 .atras p, main .grid-container .sH3 .atras p, main .grid-container .sH4 .atras p {
+          font-size: 20px; }
+        main .grid-container .choc1 .atras a, main .grid-container .choc2 .atras a, main .grid-container .choc3 .atras a, main .grid-container .choc4 .atras a, main .grid-container .tart1 .atras a, main .grid-container .tart2 .atras a, main .grid-container .tart3 .atras a, main .grid-container .tart4 .atras a, main .grid-container .sH1 .atras a, main .grid-container .sH2 .atras a, main .grid-container .sH3 .atras a, main .grid-container .sH4 .atras a {
+          font-size: 20px; } }
 
 main {
   min-height: 100%; }
@@ -1237,30 +1250,59 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #ebbce436;
-    padding: 10px 0 10px 0; }
-    main .precios img {
-      width: 19em;
-      margin: 15px 0 18px 0;
-      border-radius: 5%; }
-      main .precios img:hover {
-        transform: skewX(1deg);
-        transition: 1s;
-        opacity: 0.6;
-        border: groove; }
-    main .precios .nombrePrecio {
+    margin: 10px 0 10px 0; }
+    main .precios .cardProd {
       display: flex;
       flex-direction: column;
-      margin: 15px; }
-      main .precios .nombrePrecio h3 {
-        font-family: "Cabin", sans-serif;
-        font-size: 15px;
-        font-weight: bold;
-        color: rgba(0, 0, 0, 0.842); }
-      main .precios .nombrePrecio p {
-        font-family: "Cabin", sans-serif;
-        font-size: 15px;
-        color: #462749;
-        font-weight: 800; }
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      height: 23em;
+      width: 19em;
+      margin: 15px 0 15px 0;
+      padding: 10px;
+      position: relative;
+      transition: all 500ms ease-out; }
+      main .precios .cardProd:hover {
+        box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-15px); }
+      main .precios .cardProd:hover img {
+        opacity: 0.6; }
+      main .precios .cardProd img {
+        width: 100%; }
+      main .precios .cardProd .nombrePrecio {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 15px 0 15px 0;
+        padding: 10px; }
+        main .precios .cardProd .nombrePrecio h3 {
+          font-family: "Cabin", sans-serif;
+          font-size: 15px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.842); }
+        main .precios .cardProd .nombrePrecio p {
+          font-family: "Cabin", sans-serif;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.842);
+          text-align: justify; }
+        main .precios .cardProd .nombrePrecio span {
+          font-family: "Cabin", sans-serif;
+          font-size: 15px;
+          color: rgba(0, 0, 0, 0.842);
+          font-weight: 800; }
+        main .precios .cardProd .nombrePrecio button {
+          width: 5em;
+          border-radius: 0.25rem;
+          font-size: 12px;
+          background-color: #462749;
+          color: #F2D1C9;
+          border: none;
+          padding: 6px;
+          transition: all 500ms ease-out; }
+          main .precios .cardProd .nombrePrecio button:hover {
+            transform: scale(1.2);
+            font-weight: bold; }
 
 /* madia query....................................................................................................................*/
 @media (min-width: 768px) {
@@ -1269,13 +1311,7 @@ main {
   main .migaPan ol li .enPagina {
     font-size: 20px; }
   main .productos h1 {
-    font-size: 35px; }
-  main .precios {
-    margin: auto;
-    width: 85%; }
-    main .precios div img {
-      width: 10em;
-      margin: 25px 25px 25px 25px; } }
+    font-size: 35px; } }
 
 /* madia query....................................................................................................................*/
 @media (min-width: 1024px) {
@@ -1284,24 +1320,27 @@ main {
   main .migaPan ol li .enPagina {
     font-size: 28px; }
   main .productos h1 {
-    font-size: 45px; }
-  main .precios {
-    width: 75%; }
-    main .precios div img {
-      width: 12em; } }
+    font-size: 45px; } }
 
 /* madia query....................................................................................................................*/
 @media (min-width: 1440px) {
-  main .productos h1 {
-    font-size: 55px; }
+  main .productos {
+    margin-bottom: 80px;
+    padding: 80px; }
+    main .productos h1 {
+      font-size: 55px; }
   main .precios {
-    width: 75%; }
-    main .precios div img {
-      width: 19em; }
-    main .precios .nombrePrecio h3 {
-      font-size: 20px; }
-    main .precios .nombrePrecio p {
-      font-size: 20px; } }
+    width: 75%;
+    margin: auto; }
+    main .precios .cardProd {
+      width: 25em;
+      height: 30em; }
+      main .precios .cardProd .nombrePrecio h3 {
+        font-size: 20px; }
+      main .precios .cardProd .nombrePrecio p {
+        font-size: 15px; }
+      main .precios .cardProd .nombrePrecio button {
+        font-size: 15px; } }
 
 main {
   min-height: 100%; }
