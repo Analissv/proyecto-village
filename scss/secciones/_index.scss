@@ -1,107 +1,162 @@
-main{
-    min-height:100%;
-    .migaPan{
-        ol{
-            li{
+main {
+    min-height: 100%;
+
+    .migaPan {
+        ol {
+            li {
                 margin: 15px;
-                .enPagina{
+
+                .enPagina {
                     text-decoration: none;
                     color: $purpura;
                     font-size: 12px;
                     font-family: $cabin;
-                
-                }             
+
+                }
             }
         }
     }
-    .section0{
+
+    .section0 {
         display: flex;
-        background-color: #ebbce436;        
+        background-color: #ebbce436;
         justify-content: center;
         height: 6em;
-        h1{
+
+        h1, p {
             margin: auto;
             color: rgba(0, 0, 0, 0.815);
             font-family: 'Caveat', cursive;
             font-size: 25px;
         }
     }
-    #todasSection{
-        .section{
-            .imgTexto{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 25px;
+
+    .section {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imgSection {
+            img {
+                width: 100%;
+                transition: all 1s ease-in-out;
+
             }
-            p{
-                font-family: 'Cabin', sans-serif;
-                background-color: #4627499d;
+    
+        }
+
+        .textoSection {
+            padding: 10px;
+            transition: all 1s ease-in-out;
+
+            h3 {
+                font-family: $cabin;
+                font-size: 15px;
                 text-align: center;
-                margin: 15px;
-                border-radius: 0.30rem;
-                &:hover{
-                    transform: scale(1.2);
-                    font-weight: bold;
-                    transition: 0.2s;
-                  }
-              }
-        }
-        .sectionVideo{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-content: space-around;
-            video{
-                width: 15em;
-                height: 10em;
-                margin: 10px 0 10px 0;
-    
+
             }
-        }
+
+            p {
+                font-family: $cabin;
+                font-size: 12px;
+                text-align: center;
+
+            }
     
+        }
+        &:hover img{
+            transform: scale(0.9);
+        }
+        &:hover .textoSection{
+            background-color:$lilaClaro;
+
+        }
+
+
     }
+
+    #parallax {
+        background-image: url(https://images.unsplash.com/photo-1591899495446-836c1c873ae7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-family: $cabin;
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    .sectionVideo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+
+        video {
+            width: 15em;
+            height: 10em;
+            margin: 10px 0 10px 0;
+
+        }
+    }
+
+
 
 }
 
 /*media query 768....................................................................................................................................................*/
-@media(min-width:768px){
-    main{
-        .migaPan{
-            ol{
-                li{
+@media(min-width:768px) {
+    main {
+        .migaPan {
+            ol {
+                li {
                     font-size: 20px;
-                    
+
                 }
             }
         }
-        .section0{
+
+        .section0 {
             flex-direction: column;
             height: 6em;
-            h1{
+
+            h1, p {
                 font-size: 2em;
             }
         }
-        #todasSection{
+        .section{
+            width: 80%;
+            margin: auto;
             display: flex;
-            flex-wrap: wrap;
-            align-content: stretch;
-            justify-content: space-evenly;
-            .section{
-                .imgTexto{
-                    img{
-                        width: 20em;
-                        border-radius: 5%;
-                    }
-                }
-            }
-            .sectionVideo{
-                video{
-                    width: 25em;
-                    height: 15em;  
-                }
+            flex-direction: row;
+            .imgSection, .textoSection {
+                width: 50%;
             }
         }
+        .invertir{
+            display: flex;
+            flex-direction: row-reverse;
+            .imgSection , .textoSection{
+                width: 50%;
+            }
+
+        }
+        .sectionVideo {
+            margin: 20px;
+            video {
+                width: 25em;
+                height: 15em;
+            }
+        }
+
     }
 }
 
@@ -122,41 +177,47 @@ main{
         .section0{
             flex-direction: column;
             height: 10em;
-            h1{
+            h1, p{
                 font-size: 4em;
             }
         }
-        #todasSection{
-            width: 75%;
-            margin: auto;
-            .section{
-                .imgTexto{
-                    img{
-                        width: 20em;
-                    }
-                    p{
-                        font-size: 25px; 
-                    }
+        .section{
+            .textoSection{
+                h3{
+                    font-size: 30px;
                 }
-                
+                p{
+                    font-size: 20px;
+                    padding: 10px;
+                }
+            }
+        }
+        #parallax{
+            height: 18em;
+            span{
+                font-size: 45px;
             }
         }
     }
 }
 
 /*media query 1024....................................................................................................................................................*/
-@media(min-width:1024px){
-    #todasSection{
-        .section{
-            .imgTexto{
-                img{
-                    width: 30em;
-                }
-                p{
-                    font-size: 25px; 
-                }
+@media(min-width:1440px){
+    .section{
+        .textoSection{
+            h3{
+                font-size: 40px;
             }
-            
+            p{
+                font-size: 30px;
+                padding: 35px;
+            }
+        }
+    }
+    #parallax{
+        height: 25em;
+        span{
+            font-size: 50px;
         }
     }
 

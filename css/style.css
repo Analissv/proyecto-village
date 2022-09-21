@@ -52,32 +52,55 @@ main {
     background-color: #ebbce436;
     justify-content: center;
     height: 6em; }
-    main .section0 h1 {
+    main .section0 h1, main .section0 p {
       margin: auto;
       color: rgba(0, 0, 0, 0.815);
       font-family: 'Caveat', cursive;
       font-size: 25px; }
-  main #todasSection .section .imgTexto {
+  main .section {
+    margin: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center; }
+    main .section .imgSection img {
+      width: 100%;
+      transition: all 1s ease-in-out; }
+    main .section .textoSection {
+      padding: 10px;
+      transition: all 1s ease-in-out; }
+      main .section .textoSection h3 {
+        font-family: "Cabin", sans-serif;
+        font-size: 15px;
+        text-align: center; }
+      main .section .textoSection p {
+        font-family: "Cabin", sans-serif;
+        font-size: 12px;
+        text-align: center; }
+    main .section:hover img {
+      transform: scale(0.9); }
+    main .section:hover .textoSection {
+      background-color: #8d64a221; }
+  main #parallax {
+    background-image: url(https://images.unsplash.com/photo-1591899495446-836c1c873ae7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 8em;
+    display: flex;
     justify-content: center;
-    padding: 25px; }
-  main #todasSection .section p {
-    font-family: 'Cabin', sans-serif;
-    background-color: #4627499d;
-    text-align: center;
-    margin: 15px;
-    border-radius: 0.30rem; }
-    main #todasSection .section p:hover {
-      transform: scale(1.2);
-      font-weight: bold;
-      transition: 0.2s; }
-  main #todasSection .sectionVideo {
+    align-items: center; }
+    main #parallax span {
+      font-family: "Cabin", sans-serif;
+      font-size: 25px;
+      text-align: center; }
+  main .sectionVideo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: space-around; }
-    main #todasSection .sectionVideo video {
+    main .sectionVideo video {
       width: 15em;
       height: 10em;
       margin: 10px 0 10px 0; }
@@ -89,17 +112,23 @@ main {
   main .section0 {
     flex-direction: column;
     height: 6em; }
-    main .section0 h1 {
+    main .section0 h1, main .section0 p {
       font-size: 2em; }
-  main #todasSection {
+  main .section {
+    width: 80%;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: space-evenly; }
-    main #todasSection .section .imgTexto img {
-      width: 20em;
-      border-radius: 5%; }
-    main #todasSection .sectionVideo video {
+    flex-direction: row; }
+    main .section .imgSection, main .section .textoSection {
+      width: 50%; }
+  main .invertir {
+    display: flex;
+    flex-direction: row-reverse; }
+    main .invertir .imgSection, main .invertir .textoSection {
+      width: 50%; }
+  main .sectionVideo {
+    margin: 20px; }
+    main .sectionVideo video {
       width: 25em;
       height: 15em; } }
 
@@ -110,22 +139,29 @@ main {
   main .section0 {
     flex-direction: column;
     height: 10em; }
-    main .section0 h1 {
+    main .section0 h1, main .section0 p {
       font-size: 4em; }
-  main #todasSection {
-    width: 75%;
-    margin: auto; }
-    main #todasSection .section .imgTexto img {
-      width: 20em; }
-    main #todasSection .section .imgTexto p {
-      font-size: 25px; } }
+  main .section .textoSection h3 {
+    font-size: 30px; }
+  main .section .textoSection p {
+    font-size: 20px;
+    padding: 10px; }
+  main #parallax {
+    height: 18em; }
+    main #parallax span {
+      font-size: 45px; } }
 
 /*media query 1024....................................................................................................................................................*/
-@media (min-width: 1024px) {
-  #todasSection .section .imgTexto img {
-    width: 30em; }
-  #todasSection .section .imgTexto p {
-    font-size: 25px; } }
+@media (min-width: 1440px) {
+  .section .textoSection h3 {
+    font-size: 40px; }
+  .section .textoSection p {
+    font-size: 30px;
+    padding: 35px; }
+  #parallax {
+    height: 25em; }
+    #parallax span {
+      font-size: 50px; } }
 
 main {
   min-height: 100%; }
