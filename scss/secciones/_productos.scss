@@ -43,7 +43,6 @@ main{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background-color:$rosaParaFondo ;
         margin: 10px 0 10px 0;
         .cardProd{
             display: flex;
@@ -51,6 +50,7 @@ main{
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
+            background-color: $rosaParaFondo;
             height: 23em;
             width: 19em;
             margin: 15px 0 15px 0;
@@ -64,6 +64,10 @@ main{
             &:hover img{
                 opacity: 0.6;
             }
+            &:hover .nombrePrecio{
+                background-color: #8d64a234;
+
+            }
             img{
                 width: 100%;
                     
@@ -71,9 +75,10 @@ main{
             .nombrePrecio{
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 flex-wrap: wrap;
-                margin: 15px 0 15px 0 ;
-                padding: 10px;
+                padding: 15px;
+                width: 100%;
                 h3{
                     font-family: $cabin;
                     font-size: 15px;

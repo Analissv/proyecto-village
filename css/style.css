@@ -268,7 +268,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .choc1:hover .adelante {
         z-index: -1;
@@ -296,7 +296,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .choc1 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -339,7 +339,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .choc2:hover .adelante {
         z-index: -1;
@@ -367,7 +367,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .choc2 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -410,7 +410,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .choc3:hover .adelante {
         z-index: -1;
@@ -438,7 +438,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .choc3 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -481,7 +481,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .choc4:hover .adelante {
         z-index: -1;
@@ -509,7 +509,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .choc4 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -565,7 +565,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .tart1:hover .adelante {
         z-index: -1;
@@ -593,7 +593,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .tart1 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -636,7 +636,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .tart2:hover .adelante {
         z-index: -1;
@@ -664,7 +664,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .tart2 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -707,7 +707,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .tart3:hover .adelante {
         z-index: -1;
@@ -735,7 +735,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .tart3 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -778,7 +778,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .tart4:hover .adelante {
         z-index: -1;
@@ -806,7 +806,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .tart4 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -862,7 +862,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .sH1:hover .adelante {
         z-index: -1;
@@ -890,7 +890,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .sH1 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -933,7 +933,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .sH2:hover .adelante {
         z-index: -1;
@@ -961,7 +961,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .sH2 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -1004,7 +1004,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .sH3:hover .adelante {
         z-index: -1;
@@ -1032,7 +1032,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .sH3 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -1075,7 +1075,7 @@ main {
       width: 18em;
       height: 15em;
       margin: 15px auto;
-      box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.8);
+      box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
       position: relative; }
       main .grid-container .sH4:hover .adelante {
         z-index: -1;
@@ -1103,7 +1103,7 @@ main {
           font-size: 20px;
           color: #462749; }
       main .grid-container .sH4 .atras {
-        width: 80%;
+        width: 90%;
         height: 12em;
         display: flex;
         flex-direction: column;
@@ -1249,7 +1249,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #ebbce436;
     margin: 10px 0 10px 0; }
     main .precios .cardProd {
       display: flex;
@@ -1257,6 +1256,7 @@ main {
       flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
+      background-color: #ebbce436;
       height: 23em;
       width: 19em;
       margin: 15px 0 15px 0;
@@ -1268,14 +1268,17 @@ main {
         transform: translateY(-15px); }
       main .precios .cardProd:hover img {
         opacity: 0.6; }
+      main .precios .cardProd:hover .nombrePrecio {
+        background-color: #8d64a234; }
       main .precios .cardProd img {
         width: 100%; }
       main .precios .cardProd .nombrePrecio {
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
-        margin: 15px 0 15px 0;
-        padding: 10px; }
+        padding: 15px;
+        width: 100%; }
         main .precios .cardProd .nombrePrecio h3 {
           font-family: "Cabin", sans-serif;
           font-size: 15px;
