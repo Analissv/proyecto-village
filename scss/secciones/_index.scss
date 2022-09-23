@@ -67,7 +67,7 @@ main {
         &:hover img{
             transform: scale(0.9);
         }
-        &:hover .textoSection{
+        &:hover {
             background-color:$lilaClaro;
 
         }
