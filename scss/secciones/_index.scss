@@ -19,14 +19,14 @@ main {
 
     .section0 {
         display: flex;
-        background-color: #ebbce436;
+        background-color: $rosaParaFondo;
         justify-content: center;
         height: 6em;
 
         h1, p {
             margin: auto;
             color: rgba(0, 0, 0, 0.815);
-            font-family: 'Caveat', cursive;
+            font-family: $caveatCursiva;
             font-size: 25px;
         }
     }
@@ -40,7 +40,6 @@ main {
             img {
                 width: 100%;
                 transition: all 1s ease-in-out;
-
             }
     
         }
@@ -53,26 +52,20 @@ main {
                 font-family: $cabin;
                 font-size: 15px;
                 text-align: center;
-
             }
 
             p {
                 font-family: $cabin;
                 font-size: 12px;
                 text-align: center;
-
             }
-    
         }
         &:hover img{
             transform: scale(0.9);
         }
         &:hover {
             background-color:$lilaClaro;
-
         }
-
-
     }
 
     #parallax {
@@ -107,9 +100,6 @@ main {
 
         }
     }
-
-
-
 }
 
 /*media query 768....................................................................................................................................................*/
@@ -125,11 +115,10 @@ main {
         }
 
         .section0 {
-            flex-direction: column;
-            height: 6em;
+            height: 8em;
 
             h1, p {
-                font-size: 2em;
+                font-size: 40px;
             }
         }
         .section{
@@ -156,7 +145,6 @@ main {
                 height: 15em;
             }
         }
-
     }
 }
 
@@ -175,10 +163,9 @@ main {
         }
 
         .section0{
-            flex-direction: column;
             height: 10em;
             h1, p{
-                font-size: 4em;
+                font-size: 50px;
             }
         }
         .section{
@@ -201,24 +188,31 @@ main {
     }
 }
 
-/*media query 1024....................................................................................................................................................*/
+/*media query 1440....................................................................................................................................................*/
 @media(min-width:1440px){
-    .section{
-        .textoSection{
-            h3{
-                font-size: 40px;
+    main{
+        .section{
+            .textoSection{
+                h3{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 25px;
+                }
             }
-            p{
-                font-size: 30px;
-                padding: 35px;
+        }
+        #parallax{
+            height: 25em;
+            span{
+                font-size: 50px;
+            }
+        }
+        .sectionVideo{
+            video{
+                width: 35em;
+                height: 25em;
+    
             }
         }
     }
-    #parallax{
-        height: 25em;
-        span{
-            font-size: 50px;
-        }
-    }
-
 }

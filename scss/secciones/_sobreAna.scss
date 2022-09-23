@@ -42,19 +42,15 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         .sectionA{
-            font-family: $cabin;
-            font-size: 15px;
             margin: 15px;
-            line-height: 20px;
-            text-align: justify;
             p{
-                line-height: 2;
-          }
+              font-family: $cabin;
+              font-size: 15px;
+              line-height: 2;
+              text-align: justify;
+            }
         }
-      .sectionB{
-        display: flex;
-        justify-content: center;
-        justify-items: center;
+      .sectionB{ 
         img{
             width: 18em;
             border-radius: 5%;
@@ -85,62 +81,24 @@ main{
       "panel8 panel8 panel9 panel10"
       "panel11 panel12 panel13 panel14"
       "panel11 panel15 panel16 panel17";
-        .panel1 { 
-          grid-area: panel1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background-color: $rosaParaFondo;
-          height: 100%;
-
-          span{
-            font-family: $cabin;
-            font-size: 18px;
-            padding: 5px;
-  
-          }
+        .panel1 {
+          @include estiloTextoGaleria(panel1);
         }
     
         .panel2 { 
-          grid-area: panel2; 
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel2);
         }
         
         .panel3 {
-          grid-area: panel3;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-            
-          }
+          @include estilopanelImagen(panel3)
         }
         
         .panel4 { 
-          grid-area: panel4;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel4)
         }
         
         .panel5 { 
-          grid-area: panel5;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel5)
         }
         
         .panel6 { 
@@ -150,128 +108,57 @@ main{
           align-items: center;
           height: 100%;
           background-color: $rosaParaFondo;
-
-
-          span{
-            font-family: $cabin;
-            font-size: 26px;
-            text-align: center;
-          }
+            span{
+              font-family: $cabin;
+              font-size: 26px;
+              text-align: center;
+            }
 
         }
         
         .panel7 { 
-          grid-area: panel7;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel7)
         }
         
         .panel8 { 
-          grid-area: panel8;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
-        }
-        
-        .panel9 { 
-          grid-area: panel9;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
-        }
-        
-        .panel10 { 
-          grid-area: panel10;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
-        }
-        
-        .panel11 { 
-          grid-area: panel11;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          font-family: $cabin;
-          font-size: 18px;
-          padding: 5px;
-          height: 100%;
-          background-color: $rosaParaFondo;
+          @include estilopanelImagen(panel8)
 
         }
         
+        .panel9 { 
+          @include estilopanelImagen(panel9)
+        }
+        
+        .panel10 { 
+          @include estilopanelImagen(panel10)
+        }
+        
+        .panel11 { 
+          @include estiloTextoGaleria(panel11) 
+        }
+        
         .panel12 { 
-          grid-area: panel12;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel12)
         }
         
         .panel13 { 
-          grid-area: panel13;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel13)
         }
         
         .panel14 { 
-          grid-area: panel14;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel14)
         }
         
         .panel15 { 
-          grid-area: panel15;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel15)
         }
         
         .panel16 { 
-          grid-area: panel16;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel16)
         }
         
         .panel17 { 
-          grid-area: panel17;
-          display: flex;
-          width: 100%;
-          img{
-            width: 100%;
-            object-fit: cover;
-          }
+          @include estilopanelImagen(panel17)
         }
     
     }
@@ -296,10 +183,10 @@ main{
     }
     .todasSection{
       .sectionA{
+        width: 75%;
         align-items: center;
         margin: 25px;
         line-height: 30px;
-        width: 60%;
       }
       .sectionB{
         width: 25em;
@@ -318,15 +205,11 @@ main{
         justify-content: center;
         span{
           font-size: 45px;
-          
         }
       }
-      
-      
     }
-    }
-  
   }
+}
 
 
 
@@ -350,12 +233,13 @@ main{
     .todasSection{
       .sectionA{
         margin: 40px;
-        font-size: 20px;
+        p{
+          font-size: 20px;
+        }
       }
       .sectionB{
         img{
-          width: 40em;
-  
+          width: 100%;
         }
       }
     }
@@ -378,11 +262,12 @@ main{
     .todasSection{
       .sectionA{
         width: 50%;
-        justify-content: center;
-        font-size: 25px;
+        p{
+          font-size: 25px;
+        }
       }
       .sectionB{
-        width: 50em;
+        width: 50%;
       }
     }
     #trabajos{

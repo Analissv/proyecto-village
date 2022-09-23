@@ -43,14 +43,15 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $rosaParaFondo;
         form{
           display: flex;
           flex-direction: column;
           justify-content: center;
-          border:2px solid rgba(0, 0, 0, 0.733);
+          border: $purpura 2px solid;
+          border-radius: 4%;
           margin: 20px;
           padding: 25px 25px;
+          background-color: $lilaClaro;
           .llenar{
             display: flex;
             flex-direction: column;
@@ -64,29 +65,22 @@ main{
               margin: 10px 0 10px 0;
               .input{
                 outline: none;
-                border:$purpura 1px solid;
-                outline: none;
                 height: 30px;
                 font-size: 12px;
+                &:focus{
+                  border:$purpura 2px solid;
+                  border-radius: 0.6em;
+
+                }
                &:focus + label, &:valid + label{
                   bottom: 1.3rem;
                   left: 0.5rem;
                   font-size: 10px;
-                  background-color:$purpura;
-                  border-radius: 0.3em;
-                  color: white;
-                  padding: 2px;
-                  letter-spacing: 2px;
+                  @extend %labelInputDescrip;
                 }
               }
               label{
-                position: absolute;
-                transition: top 2s left 2s;
-                font-family: $cabin;
-                font-size: 14px;
-                pointer-events: none;
-                margin-left:5px ;
-                               
+                @extend %detrasInputDescrip;                               
               }
               #descripcion{
                 outline: none;
@@ -94,29 +88,26 @@ main{
                 outline: none;
                 height: 10em;
                 font-size: 12px;
+                &:focus{
+                  border:$purpura 2px solid;
+                  border-radius: 0.6em;
+
+                }
+
     
                 &:focus + .comentario{
                   top: -1rem;
                   left: 0.5rem;
                   font-size: 10px;
-                  background-color:$purpura;
-                  border-radius: 0.3em;
-                  color: white;
-                  padding: 2px;
                   margin-top: 5px;
-                  letter-spacing: 2px;
+                  @extend %labelInputDescrip;
 
 
                 }
               }
               .comentario{
-                position: absolute;
+                @extend %detrasInputDescrip;
                 top: 5px;
-                transition: top 2s left 2s;
-                font-family: $cabin;
-                font-size: 14px;
-                pointer-events: none;
-                margin-left:5px ;
 
               }
             }
@@ -131,12 +122,11 @@ main{
               border-radius: 0.5em;
               font-family: $cabin;
               font-size: 14px;
-              border: $purpura 10;
-              background-color: rgba(0, 0, 0, 0.336);
+              background-color: $purpura;
+              color: white;
+              transition: all 500ms;
               &:focus{
-                font-size: 18px;
-                background-color: $purpura;
-                color: white;
+                transform: scale(1.1);
               }
             }
           }

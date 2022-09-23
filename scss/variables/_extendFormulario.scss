@@ -1,0 +1,18 @@
+%labelInputDescrip {
+    background-color:$purpura;
+    border-radius: 0.3em;
+    color: white;
+    padding: 2px;
+    letter-spacing: 2px;
+
+}
+
+%detrasInputDescrip{
+    position: absolute;
+    transition: top 2s left 2s;
+    font-family: $cabin;
+    font-size: 14px;
+    pointer-events: none;
+    margin-left:5px ;
+
+}

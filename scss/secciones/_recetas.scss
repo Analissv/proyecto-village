@@ -88,7 +88,7 @@ main{
             }
         }
         .chocolatosas { 
-            @include estiloContenedorTipoReceta(chocolatosas)
+            @include estiloContenedorTipoReceta(chocolatosas) 
         }  
         .choc1{
             @include estiloCadaContenedorReceta (choc1);

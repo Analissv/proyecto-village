@@ -7,6 +7,21 @@
 
 /*mixin contenedor de cada receta*/
 /*mixin para cada titulo de tipo de receta*/
+main .contacto form .llenar .escribirTexto .input:focus + label, main .contacto form .llenar .escribirTexto .input:valid + label, main .contacto form .llenar .escribirTexto #descripcion:focus + .comentario {
+  background-color: #462749;
+  border-radius: 0.3em;
+  color: white;
+  padding: 2px;
+  letter-spacing: 2px; }
+
+main .contacto form .llenar .escribirTexto label, main .contacto form .llenar .escribirTexto .comentario {
+  position: absolute;
+  transition: top 2s left 2s;
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  pointer-events: none;
+  margin-left: 5px; }
+
 .navbar {
   background-color: #462749; }
   .navbar nav img {
@@ -55,7 +70,7 @@ main {
     main .section0 h1, main .section0 p {
       margin: auto;
       color: rgba(0, 0, 0, 0.815);
-      font-family: 'Caveat', cursive;
+      font-family: "Caveat", cursive;
       font-size: 25px; }
   main .section {
     margin: 10px;
@@ -110,10 +125,9 @@ main {
   main .migaPan ol li {
     font-size: 20px; }
   main .section0 {
-    flex-direction: column;
-    height: 6em; }
+    height: 8em; }
     main .section0 h1, main .section0 p {
-      font-size: 2em; }
+      font-size: 40px; }
   main .section {
     width: 80%;
     margin: auto;
@@ -137,10 +151,9 @@ main {
   main .migaPan ol li .enPagina {
     font-size: 28px; }
   main .section0 {
-    flex-direction: column;
     height: 10em; }
     main .section0 h1, main .section0 p {
-      font-size: 4em; }
+      font-size: 50px; }
   main .section .textoSection h3 {
     font-size: 30px; }
   main .section .textoSection p {
@@ -151,17 +164,19 @@ main {
     main #parallax span {
       font-size: 45px; } }
 
-/*media query 1024....................................................................................................................................................*/
+/*media query 1440....................................................................................................................................................*/
 @media (min-width: 1440px) {
-  .section .textoSection h3 {
+  main .section .textoSection h3 {
     font-size: 40px; }
-  .section .textoSection p {
-    font-size: 30px;
-    padding: 35px; }
-  #parallax {
+  main .section .textoSection p {
+    font-size: 25px; }
+  main #parallax {
     height: 25em; }
-    #parallax span {
-      font-size: 50px; } }
+    main #parallax span {
+      font-size: 50px; }
+  main .sectionVideo video {
+    width: 35em;
+    height: 25em; } }
 
 main {
   min-height: 100%; }
@@ -191,21 +206,16 @@ main {
     flex-wrap: wrap;
     justify-content: center; }
     main .todasSection .sectionA {
-      font-family: "Cabin", sans-serif;
-      font-size: 15px;
-      margin: 15px;
-      line-height: 20px;
-      text-align: justify; }
+      margin: 15px; }
       main .todasSection .sectionA p {
-        line-height: 2; }
-    main .todasSection .sectionB {
-      display: flex;
-      justify-content: center;
-      justify-items: center; }
-      main .todasSection .sectionB img {
-        width: 18em;
-        border-radius: 5%;
-        margin: 15px; }
+        font-family: "Cabin", sans-serif;
+        font-size: 15px;
+        line-height: 2;
+        text-align: justify; }
+    main .todasSection .sectionB img {
+      width: 18em;
+      border-radius: 5%;
+      margin: 15px; }
   main #trabajos {
     font-family: "Caveat", cursive;
     font-size: 20px;
@@ -307,11 +317,12 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: "Cabin", sans-serif;
-      font-size: 18px;
-      padding: 5px;
-      height: 100%;
-      background-color: #ebbce436; }
+      background-color: #ebbce436;
+      height: 100%; }
+      main .galeria-container .panel11 span {
+        font-family: "Cabin", sans-serif;
+        font-size: 18px;
+        padding: 5px; }
     main .galeria-container .panel12 {
       grid-area: panel12;
       display: flex;
@@ -362,10 +373,10 @@ main {
   main .migaPan ol li .siguiente {
     font-size: 20px; }
   main .todasSection .sectionA {
+    width: 75%;
     align-items: center;
     margin: 25px;
-    line-height: 30px;
-    width: 60%; }
+    line-height: 30px; }
   main .todasSection .sectionB {
     width: 25em; }
   main #trabajos {
@@ -384,10 +395,11 @@ main {
   main .migaPan ol li .siguiente {
     font-size: 28px; }
   main .todasSection .sectionA {
-    margin: 40px;
-    font-size: 20px; }
+    margin: 40px; }
+    main .todasSection .sectionA p {
+      font-size: 20px; }
   main .todasSection .sectionB img {
-    width: 40em; }
+    width: 100%; }
   main #trabajos {
     font-size: 40px; }
   main .galeria-container {
@@ -397,11 +409,11 @@ main {
 /*media query.................................................................................................................................*/
 @media (min-width: 1440px) {
   main .todasSection .sectionA {
-    width: 50%;
-    justify-content: center;
-    font-size: 25px; }
+    width: 50%; }
+    main .todasSection .sectionA p {
+      font-size: 25px; }
   main .todasSection .sectionB {
-    width: 50em; }
+    width: 50%; }
   main #trabajos {
     font-size: 60px; }
   main .galeria-container .panel1 span, main .galeria-container .panel11 span {
@@ -1582,7 +1594,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /*background-color: #ebbce436;*/
     padding: 10px; }
     main .tips .contenido {
       display: flex;
@@ -1710,15 +1721,16 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #ebbce436; }
+    align-items: center; }
     main .contacto form {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      border: 2px solid rgba(0, 0, 0, 0.733);
+      border: #462749 2px solid;
+      border-radius: 4%;
       margin: 20px;
-      padding: 25px 25px; }
+      padding: 25px 25px;
+      background-color: #8d64a221; }
       main .contacto form .llenar {
         display: flex;
         flex-direction: column;
@@ -1731,50 +1743,31 @@ main {
           margin: 10px 0 10px 0; }
           main .contacto form .llenar .escribirTexto .input {
             outline: none;
-            border: #462749 1px solid;
-            outline: none;
             height: 30px;
             font-size: 12px; }
+            main .contacto form .llenar .escribirTexto .input:focus {
+              border: #462749 2px solid;
+              border-radius: 0.6em; }
             main .contacto form .llenar .escribirTexto .input:focus + label, main .contacto form .llenar .escribirTexto .input:valid + label {
               bottom: 1.3rem;
               left: 0.5rem;
-              font-size: 10px;
-              background-color: #462749;
-              border-radius: 0.3em;
-              color: white;
-              padding: 2px;
-              letter-spacing: 2px; }
-          main .contacto form .llenar .escribirTexto label {
-            position: absolute;
-            transition: top 2s left 2s;
-            font-family: "Cabin", sans-serif;
-            font-size: 14px;
-            pointer-events: none;
-            margin-left: 5px; }
+              font-size: 10px; }
           main .contacto form .llenar .escribirTexto #descripcion {
             outline: none;
             border: solid 1px #462749;
             outline: none;
             height: 10em;
             font-size: 12px; }
+            main .contacto form .llenar .escribirTexto #descripcion:focus {
+              border: #462749 2px solid;
+              border-radius: 0.6em; }
             main .contacto form .llenar .escribirTexto #descripcion:focus + .comentario {
               top: -1rem;
               left: 0.5rem;
               font-size: 10px;
-              background-color: #462749;
-              border-radius: 0.3em;
-              color: white;
-              padding: 2px;
-              margin-top: 5px;
-              letter-spacing: 2px; }
+              margin-top: 5px; }
           main .contacto form .llenar .escribirTexto .comentario {
-            position: absolute;
-            top: 5px;
-            transition: top 2s left 2s;
-            font-family: "Cabin", sans-serif;
-            font-size: 14px;
-            pointer-events: none;
-            margin-left: 5px; }
+            top: 5px; }
       main .contacto form .click {
         display: flex;
         flex-wrap: wrap;
@@ -1785,12 +1778,11 @@ main {
           border-radius: 0.5em;
           font-family: "Cabin", sans-serif;
           font-size: 14px;
-          border: #462749 10;
-          background-color: rgba(0, 0, 0, 0.336); }
+          background-color: #462749;
+          color: white;
+          transition: all 500ms; }
           main .contacto form .click input:focus {
-            font-size: 18px;
-            background-color: #462749;
-            color: white; }
+            transform: scale(1.1); }
     main .contacto .ubicacion {
       width: 18em;
       margin: 15px; }
