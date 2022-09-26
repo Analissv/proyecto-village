@@ -225,24 +225,24 @@ main {
     margin: 15px; }
   main .galeria-container {
     display: grid;
-    grid-template-columns: 0.2fr 0.5fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(6, auto);
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 5px 5px;
     grid-auto-flow: row;
-    grid-template-areas: "panel1 panel5 panel4 panel3" "panel1 panel2 panel2 panel3" "panel7 panel7 panel6 panel6" "panel8 panel8 panel9 panel10" "panel11 panel12 panel13 panel14" "panel11 panel15 panel16 panel17"; }
+    grid-template-areas: "panel1 panel2 panel3 panel4" "panel1 panel5 panel6 panel7" "panel10 panel10 panel9 panel8" "panel10 panel10 panel11 panel12" "panel13 panel14 panel15 panel16" "panel13 panel17 panel18 panel19"; }
     main .galeria-container .panel1 {
       grid-area: panel1;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #ebbce436;
+      background-color: #EBBCE4;
       height: 100%; }
       main .galeria-container .panel1 span {
         font-family: "Cabin", sans-serif;
-        font-size: 18px;
+        font-size: 10px;
         padding: 5px; }
     main .galeria-container .panel2 {
       grid-area: panel2;
@@ -250,121 +250,199 @@ main {
       width: 100%; }
       main .galeria-container .panel2 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel2 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel3 {
       grid-area: panel3;
       display: flex;
       width: 100%; }
       main .galeria-container .panel3 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel3 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel4 {
       grid-area: panel4;
       display: flex;
       width: 100%; }
       main .galeria-container .panel4 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel4 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel5 {
       grid-area: panel5;
       display: flex;
       width: 100%; }
       main .galeria-container .panel5 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel5 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel6 {
       grid-area: panel6;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      height: 100%;
-      background-color: #ebbce436; }
-      main .galeria-container .panel6 span {
-        font-family: "Cabin", sans-serif;
-        font-size: 26px;
-        text-align: center; }
+      width: 100%; }
+      main .galeria-container .panel6 img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel6 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel7 {
       grid-area: panel7;
       display: flex;
       width: 100%; }
       main .galeria-container .panel7 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel7 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel8 {
       grid-area: panel8;
       display: flex;
-      width: 100%; }
-      main .galeria-container .panel8 img {
-        width: 100%;
-        object-fit: cover; }
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+      background-color: #EBBCE4; }
+      main .galeria-container .panel8 span {
+        font-family: "Cabin", sans-serif;
+        font-size: 10px;
+        text-align: center; }
     main .galeria-container .panel9 {
       grid-area: panel9;
       display: flex;
       width: 100%; }
       main .galeria-container .panel9 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel9 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel10 {
       grid-area: panel10;
       display: flex;
       width: 100%; }
       main .galeria-container .panel10 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel10 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel11 {
       grid-area: panel11;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #ebbce436;
-      height: 100%; }
-      main .galeria-container .panel11 span {
-        font-family: "Cabin", sans-serif;
-        font-size: 18px;
-        padding: 5px; }
+      width: 100%; }
+      main .galeria-container .panel11 img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel11 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel12 {
       grid-area: panel12;
       display: flex;
       width: 100%; }
       main .galeria-container .panel12 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel12 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel13 {
       grid-area: panel13;
       display: flex;
-      width: 100%; }
-      main .galeria-container .panel13 img {
-        width: 100%;
-        object-fit: cover; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #EBBCE4;
+      height: 100%; }
+      main .galeria-container .panel13 span {
+        font-family: "Cabin", sans-serif;
+        font-size: 10px;
+        padding: 5px; }
     main .galeria-container .panel14 {
       grid-area: panel14;
       display: flex;
       width: 100%; }
       main .galeria-container .panel14 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel14 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel15 {
       grid-area: panel15;
       display: flex;
       width: 100%; }
       main .galeria-container .panel15 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel15 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel16 {
       grid-area: panel16;
       display: flex;
       width: 100%; }
       main .galeria-container .panel16 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel16 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
     main .galeria-container .panel17 {
       grid-area: panel17;
       display: flex;
       width: 100%; }
       main .galeria-container .panel17 img {
         width: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel17 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
+    main .galeria-container .panel18 {
+      grid-area: panel18;
+      display: flex;
+      width: 100%; }
+      main .galeria-container .panel18 img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel18 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
+    main .galeria-container .panel19 {
+      grid-area: panel19;
+      display: flex;
+      width: 100%; }
+      main .galeria-container .panel19 img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 500ms ease-out; }
+        main .galeria-container .panel19 img:hover {
+          transform: scale(0.9);
+          opacity: 0.6; }
 
 /*media query.................................................................................................................................*/
 @media (min-width: 768px) {
@@ -381,12 +459,12 @@ main {
     width: 25em; }
   main #trabajos {
     font-size: 30px; }
-  main .galeria-container .panel1 span, main .galeria-container .panel11 span {
-    font-size: 25px; }
-  main .galeria-container .panel6 {
+  main .galeria-container .panel1 span, main .galeria-container .panel13 span {
+    font-size: 15px; }
+  main .galeria-container .panel8 {
     justify-content: center; }
-    main .galeria-container .panel6 span {
-      font-size: 45px; } }
+    main .galeria-container .panel8 span {
+      font-size: 18px; } }
 
 /*media query.................................................................................................................................*/
 @media (min-width: 1024px) {
@@ -416,8 +494,10 @@ main {
     width: 50%; }
   main #trabajos {
     font-size: 60px; }
-  main .galeria-container .panel1 span, main .galeria-container .panel11 span {
-    font-size: 35px; } }
+  main .galeria-container .panel1 span, main .galeria-container .panel13 span {
+    font-size: 35px; }
+  main .galeria-container .panel8 span {
+    font-size: 40px; } }
 
 main {
   min-height: 100%; }

@@ -68,19 +68,19 @@ main{
     }
     .galeria-container {  
       display: grid;
-      grid-template-columns: 0.2fr 0.5fr 0.5fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: repeat(6, auto);
       grid-auto-columns: 1fr;
       grid-auto-rows: 1fr;
       gap: 5px 5px;
       grid-auto-flow: row;
       grid-template-areas:
-      "panel1 panel5 panel4 panel3"
-      "panel1 panel2 panel2 panel3"
-      "panel7 panel7 panel6 panel6"
-      "panel8 panel8 panel9 panel10"
-      "panel11 panel12 panel13 panel14"
-      "panel11 panel15 panel16 panel17";
+      "panel1 panel2 panel3 panel4"
+      "panel1 panel5 panel6 panel7"
+      "panel10 panel10 panel9 panel8"
+      "panel10 panel10 panel11 panel12"
+      "panel13 panel14 panel15 panel16"
+      "panel13 panel17 panel18 panel19";
         .panel1 {
           @include estiloTextoGaleria(panel1);
         }
@@ -100,28 +100,25 @@ main{
         .panel5 { 
           @include estilopanelImagen(panel5)
         }
-        
         .panel6 { 
-          grid-area: panel6;
+          @include estilopanelImagen(panel6)
+        }
+        .panel7 { 
+          @include estilopanelImagen(panel7)
+        }
+
+        .panel8 { 
+          grid-area: panel8;
           display: flex;
           flex-wrap: wrap;
           align-items: center;
           height: 100%;
-          background-color: $rosaParaFondo;
+          background-color: $rosa;
             span{
               font-family: $cabin;
-              font-size: 26px;
+              font-size: 10px;
               text-align: center;
             }
-
-        }
-        
-        .panel7 { 
-          @include estilopanelImagen(panel7)
-        }
-        
-        .panel8 { 
-          @include estilopanelImagen(panel8)
 
         }
         
@@ -131,18 +128,19 @@ main{
         
         .panel10 { 
           @include estilopanelImagen(panel10)
+
         }
         
         .panel11 { 
-          @include estiloTextoGaleria(panel11) 
+          @include estilopanelImagen(panel11)
         }
         
         .panel12 { 
           @include estilopanelImagen(panel12)
         }
-        
+
         .panel13 { 
-          @include estilopanelImagen(panel13)
+          @include estiloTextoGaleria(panel13) 
         }
         
         .panel14 { 
@@ -160,7 +158,15 @@ main{
         .panel17 { 
           @include estilopanelImagen(panel17)
         }
-    
+        
+        .panel18 { 
+          @include estilopanelImagen(panel18)
+        }
+        
+        .panel19 { 
+          @include estilopanelImagen(panel19)
+        }
+
     }
     
     
@@ -196,15 +202,15 @@ main{
       font-size: 30px;
     }
     .galeria-container{
-      .panel1, .panel11{
+      .panel1, .panel13{
         span{
-          font-size: 25px;
+          font-size: 15px;
         }
       }
-      .panel6{
+      .panel8{
         justify-content: center;
         span{
-          font-size: 45px;
+          font-size: 18px;
         }
       }
     }
@@ -250,7 +256,6 @@ main{
       width: 75%;
       margin: auto;
     }
-  
   }
 
 }
@@ -274,9 +279,14 @@ main{
       font-size: 60px;
     }
     .galeria-container{
-      .panel1, .panel11{
+      .panel1, .panel13{
         span{
           font-size: 35px;
+        }
+      }
+      .panel8{
+        span{
+          font-size: 40px;
         }
       }
       
