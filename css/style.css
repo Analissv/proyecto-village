@@ -225,7 +225,7 @@ main {
     margin: 15px; }
   main .galeria-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
     grid-template-rows: repeat(6, auto);
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -238,7 +238,7 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #EBBCE4;
+      background-color: #ebbce436;
       height: 100%; }
       main .galeria-container .panel1 span {
         font-family: "Cabin", sans-serif;
@@ -316,7 +316,7 @@ main {
       flex-wrap: wrap;
       align-items: center;
       height: 100%;
-      background-color: #EBBCE4; }
+      background-color: #ebbce436; }
       main .galeria-container .panel8 span {
         font-family: "Cabin", sans-serif;
         font-size: 10px;
@@ -371,7 +371,7 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #EBBCE4;
+      background-color: #ebbce436;
       height: 100%; }
       main .galeria-container .panel13 span {
         font-family: "Cabin", sans-serif;
