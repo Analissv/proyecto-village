@@ -62,10 +62,10 @@ main{
                 transform: translateY(-15px);
             }
             &:hover img{
-                opacity: 0.6;
+                opacity: 0.9;
             }
             &:hover .nombrePrecio{
-                background-color: #8d64a234;
+                background-color: #8d64a234;  
 
             }
             img{
@@ -80,22 +80,19 @@ main{
                 padding: 15px;
                 width: 100%;
                 h3{
-                    font-family: $cabin;
+                    @extend %fuentesProductos;
                     font-size: 15px;
                     font-weight: bold;
-                    color: rgba(0, 0, 0, 0.842);
                 }
                 p{
-                    font-family:$cabin;
+                    @extend %fuentesProductos;
                     font-size: 12px; 
-                    color: rgba(0, 0, 0, 0.842);
                     text-align: justify ;
                     
                 }
                 span{
-                    font-family: $cabin;
+                    @extend %fuentesProductos;
                     font-size: 15px;
-                    color: rgba(0, 0, 0, 0.842);
                     font-weight: 800;
                 }
                 button{

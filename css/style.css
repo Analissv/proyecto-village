@@ -7,6 +7,10 @@
 
 /*mixin contenedor de cada receta*/
 /*mixin para cada titulo de tipo de receta*/
+main .precios .cardProd .nombrePrecio h3, main .precios .cardProd .nombrePrecio p, main .precios .cardProd .nombrePrecio span {
+  font-family: "Cabin", sans-serif;
+  color: rgba(0, 0, 0, 0.842); }
+
 main .contacto form .llenar .escribirTexto .input:focus + label, main .contacto form .llenar .escribirTexto .input:valid + label, main .contacto form .llenar .escribirTexto #descripcion:focus + .comentario {
   background-color: #462749;
   border-radius: 0.3em;
@@ -129,7 +133,7 @@ main {
     main .section0 h1, main .section0 p {
       font-size: 40px; }
   main .section {
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-direction: row; }
@@ -254,7 +258,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel2 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel3 {
       grid-area: panel3;
       display: flex;
@@ -265,7 +269,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel3 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel4 {
       grid-area: panel4;
       display: flex;
@@ -276,7 +280,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel4 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel5 {
       grid-area: panel5;
       display: flex;
@@ -287,7 +291,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel5 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel6 {
       grid-area: panel6;
       display: flex;
@@ -298,7 +302,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel6 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel7 {
       grid-area: panel7;
       display: flex;
@@ -309,7 +313,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel7 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel8 {
       grid-area: panel8;
       display: flex;
@@ -331,7 +335,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel9 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel10 {
       grid-area: panel10;
       display: flex;
@@ -342,7 +346,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel10 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel11 {
       grid-area: panel11;
       display: flex;
@@ -353,7 +357,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel11 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel12 {
       grid-area: panel12;
       display: flex;
@@ -364,7 +368,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel12 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel13 {
       grid-area: panel13;
       display: flex;
@@ -387,7 +391,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel14 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel15 {
       grid-area: panel15;
       display: flex;
@@ -398,7 +402,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel15 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel16 {
       grid-area: panel16;
       display: flex;
@@ -409,7 +413,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel16 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel17 {
       grid-area: panel17;
       display: flex;
@@ -420,7 +424,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel17 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel18 {
       grid-area: panel18;
       display: flex;
@@ -431,7 +435,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel18 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
     main .galeria-container .panel19 {
       grid-area: panel19;
       display: flex;
@@ -442,7 +446,7 @@ main {
         transition: all 500ms ease-out; }
         main .galeria-container .panel19 img:hover {
           transform: scale(0.9);
-          opacity: 0.6; }
+          opacity: 0.8; }
 
 /*media query.................................................................................................................................*/
 @media (min-width: 768px) {
@@ -1570,7 +1574,7 @@ main {
         box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
         transform: translateY(-15px); }
       main .precios .cardProd:hover img {
-        opacity: 0.6; }
+        opacity: 0.9; }
       main .precios .cardProd:hover .nombrePrecio {
         background-color: #8d64a234; }
       main .precios .cardProd img {
@@ -1583,19 +1587,13 @@ main {
         padding: 15px;
         width: 100%; }
         main .precios .cardProd .nombrePrecio h3 {
-          font-family: "Cabin", sans-serif;
           font-size: 15px;
-          font-weight: bold;
-          color: rgba(0, 0, 0, 0.842); }
+          font-weight: bold; }
         main .precios .cardProd .nombrePrecio p {
-          font-family: "Cabin", sans-serif;
           font-size: 12px;
-          color: rgba(0, 0, 0, 0.842);
           text-align: justify; }
         main .precios .cardProd .nombrePrecio span {
-          font-family: "Cabin", sans-serif;
           font-size: 15px;
-          color: rgba(0, 0, 0, 0.842);
           font-weight: 800; }
         main .precios .cardProd .nombrePrecio button {
           width: 5em;
@@ -1789,7 +1787,7 @@ main {
       font-size: 18px;
       font-family: "Cabin", sans-serif; }
   main .bannerContacto img {
-    max-width: 100%; }
+    width: 100%; }
   main .comentarioForm {
     font-family: "Caveat", cursive;
     font-size: 25px;
@@ -1948,7 +1946,7 @@ main {
     border-radius: 15%;
     margin: 15px; }
   .footer p {
-    font-family: 'Cabin', sans-serif;
+    font-family: "Cabin", sans-serif;
     font-size: 12px;
     font-style: oblique;
     margin-bottom: 15px; }

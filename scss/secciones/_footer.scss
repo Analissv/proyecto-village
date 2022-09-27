@@ -10,7 +10,7 @@
     margin: 15px;
   }
   p{
-    font-family: 'Cabin', sans-serif;
+    font-family: $cabin;
     font-size: 12px;
     font-style: oblique;
     margin-bottom: 15px;
@@ -22,7 +22,7 @@
   .footer{
     p{
       font-size: 16px;
-    }
+    } 
   }
 }
 
